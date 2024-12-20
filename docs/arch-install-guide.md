@@ -142,7 +142,7 @@ loadkeys [keymap]
 ### Connect to the internet
 
 The ArchISO *requires* an internet connection in order to be set up properly.
-If your computer is connected via Ethernet, you may skip this section by going [here](#test-connectivity).
+If your computer is connected via Ethernet, you may skip this section by going [here](#testing-your-internet-connection).
 If it isn't however, you must connect to the internet by reading the instructions below.
 
 Check if your access point is either a Wi-Fi router or mobile broadband modem, of which the former is more likely.
@@ -1067,7 +1067,7 @@ Tiling window managers, however, have a steeper learning curve than stacking win
 Use a tiling window manager if you use vim, neovim or emacs.
 Use a stacking window manager if you use nano.
 
-For a list of notable window managers and how to install them, go to ```window-managers.md```, by clicking [here](https://github.com/Exvix/arch-install-guide/blob/main/window-managers.md)
+For a list of notable window managers and how to install them, go to ```window-managers.md```, by clicking [here](window-managers.md)
 
 ### Audio Utilities and Bluetooth
 

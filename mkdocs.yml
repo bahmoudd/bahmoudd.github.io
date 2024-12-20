@@ -11,8 +11,9 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
   - pymdownx.superfences
-  - pymdownx.emoji  # Optional: Emojis
+  - pymdownx.emoji 
   - gfm_admonition
 nav:
   - Home: index.md
   - Arch Install Guide: arch-install-guide.md
+  - Window Managers: window-managers.md
