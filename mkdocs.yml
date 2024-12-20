@@ -11,4 +11,4 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.superfences
   - pymdownx.emoji  # Optional: Emojis
-  - markdown-gfm-admonition
+  - gfm_admonition
