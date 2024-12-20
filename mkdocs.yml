@@ -13,3 +13,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.emoji  # Optional: Emojis
   - gfm_admonition
+nav:
+  - Home: index.md
+  - Arch Install Guide: arch-install-guide.md
