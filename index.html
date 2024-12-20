@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My Docs</title>
+        <title>bahmoudd</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/fontawesome.min.css" rel="stylesheet">
         <link href="css/brands.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <body class="homepage">
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">My Docs</a>
+                <a class="navbar-brand" href=".">bahmoudd</a>
 
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -35,10 +35,40 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <script src="js/darkmode.js"></script>
 
         <div class="container">
             <div class="row">
@@ -146,5 +176,5 @@ In the meanwhile, go ahead and look around at this minimalistic starting point.<
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2024-12-19 21:51:26.321022+00:00
+Build Date UTC : 2024-12-20 12:45:04.934761+00:00
 -->
