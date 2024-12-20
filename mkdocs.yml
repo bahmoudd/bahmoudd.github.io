@@ -14,6 +14,5 @@ markdown_extensions:
   - pymdownx.emoji 
   - gfm_admonition
 nav:
-  - Home: index.md
   - Arch Install Guide: arch-install-guide.md
   - Window Managers: window-managers.md
