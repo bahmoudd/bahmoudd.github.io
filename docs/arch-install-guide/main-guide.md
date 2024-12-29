@@ -1147,7 +1147,7 @@ sudo systemctl enable --now cups.service
 
 ### Installing Vulkan and OpenGL drivers
 
-For pretty much any game to work, you need an OpenGL and a Vulkan driver. Check your GPU driver for the OpenGL and Vulkan drivers below:
+For pretty much any game to work, you need an OpenGL and a Vulkan driver. Check your GPU driver for the corresponding OpenGL and Vulkan drivers below:
 
 GPU driver            | OpenGL driver                     | Vulkan driver                         |
 --------------------- | --------------------------------- | ------------------------------------- |
