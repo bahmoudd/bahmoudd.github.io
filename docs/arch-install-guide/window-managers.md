@@ -21,7 +21,7 @@ This section will cover Stacking Window Managers.
 <details>
   <summary><h4>KDE Plasma</h4></summary>
 
-<img src="https://raw.githubusercontent.com/Exvix/arch-install-guide/main/images/kde-plasma.png">
+<img src="../images/kde-plasma.png">
 
 To just install KDE Plasma, use the below command:
 ```
@@ -81,7 +81,7 @@ sudo pacman -S konsole dolphin ark kwrite kcalc spectacle krunner partitionmanag
 <details>
   <summary><h4>GNOME</h4></summary>
 
-<img src="https://raw.githubusercontent.com/Exvix/arch-install-guide/main/images/GNOME_Shell.png">
+<img src="../images/GNOME_Shell.png">
 
 To install GNOME, use the below command:
 ```
@@ -94,7 +94,7 @@ sudo pacman -S gnome gnome-extra
 <details>
   <summary><h4>Enlightenment</h4></summary>
 
-<img src="https://raw.githubusercontent.com/Exvix/arch-install-guide/main/images/Enlightenment.png">
+<img src="../images/Enlightenment.png">
 
 Install Enlightenment, as shown below:
 ```
@@ -141,7 +141,7 @@ The packages that aren't `enlightenment` provide a more integrated desktop envir
 <details>
   <summary><h4>LXQt</h4></summary>
 
-<img src="https://raw.githubusercontent.com/Exvix/arch-install-guide/main/images/lxqt.png">
+<img src="../images/lxqt.png">
 
 To install LXQt, use the below command:
 ```
@@ -152,7 +152,7 @@ sudo pacman -S lxqt
 <details>
   <summary><h4>XFCE</h4></summary>
 
-<img src="https://raw.githubusercontent.com/Exvix/arch-install-guide/main/images/xfce.png">
+<img src="../images/xfce.png">
 
 To install XFCE, use the below command:
 ```
@@ -170,7 +170,7 @@ sudo pacman -S xfce xfce4-goodies
 <details>
   <summary><h4>Hyprland</h4></summary>
 
-<img src="https://raw.githubusercontent.com/Exvix/arch-install-guide/main/images/hyprland.png">
+<img src="../images/hyprland.png">
 
 To install hyprland, use the below command:
 ```
@@ -183,7 +183,7 @@ sudo pacman -S hyprland
 <details>
   <summary><h4>Awesome</h4></summary>
 
-<img src="https://raw.githubusercontent.com/Exvix/arch-install-guide/main/images/awesome.png">
+<img src="../images/awesome.png">
 
 To install AwesomeWM, use the below command:
 ```
@@ -205,7 +205,7 @@ cp /etc/xdg/awesome/rc.lua ~/.config/awesome/rc.lua
 <details>
   <summary><h4>Sway</h4></summary>
 
-<img src="https://raw.githubusercontent.com/Exvix/arch-install-guide/main/images/sway.png">
+<img src="../images/sway.png">
 
 Install Sway, as shown below:
 ```
@@ -217,7 +217,7 @@ sudo pacman -S sway swaylock swaybg swayidle
 <details>
   <summary><h4>river</h4></summary>
 
-<img src="https://raw.githubusercontent.com/Exvix/arch-install-guide/main/images/riverwm.png">
+<img src="../images/riverwm.png">
 
 To install river, use the below command:
 ```
