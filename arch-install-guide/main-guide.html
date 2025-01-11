@@ -1,0 +1,1961 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Bahman Altamash">
+      
+      
+        <link rel="canonical" href="https://bahmoudd.github.io/arch-install-guide/main-guide.html">
+      
+      
+        <link rel="prev" href="../index.html">
+      
+      
+        <link rel="next" href="window-managers.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Main Guide - bahmoudd</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-ultimate-arch-linux-install-guide-uefi-mbr" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="bahmoudd" class="md-header__button md-logo" aria-label="bahmoudd" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            bahmoudd
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Main Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/bahmoudd/bahmoudd.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bahmoudd/bahmoudd.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="main-guide.html" class="md-tabs__link">
+          
+  
+  Arch Install Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../the-tech-times/2025-01-04.html" class="md-tabs__link">
+          
+  
+  The Tech Times
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../changelog/2025-01-11.html" class="md-tabs__link">
+          
+  
+  Changelog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="bahmoudd" class="md-nav__button md-logo" aria-label="bahmoudd" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    bahmoudd
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bahmoudd/bahmoudd.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bahmoudd/bahmoudd.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Arch Install Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Arch Install Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="main-guide.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Main Guide
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="window-managers.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Window Managers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    The Tech Times
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            The Tech Times
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-tech-times/2025-01-04.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025-01-04
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Changelog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/2025-01-11.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025-01-11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<blockquote>
+<p>Tested working as of release 2024.12.01</p>
+</blockquote>
+<h1 id="the-ultimate-arch-linux-install-guide-uefi-mbr">The ultimate Arch linux install guide (UEFI &amp; MBR)</h1>
+<hr />
+<h1 id="glossary">Glossary</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Operating System, a kind of program that helps a computer to interact with other machines and/or with people.</td>
+</tr>
+<tr>
+<td>Unix</td>
+<td>Unix is a computer OS, first developed at Bell Labs. It became very influential within academic circles, leading to large-scale adoption by start-up companies leading Unix to fragment into much smaller, similar but mostly mutually incompatible OSes. Among these are FreeBSD, OpenBSD and MacOS.</td>
+</tr>
+<tr>
+<td>Unix-like</td>
+<td>Any Operating System not derived off of any Unix system, but behaves like one.</td>
+</tr>
+<tr>
+<td>Kernel</td>
+<td>The middleman between the OS and the hardware.</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>A Unix-like kernel created by Linux Torvalds in 1991.</td>
+</tr>
+<tr>
+<td>Distro</td>
+<td>A distribution of Linux - meaning - an OS based off of the Linux kernel, these include Ubuntu, Debian, RHEL, Fedora and Arch Linux amongst many others.</td>
+</tr>
+<tr>
+<td>Bootloader</td>
+<td>A piece of software designed to load the necessary files that start your computer.</td>
+</tr>
+<tr>
+<td>Package Manager</td>
+<td>A package manager is a program designed to automate the process of downloading, installing, updating, listing, removing and searching for software (bundled together as an app or "package")</td>
+</tr>
+<tr>
+<td>Greeter</td>
+<td>A greeter is a graphical login interface, and is often called the login screen. It essentially "greets" the user(s) to the system.</td>
+</tr>
+<tr>
+<td>Shell</td>
+<td>A shell is a text environment where you issue commands and information to your computer.</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>Some text that Arch Linux ignores automatically. Comments begin with the hashtag. To comment something out, put a hashtag before it, and to uncomment something, remove the hashtag preceeding it</td>
+</tr>
+<tr>
+<td>Parition</td>
+<td>Sections of a disk that keep different types of data separate</td>
+</tr>
+<tr>
+<td>Boot partition</td>
+<td>A partition that tells your firmware interface that your OS supports and runs on UEFI</td>
+</tr>
+<tr>
+<td>Root partition</td>
+<td>A partition which stores your OS</td>
+</tr>
+<tr>
+<td>Swap partition</td>
+<td>Acts a sort-of secondary RAM on your computer. It essentially works the same as the pagefile.sys on Windows. It's used for hibernation and is used when RAM is insufficient. You should have swap regardless of how good your computer is because some software only uses swap.</td>
+</tr>
+<tr>
+<td>Home partition</td>
+<td>Where your accounts and local data is stored. This is kept separate from the root partition to keep it secure.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="introduction">Introduction</h1>
+<h2 id="what-is-arch-linux">What is Arch Linux?</h2>
+<p>Arch Linux is an independently-developed rolling-release distribution of Linux. This means that there are no major updates that are delivered to Arch, unlike Windows. Instead, Arch delivers updates in small, frequent amounts, meaning that you have access to the latest drivers, firmware and software as soon as it's available. Since Arch is based off the Linux kernel, it's distributed under the GNU GPLv2 license, meaning that anyone can view the kernel, and what makes up Arch, as well as being able to modify it any point, so long as the software remains open-source.</p>
+<p>Arch Linux is fantastic for its Arch User Repository (AUR) and simplicity of design. It is well known for its straightforwardness and is relatively easy for the end user to understand directly, rather than having to dig through multiple layers of graphical interfaces. The package manager - pacman - has no GUI, meaning that everything has to be installed through the command line. This may seem a bit scary at first, but in this guide, I will go through how to install Arch Linux, and how to use its many features.</p>
+<h2 id="a-few-notes-before-you-continue-with-the-guide">A few notes before you continue with the guide</h2>
+<ul>
+<li><code>[...]</code> means that there are lines present between whatever is shown</li>
+<li>Anything else within square brackets, e.g. <code>[text]</code> means you should substitute with what's between those square brackets. For example, <code>[Root Partition UUID]</code> means you have to put the UUID of your root partition in place of the square brackets.</li>
+<li>Any text after hashtags or equals signs explain the command you are running and are not to be included when you type in the command, unless explicitly stated otherwise.</li>
+<li><code>[your drive]</code> is the drive that contains your entire OS</li>
+</ul>
+<hr />
+<details>
+ <summary><h4>Dualbooting Arch Linux and Windows</h4></summary>
+
+<blockquote> Note: You cannot dual-boot Windows and Arch Linux if you're an MBR system, as MBR only allows a maximum of 4 partitions per disk </blockquote>
+
+If you plan on dual-booting Windows and Arch Linux, hit <code>Win+R</code> on your keyboard and type into the Run prompt:
+<div class="highlight"><pre><span></span><code>diskmgmt.exe
+</code></pre></div>
+
+This will bring up disk management. From here, you can resize your <code>C:\</code> partition to dual-boot it with Arch Linux.
+Find your <code>C:\</code> partition and right-click on it.<br />
+Click on <code>Shrink Volume</code> and right beside <code>Enter the amount of space to shrink in MB</code>, enter the amount of drive space you'd like to allocate to Arch. <br />
+I recommend shrinking your <code>C:\</code> partition to half of its original size.
+
+</details>
+
+<h2 id="creating-the-arch-installation-medium">Creating the Arch installation medium</h2>
+<p>Firstly, get the ISO file from <a href="https://archlinux.org/download/">the official Arch Linux website</a> or <a href="https://www.archlinux32.org/download/">the website for the community-maintained 32-bit Arch Linux OS</a> either through torrenting it, or using one of the mirrorlinks.<br />
+You'll need to use software such as <a href="https://www.ventoy.net/en/download.html">Ventoy</a>, <a href="https://rufus.ie/en/">Rufus</a> or <a href="https://etcher.balena.io/#download-etcher">BalenaEtcher</a>. The instructions on how to use such software can be found within their websites.</p>
+<h1 id="booting-into-the-archiso">Booting into the ArchISO</h1>
+<h2 id="entering-the-boot-menu">Entering the boot menu</h2>
+<p>Once the ISO has been written to a storage medium (that could be a USB thumb drive, SD card .etc), you'll need to go into your computers boot options through the firmware interface. To do so, follow the instructions below, based on your current operating system (not the operating system you want to install, which is, obviously, Arch Linux).</p>
+<details>
+ <summary><h3>Windows</h3></summary>
+
+
+ On Windows systems, open up the command prompt by hitting the Win and searching <code>cmd</code>. </br>
+ Make sure you run it as administrator. </br>
+ Once you've done that, enter the following command:
+ <div class="highlight"><pre><span></span><code>shutdown /r /fw /t 0
+</code></pre></div>
+
+ And enter your computer's boot menu. Once that's done, select the storage medium that contains your ArchISO.
+ Then, wait for it to boot before selecting the option containing <code>Arch Linux install medium</code> or <code>Arch Linux install medium (with speech)</code> if you are visually impaired, and have someone reading this guide to you out loud.
+</details>
+
+<details>
+ <summary><h3>MacOS</h3></summary>
+
+
+ On a MacOS system, there is no way through the command line to enter the boot menu.</br>
+ You can only do so by powering off the system entirely and holding the <code>Alt</code> or <code>Option</code> key when powering it on.</br>
+ Select the storage medium that contains your ArchISO.</br>
+ Then, wait for it to boot before selecting the option containing <code>Arch Linux install medium</code> or <code>Arch Linux install medium (with speech)</code> if you are visually impaired, and have someone reading this guide to you out loud.
+</details>
+
+<details>
+ <summary><h3>Linux</h3></summary>
+
+ Assuming you have SystemD as your init system, run the below command:
+ <div class="highlight"><pre><span></span><code>sudo systemctl reboot --firmware-setup
+</code></pre></div>
+
+ And enter your computer's boot menu. Once that's done, select the storage medium that contains your ArchISO.<br/>
+ Then, wait for it to boot before selecting the option containing <code>Arch Linux install medium</code> or <code>Arch Linux install medium (with speech)</code> if you are visually impaired, and have someone reading this guide to you out loud.
+</details>
+
+<hr />
+<h2 id="pre-installation-configuration">Pre-installation configuration</h2>
+<p>Now that you've booted into the ArchISO, we can go ahead and begin installing Arch.</p>
+<h3 id="load-font-for-hidpi-monitors">Load font (for HiDPI monitors)</h3>
+<p>If you have a HiDPI monitor, it may be in your best interest to change the terminal font to a larger one since the text may be small and difficult to read.<br />
+Load a larger terminal font as shown below:<br />
+<div class="highlight"><pre><span></span><code>setfont ter-132b
+</code></pre></div></p>
+<h3 id="load-keymaps">Load Keymaps</h3>
+<p>A keymap is how your keyboard is laid out. It defines the keys you use and where they are placed on the keyboard. To find a list of all the keymaps available for your language/region, run the below command:</p>
+<div class="highlight"><pre><span></span><code>localectl list-keymaps
+</code></pre></div>
+<p>To search for a keymap, use the following command, replacing <code>[search_term]</code> with the code for your language, country, or layout:<br />
+<div class="highlight"><pre><span></span><code>localectl list-keymaps | grep -i [search_term]
+</code></pre></div></p>
+<p>Once you've found a keymap that matches your physical keyboard's layout, run the below command.</p>
+<div class="highlight"><pre><span></span><code>loadkeys [keymap]
+</code></pre></div>
+<h3 id="connect-to-the-internet">Connect to the internet</h3>
+<p>The ArchISO <em>requires</em> an internet connection in order to be set up properly.<br />
+If your computer is connected via Ethernet, you may skip this section by going <a href="#testing-your-internet-connection">here</a>.<br />
+If it isn't however, you must connect to the internet by reading the instructions below.</p>
+<p>Check if your access point is either a Wi-Fi router or mobile broadband modem, of which the former is more likely.</p>
+<details>
+ <summary><h3>WiFi Router (iwctl)</h3></summary>
+
+ If your access point is a Wi-Fi router, run the below command:
+ <div class="highlight"><pre><span></span><code>iwctl
+</code></pre></div>
+ This will bring up an interactive prompt session and change your prompt from:
+ <div class="highlight"><pre><span></span><code>root@archiso ~ #
+</code></pre></div>
+ to:
+ <div class="highlight"><pre><span></span><code>[iwd]#
+</code></pre></div>
+
+ If you don't know what your wireless device's name is, you can list them by running:
+ <div class="highlight"><pre><span></span><code>device list
+</code></pre></div>
+ To turn your wireless device and its corresponding adapter on, run the below commands:
+ <div class="highlight"><pre><span></span><code>device [device-name] set-property Powered on
+adapter [adapter-name] set-property Powered on
+</code></pre></div>
+ (replacing <code>[device-name]</code> with your device's name and <code>[adapter-name]</code> with its corresponding adapter's name respectively) 
+
+ Then, to scan for Wi-Fi networks, run:
+ <div class="highlight"><pre><span></span><code>station [device-name] scan
+</code></pre></div>
+ To list them, run:
+ <div class="highlight"><pre><span></span><code>station [device-name] get-networks
+</code></pre></div>
+ Find your router's SSID amongst the list shown, and connect to it by running:
+ <div class="highlight"><pre><span></span><code>station [device-name] connect [your router&#39;s SSID]
+</code></pre></div>
+</details>
+
+<details>
+ <summary><h3>Mobile Broadband Modem (mmcli)</h3></summary>
+
+ Start and enable <code>ModemManager.service</code>, this is the service that allows you to connect to your Mobile Broadband Modem.</br>
+ You can do so by running:
+ <div class="highlight"><pre><span></span><code>systemctl start ModemManager.service
+systemctl enable ModemManager.service
+</code></pre></div>
+ You can find a list of modems near you by running:
+ <div class="highlight"><pre><span></span><code>mmcli -L
+</code></pre></div>
+ Look for <code>/org/freedesktop/ModemManager1/Modem/[modem index]</code><br/>
+ (where your modem index is the unique number representing your modem)<br/><br/>
+
+ Connect to your modem by running:
+ <div class="highlight"><pre><span></span><code>mmcli -m [modem index] --simple-connect=&quot;apn=[your modem&#39;s APN]&quot;
+</code></pre></div>
+
+ Your APN is your modem's Access Point Name and will have been given to you by your ISP.<br/>
+ If your modem requires a username and password, you can specify them like so:
+ <div class="highlight"><pre><span></span><code>mmcli -m [modem index] --simple-connect=&quot;apn=[your modem&#39;s APN],user=[username],password=[password]&quot;
+</code></pre></div>
+
+</details>
+
+<h4 id="testing-your-internet-connection">Testing your internet connection</h4>
+<p><code>ping</code> is a command that sends data to a URL and checks that the data has been sent properly. This is normally done to test the URL or to test your internet connection, of which you are doing the latter.<br />
+<div class="highlight"><pre><span></span><code>ping -c 4 archlinux.org
+</code></pre></div></p>
+<blockquote>
+<p>The <code>-c</code> switch represents the amount of sample data you are sending to that URL, in this case, 4.</p>
+</blockquote>
+<h3 id="check-the-system-clock-is-correct">Check the system clock is correct</h3>
+<p>Your computer keeps track of time by utilising an internal hardware clock.<br />
+To check that it's in sync with the real world time, run the below command:</p>
+<div class="highlight"><pre><span></span><code>timedatectl
+</code></pre></div>
+<p>If <code>NTP service</code> does not show <code>active</code>, run the below command:<br />
+<div class="highlight"><pre><span></span><code>timedatectl set-ntp true
+</code></pre></div></p>
+<p>As of now, you don't have to worry about the timezone, just make sure that the UTC time it returns matches real-world UTC time</p>
+<hr />
+<h2 id="creating-necessary-partitions">Creating necessary partitions</h2>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Make sure that all of your data on the disk you want to install Arch Linux onto has been backed up.<br />
+If you've already done that or you don't care about the data present on it, proceed with this guide.<br />
+If not, exit out of the ArchISO and back up your data.</p>
+</div>
+<p>Run the below command:<br />
+<div class="highlight"><pre><span></span><code>[ -d /sys/firmware/efi ] &amp;&amp; echo UEFI || echo BIOS
+</code></pre></div></p>
+<p>And take note of whether it returns <code>UEFI</code> or <code>BIOS</code></p>
+<h3 id="disk-partitioning">Disk Partitioning</h3>
+<details>
+ <summary><h3>UEFI</h3></summary>
+
+  <blockquote> Note: If you're dual-booting, skip down to "Creating Partitions" </blockquote>
+
+  Run the below commands to initialise the disk:
+  <div class="highlight"><pre><span></span><code>gdisk /dev/[your drive]
+</code></pre></div>
+
+  The above will open up an interactive prompt session and change the prompt from:
+  <div class="highlight"><pre><span></span><code>root@archiso ~ #
+</code></pre></div>
+  to:
+  <div class="highlight"><pre><span></span><code>Command (? for help):
+</code></pre></div>
+
+  Run:
+  <div class="highlight"><pre><span></span><code>x
+</code></pre></div>
+
+  which will change your prompt to:
+  <div class="highlight"><pre><span></span><code>Expert command (? for help):
+</code></pre></div>
+
+  And enter:
+  <div class="highlight"><pre><span></span><code>z
+</code></pre></div>
+  To "zap" the disk (basically, to initialise the disk).
+  It will ask you if you want to confirm, enter <code>y</code> and it will then if ask you want to "blank out MBR?", which means it will wipe all of the boot code and other critical data necessary for an OS to boot. Since you're no longer booting from your old OS, go ahead and hit <code>y</code>. <br/>
+
+  <h4> Creating Partitions </h4>
+
+  Run gdisk again and enter the below characters, as gdisk only uses one-character commands:
+
+  <div class="highlight"><pre><span></span><code>n = New Partition
+[simply press enter] = 1st Partition
+[simply press enter] = As First Sector
++1G = As Last sector (BOOT Partition Size)
+ef00 = EFI System Partition
+
+c = Change partition label
+1 = Change boot partition&#39;s label
+boot = Set the boot partition label to be &quot;boot&quot;
+</code></pre></div>
+
+  Or if you're dual-booting:
+
+  <div class="highlight"><pre><span></span><code>n = New Partition
+[simply press enter] = 1st Partition
+[simply press enter] = As First Sector
++1G = As Last sector (BOOT Partition Size)
+ea00 = XBOOTLDR Partition
+
+c = Change partition label
+5 = Change boot partition&#39;s label
+boot = Set the boot partition label to be &quot;boot&quot;
+</code></pre></div>
+
+  Regardless, you should make a SWAP partition:
+  <div class="highlight"><pre><span></span><code>n = New Partition
+[simply press enter] = 2nd Partition
+[simply press enter] = As First Sector
++16G = As Last sector (SWAP size, or double your RAM, whichever is smaller)
+8200 = Linux Swap
+
+c = Change partition label
+2 = Change swap partition&#39;s label (if you&#39;re dual-booting, this will be 6 instead)
+swap = Set the boot partition label to be &quot;swap&quot;
+</code></pre></div>
+
+  If you want to create a home partition (separates the data that is your system from your basic user apps and configurations), enter the below:
+
+  <div class="highlight"><pre><span></span><code>n = New Partition
+[simply press enter] = 3rd Partition
+[simply press enter] = As First Sector
++40G = As Last sector [ROOT Partition Size (you may use 20GiB if you have a small hard drive)]
+[simply press enter] = Linux filesystem
+
+c = Change partition label
+3 = Change boot partition&#39;s label (if you&#39;re dual-booting, this will be 7 instead)
+root = Set the boot partition label to be &quot;root&quot;
+
+n = New Parition
+[simply press enter] = 4th Partition
+[simply press enter] = As first sector
+[simply press enter] = As last sector [HOME parition size (takes up remaining hard drive space)]
+[simply press enter] = Linux filesystem
+
+c = Change partition label
+4 = Change boot partition&#39;s label (if you&#39;re dual-booting, this will be 8 instead)
+home = Set the boot partition label to be &quot;home&quot;
+
+w = Write partitions and quit
+</code></pre></div>
+
+  If you don't want to do that, however, enter the below:
+  <div class="highlight"><pre><span></span><code>n = New Parition
+[simply press enter] = 3rd Partition
+[simply press enter] = As first sector
+[simply press enter] = As last sector [ROOT parition size (takes up remaining hard drive space)]
+[simply press enter] = Linux filesystem
+
+c = Change partition label
+3 = Change boot partition&#39;s label (if you&#39;re dual-booting, this will be 7 instead)
+root = Set the boot partition label to be &quot;root&quot;
+
+w = Write partitions and quit
+</code></pre></div>
+
+  <details>
+    <summary><h4>Encrypt your drive (optional)</h4></summary>
+    LUKS encryption encrypts your root partition (and home partition too, if present) so that attackers who have physical access to your laptop cannot access the contents of your drive.
+
+    To set that up, enter the following commands:
+
+    <div class="highlight"><pre><span></span><code>cryptsetup -v luksFormat /dev/disk/by-partlabel/root
+</code></pre></div>
+
+    And if you have set up a home partition, encrypt that too.
+
+    <div class="highlight"><pre><span></span><code>cryptsetup -v luksFormat /dev/disk/by-partlabel/home
+</code></pre></div>
+
+    Make sure to unlock them so that they can be formatted later.
+
+    <div class="highlight"><pre><span></span><code>cryptsetup open /dev/disk/by-partlabel/root root
+</code></pre></div>
+
+    And if you have a separate home partition, run the below command:
+    <div class="highlight"><pre><span></span><code>cryptsetup open /dev/disk/by-partlabel/home home
+</code></pre></div>
+  </details>
+
+  <h3> Format non-swap partitions (so that data can be written/read from it) </h3>
+  <div class="highlight"><pre><span></span><code>mkfs.fat -F32 /dev/disk/by-partlabel/boot # It needs to be in a universally-recognised file system, so your computer can boot from it.
+mkfs.btrfs /dev/disk/by-partlabel/root # Add -f if your system tells you another filesystem like ext4 is already present
+mkfs.btrfs /dev/disk/by-partlabel/home
+</code></pre></div>
+
+  Format and turn on swap memory
+  <div class="highlight"><pre><span></span><code>mkswap /dev/disk/by-partlabel/swap
+swapon /dev/disk/by-partlabel/swap
+</code></pre></div>
+
+  <h3> Mount Remaining Partitions (so they can be accessed) </h3>
+
+  If you have set up LUKS encryption, run the below:
+  <div class="highlight"><pre><span></span><code>mount /dev/mapper/root /mnt
+mount -m /dev/mapper/home /mnt/home
+mount -m /dev/disk/by-partlabel/home /mnt/home
+</code></pre></div>
+
+  Otherwise, run the below:
+
+  <div class="highlight"><pre><span></span><code>mount /dev/disk/by-partlabel/root /mnt 
+mount -m /dev/disk/by-partlabel/boot /mnt/boot
+mount -m /dev/disk/by-partlabel/home /mnt/home
+</code></pre></div>
+
+  If you're dual-booting:
+  <div class="highlight"><pre><span></span><code>mount -m [windows boot partition] /mnt/efi
+</code></pre></div>
+
+  <blockquote> Note: Your Windows Boot Partition is either /dev/sda1 or /dev/nvme0n1p1 </blockquote>
+
+</details>
+
+<details>
+ <summary><h3>BIOS</h3></summary>
+
+  To initialise the disk you want to install Arch on ("sdx" from now on), run the below command:
+  <div class="highlight"><pre><span></span><code>sfdisk --delete [your drive]
+</code></pre></div>
+
+  Then, enter the below (do not type anything where ```=``` precedes it, as those are just explanations for what each command does):
+  <div class="highlight"><pre><span></span><code>n = New Partition
+1 = Partition number, MBR only supports 4 partitions
+[simply press enter] = First sector size
++16G = (or double the size of your RAM, whichever is smaller, this is your SWAP size)
+
+t = Change partition type ID
+19 = Linux SWAP
+</code></pre></div>
+
+  If you want to create a home partition (separates the data that is your system from your basic user apps and configurations), enter the below:
+
+  <div class="highlight"><pre><span></span><code>n = New Partition
+2 = Partition number, MBR only supports 4 partitions
+[simply press enter] = First sector size
++20G = (this is your ROOT size. If you have a disk with 128GB or more, use 40GB instead)
+
+n = New Partition
+3 = Partition number, MBR only supports 4 partitions
+[simply press enter] = First sector size
+[simply press enter] = (this is your HOME size, takes up the rest of the disk)
+
+x = Enter expert mode
+A = Make a partition bootable
+2 = Make your ROOT partition bootable
+
+w = Write partitions and quit
+</code></pre></div>
+
+  Else, just enter the below:
+
+  <div class="highlight"><pre><span></span><code>n = New Partition
+2 = Partition number, MBR only supports 4 partitions
+[simply press enter] = First sector size
+[simply press enter] = (this is your ROOT size, takes up the rest of the disk)
+
+x = Enter expert mode
+A = Make a partition bootable
+2 = Make your ROOT partition bootable
+
+w = Write partitions and quit
+</code></pre></div>
+
+  Format non-swap partitions
+  <div class="highlight"><pre><span></span><code>mkfs.ext4 -L root /dev/sdx2 
+mkfs.ext4 -L home /dev/sdx3 # If you made a home partition
+</code></pre></div>
+
+  Format and turn on swap memory
+  <div class="highlight"><pre><span></span><code>mkswap -L swap /dev/disk/by-partlabel/swap
+swapon /dev/disk/by-partlabel/swap
+</code></pre></div>
+
+  Mount Remaining Partitions
+  <div class="highlight"><pre><span></span><code>mount /dev/disk/by-partlabel/root /mnt 
+mount -m /dev/disk/by-partlabel/home /mnt/home
+</code></pre></div>
+
+</details>
+
+<hr />
+<h1 id="base-system-installation">Base System Installation</h1>
+<h2 id="update-mirrors-using-reflector">Update Mirrors using Reflector</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is highly recommended for faster download speeds. Slower download speeds can time out.</p>
+</div>
+<div class="highlight"><pre><span></span><code>reflector -c County1 -c Country2 -a 12 -p https --sort rate --save /etc/pacman.d/mirrorlist
+</code></pre></div>
+<p>A mirror is basically a repository of files located within a specific region so that people near that region can download files with minimal ping (as ping is how long it takes for the data you requested for reaches you).<br />
+A mirrorlist is a list of these mirrors ranked based on their speed relative to your computer.<br />
+The <code>-c</code> flag allows you to specify which country you live in, this is to reduce ping.<br />
+The <code>-a</code> flag excludes mirrors that haven't been updated within the hour range specifies (in this case, 12 hours)<br />
+The <code>-p</code> flag specifies the protocol you want to download packages through. HTTPS is chosen here as it is the fastest and the safest.<br />
+<code>--sort</code> sorts the mirrors by how fast they are, relative to your computer.<br />
+<code>--save</code> specifies to reflector to save them in <code>/etc/pacman.d/mirrorlist</code>, which is where pacman refers to when you want to download a package.</p>
+<p>Example:<br />
+<div class="highlight"><pre><span></span><code>reflector -c &#39;United Kingdom&#39; -a 12 -p https --sort rate --save /etc/pacman.d/mirrorlist
+</code></pre></div></p>
+<h3 id="install-base-system">Install base system</h3>
+<div class="highlight"><pre><span></span><code>pacstrap -K /mnt base base-devel linux linux-firmware linux-headers nano intel-ucode mtools dosfstools networkmanager btrfs-progs
+</code></pre></div>
+<p><code>base</code> is all the software necessary to make Arch Linux work.<br />
+<code>base-devel</code> is software for development purposes only, such as GCC or G++, this is necessary if you want to build any software from the source code (which many packages require).<br />
+<code>linux</code>, <code>linux-headers</code> and <code>linux-firmware</code> are the kernel, which, together, act as the middleman between the software on your computer and the hardware on your computer.<br />
+<code>mtools</code> allows the user to access MS-DOS disks.<br />
+<code>dosfstools</code> allows the user to format MS-DOS disks.<br />
+<code>networkmanager</code> allows the user to connect to the internet.<br />
+<code>btrfs-progs</code> allows userspace utilities for your disk to run.</p>
+<p>If you're connected to the internet through a Mobile Broadband Modem, append the below packages to your command:<br />
+<div class="highlight"><pre><span></span><code>modemmanager usb_modeswitch
+</code></pre></div></p>
+<ul>
+<li>Replace <code>nano</code> with editor of your choice (i.e <code>vim</code> or <code>vi</code>). Nano is the most beginner friendly</li>
+<li>Replace <code>intel-ucode</code> with <code>amd-ucode</code> if you are using an AMD Processor.</li>
+<li>If you want to include a derivative of the Linux kernel (e.g. linux-zen, linux-hardened, linux-lts), include that ALONGSIDE the original kernel and headers so if something breaks, you always have that extra option to use the regular Linux kernel. This can be done by appending your chosen Linux derivative (e.g. <code>linux-zen</code>) and its headers (e.g. <code>linux-zen-headers</code>)</li>
+</ul>
+<h3 id="generate-fstab">Generate fstab</h3>
+<p>The fstab file lists all available disk partitions and other types of file systems and data sources that may not necessarily be disk-based, and indicates how they are to be initialized or otherwise integrated into the larger file system structure. It is <em>essential</em> for your system to function.</p>
+<div class="highlight"><pre><span></span><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A <code>&gt;</code> will overwrite a file and a <code>&gt;&gt;</code> will append to a file. Ensure you don't confuse these with each other, and make sure the commands you type are as how this guide has written it before you hit enter.</p>
+</div>
+<hr />
+<h2 id="chroot">Chroot <a name="chroot"></a></h2>
+<p>Chroot essentially takes you inside of the Arch Linux system, so you can perform necessary configuration to it for it to function. This can be done by running the below command:</p>
+<div class="highlight"><pre><span></span><code>arch-chroot /mnt
+</code></pre></div>
+<h3 id="set-time-and-date">Set Time and Date</h3>
+<p>The below symbolically links <code>/etc/localtime</code> to <code>/usr/share/zoneinfo/Region/City</code> so that your computer knows it is measuring the date and time in the correct timezone.</p>
+<div class="highlight"><pre><span></span><code>ln -sf /usr/share/zoneinfo/Region/City /etc/localtime 
+hwclock --systohc # Sync hardware clock with system time
+</code></pre></div>
+<p>Replace <code>Region</code> &amp; <code>City</code> according to your timezone.<br />
+To see what timezones are available, use the following commands:<br />
+<div class="highlight"><pre><span></span><code>ls /usr/share/zoneinfo/
+</code></pre></div><br />
+and<br />
+<div class="highlight"><pre><span></span><code>ls /usr/share/zoneinfo/[Region]
+</code></pre></div><br />
+An example of this would be:<br />
+<div class="highlight"><pre><span></span><code>/usr/share/zoneinfo/Europe/London
+</code></pre></div></p>
+<h2 id="set-locale-and-language">Set locale and language</h2>
+<p>We will use <code>en_GB.UTF-8</code> here but, if you want to set your language, replace <code>en_GB.UTF-8</code> with yours in all below instances.</p>
+<h4 id="edit-localegen">Edit locale.gen</h4>
+<p>A locale customises your system to be tailored more towards a specific region.</p>
+<div class="highlight"><pre><span></span><code>nano /etc/locale.gen
+</code></pre></div>
+<p>Find your locale from the list given.</p>
+<p>An example (for those living in the UK) is shown below:<br />
+<div class="highlight"><pre><span></span><code>#en_GB.UTF-8 UTF-8
+</code></pre></div></p>
+<p>Save &amp; exit, by hitting Ctrl+W, Enter, then Ctrl+X.</p>
+<p>Then, generate your locales as shown below:<br />
+<div class="highlight"><pre><span></span><code>locale-gen
+</code></pre></div></p>
+<h3 id="add-lang-to-localeconf">Add LANG to locale.conf</h3>
+<div class="highlight"><pre><span></span><code>echo &#39;LANG=en_GB.UTF-8&#39; &gt; /etc/locale.conf
+</code></pre></div>
+<h3 id="add-keymaps-to-vconsole">Add Keymaps to vconsole</h3>
+<p>For keyboard users with non-US English only. Replace <code>uk</code> with yours.<br />
+<div class="highlight"><pre><span></span><code>echo &quot;KEYMAP=uk&quot; &gt; /etc/vconsole.conf
+</code></pre></div></p>
+<h2 id="set-hostname">Set Hostname</h2>
+<p>A hostname is what your computer identifies itself as when talking to other computers. Set a hostname as shown below:</p>
+<p><div class="highlight"><pre><span></span><code>echo arch &gt; /etc/hostname
+</code></pre></div><br />
+Replace <code>arch</code> with hostname of your choice.</p>
+<h3 id="configure-hosts-file">Configure hosts file</h3>
+<div class="highlight"><pre><span></span><code>nano /etc/hosts
+</code></pre></div>
+<p>Add the below lines to it<br />
+<div class="highlight"><pre><span></span><code>127.0.0.1    localhost
+::1          localhost
+127.0.1.1    arch.localdomain arch
+</code></pre></div><br />
+Replace <code>arch</code> with the hostname of your choice. Make sure it matches the hostname in <code>/etc/hostname</code>.<br />
+Save &amp; exit.</p>
+<h3 id="enable-networkmanager">Enable NetworkManager</h3>
+<p>"Enabling" a piece of software essentially turns it on so you can use it.<br />
+<div class="highlight"><pre><span></span><code>systemctl enable NetworkManager
+</code></pre></div></p>
+<h3 id="set-root-password">Set ROOT Password</h3>
+<p>The ROOT account is an account on your computer that can do anything on your computer. Set a password for it as not doing so leaves your system vulnerable to cybercriminals.</p>
+<div class="highlight"><pre><span></span><code>passwd
+</code></pre></div>
+<h2 id="installing-the-bootloader">Installing the bootloader</h2>
+<p>The bootloader is what manages the boot process, and is the PID 0 of your Arch system.<br />
+If you're on an MBR systems, install GRUB and if you're on an EFI system, install SystemD-Boot.<br />
+You need to do some extra steps before installing the bootloader if you've encrypted your ROOT/HOME parition(s).</p>
+<details>
+ <summary><h3>Reconfigure the mkinitcpio.conf file (only do this if you're using LUKS and/or want to unify your kernel images)</h3></summary>
+
+<details>
+ <summary><h5>Enabling password prompt on boot to unencrypt your drive</h5></summary>
+
+Edit the mkinitcpio.conf file:
+<div class="highlight"><pre><span></span><code>nano /etc/mkinitcpio.conf
+</code></pre></div>
+
+Find and comment out any line beginning with <code>hooks</code> and add the following line to your <code>mkinitcpio.conf</code> file:
+<div class="highlight"><pre><span></span><code>HOOKS=(base systemd autodetect modconf kms keyboard sd-vconsole sd-encrypt consolefont block filesystems fsck)
+</code></pre></div>
+
+Save and quit.
+
+Regenerate the cpio as shown below:
+<div class="highlight"><pre><span></span><code>mkinitcpio -P
+</code></pre></div>
+</details>
+
+<details>
+ <summary><h5>Unify your kernel images (optional)</h5></summary>
+
+Make mkinitcpio quiet so your screen isn't filled with a bunch of useless garbage:
+<div class="highlight"><pre><span></span><code>echo &quot;quiet rw&quot; &gt; /etc/kernel/cmdline
+</code></pre></div>
+
+Create the <code>/efi/EFI/Linux</code> directory, which is where your kernel images will be stored:
+<div class="highlight"><pre><span></span><code>mkdir -p /efi/EFI/Linux
+</code></pre></div>
+
+Edit the <code>/etc/mkinitcpio.d/linux.preset</code> file as shown below:
+<div class="highlight"><pre><span></span><code>nano /etc/mkinitcpio.d/linux.preset
+</code></pre></div>
+
+Uncomment the below lines:
+<div class="highlight"><pre><span></span><code>ALL_config=&quot;/etc/mkinitcpio.conf&quot;
+[...]
+default_uki=&quot;/efi/EFI/Linux/arch-linux.efi&quot;
+default_options=&quot;--splash /usr/share/systemd/bootctl/splash-arch.bmp&quot;
+[...]
+fallback_uki=&quot;/efi/EFI/Linux/arch-linux-fallback.efi&quot;
+</code></pre></div>
+
+Save and quit.
+
+
+And comment out the below lines:
+<div class="highlight"><pre><span></span><code>default_image=&quot;/boot/initramfs-linux.img&quot;
+[...]
+fallback_image=&quot;/boot/initramfs-linux-fallback.img&quot;
+</code></pre></div>
+
+Regenerate the cpio as shown below:
+<div class="highlight"><pre><span></span><code>mkinitcpio -P
+</code></pre></div>
+
+</details>
+</details>
+
+<details>
+ <summary><h3>Installing GRUB (mainly for MBR systems)</h3></summary>
+
+"Targets" are CPU architechtures. These are important for grub to know so it can handle the boot process correctly.
+Find your CPU architechture from <a href="https://renenyffenegger.ch/notes/Linux/shell/commands/grub-install#grub-install-target">this site</a> and specify that as the target.
+
+<div class="highlight"><pre><span></span><code>pacman -S grub
+grub-install [your drive] # The default is i386-pc, otherwise known as 32-bit x86
+grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre></div>
+
+You can specify a CPU architechture as shown below:
+<div class="highlight"><pre><span></span><code>grub-install [your drive] --target=[Your CPU&#39;s architecture]
+</code></pre></div>
+
+An example of this is (assuming you're using a 64-bit x86-64 CPU, like most modern CPUS do)
+<div class="highlight"><pre><span></span><code>grub-install [your drive] --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+</code></pre></div>
+
+GRUB needs to know your EFI directory so it can boot your system properly, which is what <code>--efi-directory</code> specifies.<br />
+<code>--bootloader-id</code> makes GRUB known to your UEFI firmware.
+
+</details>
+
+<details>
+ <summary><h3>Installing and configuring SystemD-Boot (UEFI or if you want Arch Linux to work with Windows 11)</h3></summary>
+
+  Install SystemD-Boot:
+  <div class="highlight"><pre><span></span><code>bootctl install
+</code></pre></div>
+
+  Or if you're dual-booting:
+  <div class="highlight"><pre><span></span><code>bootctl install --esp-path=/efi --boot-path=/boot
+</code></pre></div>
+
+  <h4> Creating and amending config files </h4>
+
+  <blockquote> Note: You may skip this entire section if you've unified your kernel images </blockquote>
+
+
+  Change directory into <code>/boot/loader</code>
+  <div class="highlight"><pre><span></span><code>cd /boot/loader
+</code></pre></div>
+
+  Edit <code>/boot/loader/loader.conf</code>
+  (if you're dual-booting, this is <code>/efi/loader/loader.conf</code> instead)
+
+  <div class="highlight"><pre><span></span><code>nano loader.conf
+</code></pre></div>
+  Comment out any line beginning with <code>default</code> by putting a hashtag at the beginning of the line.
+  And add these lines to the bottom of the file:
+  <div class="highlight"><pre><span></span><code>timeout 10
+console-mode keep
+default @saved
+</code></pre></div>
+
+  <code>timeout 10</code> stalls your system by 10 seconds before it boots so you have time to select an option. This is optional, and if you want an instant boot, you can leave it commented.<br />
+  <code>console-mode keep</code> keeps your console-based SystemD-Boot menu to how it was last time.<br />
+  <code>default @saved</code> is what SystemD-Boot automatically boots to when you don't select an option. It remembers your last boot option and sets that as the default automatically.<br /><br/>
+
+  Change directory into the <code>entries</code> folder, as shown below:<br/>
+  (Note: If you're dual-booting, cd into <code>/boot/loader/entries</code> instead of <code>/efi/loader/entries</code>)
+  <div class="highlight"><pre><span></span><code>cd entries
+</code></pre></div>
+
+  Once that's done, type:
+  <div class="highlight"><pre><span></span><code>nano arch.conf
+</code></pre></div>
+
+  And define parameters as follows:
+  <div class="highlight"><pre><span></span><code>title Arch Linux
+linux /vmlinuz-linux
+initrd /initramfs-linux.img
+options root=UUID=&quot;[root partition UUID]&quot; rw
+</code></pre></div>
+
+  <code>title</code> is what the boot option will display.<br />
+  <code>linux</code> refers to the Linux kernel.<br />
+  <code>initrd</code> is what your RAM will be formatted to on boot, so memory can be stored on to it during uptime.<br />
+  <code>options</code> specifies your ROOT partition, and specifies that it can be read and written to.<br /><br />
+
+  You can find the root partition's UUID by typing into the command line (not your editor):
+  <div class="highlight"><pre><span></span><code>blkid /dev/disk/by-partlabel/root -s UUID
+</code></pre></div>
+
+  Save and exit.
+
+  We need to make a similar file for the fallback image. To do that, type:
+  <div class="highlight"><pre><span></span><code>cp /boot/loader/entries/arch.conf /boot/loader/entries/arch-fb.conf
+</code></pre></div>
+
+  Edit the file:
+  <div class="highlight"><pre><span></span><code>nano /boot/loader/entries/arch-fb.conf
+</code></pre></div>
+
+  Change the below lines:
+  <div class="highlight"><pre><span></span><code>title Arch Linux
+initrd /initramfs-linux.img
+</code></pre></div>
+
+  To (respectively):
+  <div class="highlight"><pre><span></span><code>title Arch Linux (fallback initramfs)
+initrd /initrams-linux-fallback.img
+</code></pre></div>
+
+  Do the same for any other Linux derivatives you have installed.
+  Example:
+  <div class="highlight"><pre><span></span><code>title Arch Linux Zen
+linux /vmlinuz-linux-zen
+initrd /initramfs-linuz-zen.img
+options root=UUID=&quot;[root partition UUID]&quot; rw
+</code></pre></div>
+
+  <blockquote> <b> ⚠️ Did you follow the above steps EXACTLY? Any mistakes made can and will cause your Arch system to fail its boot sequence. </b> </blockquote> 
+
+</details>
+
+<hr />
+<h3 id="create-a-user-account">Create a user account</h3>
+<p>Doing this is common sense, as many greeters do not include the root account as one of the users when logging it.<br />
+To do this, run the below:<br />
+<div class="highlight"><pre><span></span><code>useradd -mG wheel [username]
+</code></pre></div><br />
+replacing <code>[username]</code> with the username of your choice.<br />
+The <code>-m</code> option creates a user directory for you, where local configurations and apps are stored.<br />
+The <code>-G wheel</code> option creates the user as part of the wheel group, which will allow you to make changes on the system itself. For example, downloading and installing packages, and configuring them.</p>
+<p>Set a password for the user account by running:<br />
+<div class="highlight"><pre><span></span><code>passwd [username]
+</code></pre></div></p>
+<p>Repeat the above process as many times as you want, depending on the amount of users you want to add to your system.<br />
+If you do not want a user to use sudo commands , use the below command instead:</p>
+<div class="highlight"><pre><span></span><code>useradd -m [username]
+</code></pre></div>
+<h3 id="allow-wheel-group-to-use-sudo-commands">Allow Wheel Group to use Sudo Commands</h3>
+<p>You need to do this to actually allow your user to make changes to the system.<br />
+<div class="highlight"><pre><span></span><code>EDITOR=nano visudo
+</code></pre></div></p>
+<p>And find and uncomment the below line.<br />
+<div class="highlight"><pre><span></span><code>#%wheel ALL=(ALL) ALL
+</code></pre></div><br />
+Save &amp; exit.</p>
+<h3 id="final-step">Final Step</h3>
+<p><div class="highlight"><pre><span></span><code>exit
+reboot
+</code></pre></div><br />
+</br></p>
+<hr />
+<h2 id="login-as-your-user-account">Login as your user account</h2>
+<p>If you've encrypted your ROOT/HOME partition(s), enter your password to access your Arch system.<br />
+Since you're using network-manager instead of iwd, your connection settings have been lost and you'll have to reconnect.<br />
+If you were connected to the internet through a Mobile Broadband Modem, the connection process is the same as before.</p>
+<p>Firstly, to take a look at what network stations you have installed on your computer, use the command:<br />
+<div class="highlight"><pre><span></span><code>nmcli d
+</code></pre></div><br />
+Then, turn on wifi by using the command:<br />
+<div class="highlight"><pre><span></span><code>nmcli r wifi on
+</code></pre></div><br />
+And list local access points by using the command:<br />
+<div class="highlight"><pre><span></span><code>nmcli d wifi list
+</code></pre></div><br />
+Select one of the access points listed and connect to it by running the following command:<br />
+<div class="highlight"><pre><span></span><code>nmcli d wifi connect [Access Point SSID] password [Access Point Password]
+</code></pre></div></p>
+<p>You won't need to check for updates as Arch will have already downloaded the latest version of Arch Linux.<br />
+You can stop here if you want to have a desktop-less Arch system for any reason (this could be for a server install).</p>
+<hr />
+<h3 id="display-protocols-and-gpu-drivers">Display protocols and GPU Drivers</h3>
+<h4 id="display-protocols">Display protocols</h4>
+<p><code>X.org</code> is the free and open-source implementation of the X Window System (X11) display protocol. However, it is quite old, and it shows. It has multiple issues with it, for example, applications can eavesdrop on each other, animations are laggier and people with multiple monitors or high-density displays (HiDPI) might experience issues. KDE Plasma, for example, has a problem with overlapping applications on the System Tray on X11.</p>
+<p><code>Wayland</code> is a more recent display protocol. Like X.org, it is free and open-source. However, it is much newer, and more efficient. It offers better security, and modern HiDPI and multi-monitor support. However, it breaks compatibility with certain applications, and although there are compatibility layers such as xorg-xwayland and qt5-wayland, they aren't <em>perfect</em> but are incredibly good at what they do.</p>
+<p>Pick the display protocol of your choice, and install it by clicking on the headers of either of the collapsable sections below.</p>
+<details>
+ <summary><h3>X.org</h3></summary>
+
+ To install X.org, run the below command:
+ <div class="highlight"><pre><span></span><code>sudo pacman -S xorg
+</code></pre></div>
+</details>
+
+<details>
+ <summary><h3>Wayland</h3></summary>
+
+To install Wayland, run the below command:
+<div class="highlight"><pre><span></span><code>sudo pacman -S --needed wayland xorg-xwayland qt5-wayland qt6-wayland xorg-xlsclients
+</code></pre></div>
+
+<code>xorg-xwayland</code> is a compatibility layer that allows you to run X11 applications on Wayland.<br/>
+<code>qt5-wayland</code> allows you to run Qt5 apps on Wayland.<br/>
+<code>qt6-wayland</code> allows you to run Qt6 apps on Wayland.<br/>
+<code>xorg-xlsclients</code> lists any apps running on the <code>xorg-xwayland</code> compatibility layer running on the current display.<br/>
+
+</details>
+
+<h4 id="gpu-drivers">GPU drivers</h4>
+<p>GPU drivers allow your computer to utilise your GPU and massively increase performance during games, if you have a good GPU that is.<br />
+Install your GPU drivers as shown below:</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S [GPU driver]
+</code></pre></div>
+<ul>
+<li>For Nvidia GPUs, type <code>nvidia</code> &amp; <code>nvidia-settings</code>. For more info/old GPUs, refer to <a href="https://wiki.archlinux.org/index.php/NVIDIA">Arch Wiki - Nvidia</a>.</li>
+<li>If you want an open-source Nvidia GPU drive and your GPU family is "turing" or newer, type <code>nvidia-open</code> and <code>nvidia-settings</code> (or <code>nvidia-open-dkms</code> for kernel derivatives)</li>
+<li>If you want an open-source (albeit work-in-progress) driver for any GPU family older than "turing", type <code>xf86-video-nouveau</code></li>
+<li>For newer AMD GPUs, type <code>xf86-video-amdgpu</code>.</li>
+<li>For legacy Radeon GPUs like HD 7xxx Series &amp; below, type <code>xf86-video-ati</code>.</li>
+<li>For dedicated Intel Graphics, type <code>xf86-video-intel</code>.</li>
+</ul>
+<h3 id="enable-multilib-repo">Enable Multilib Repo</h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is optional but highly recommended. This is done so you can download 32-bit software on a 64-bit machine.<br />
+Of course, if you're on a 32-bit machine, you can skip this section.</p>
+</div>
+<p>Edit <code>/etc/pacman.conf</code> &amp; uncomment the below two lines.<br />
+<div class="highlight"><pre><span></span><code>#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+</code></pre></div></p>
+<p>Save and exit.</p>
+<p>Synchronise pacman with the multilib repo, as shown below:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -Syy
+</code></pre></div></p>
+<h3 id="install-and-enable-a-login-manager">Install and Enable a Login Manager</h3>
+<p>If you want to use GNOME as your desktop environment, install and enable GDM as shown below:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -S gdm
+sudo systemctl enable gdm.service
+</code></pre></div></p>
+<p>If you want to use any other window manager, install and enable SDDM as shown below:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -S sddm
+sudo systemctl enable sddm
+</code></pre></div></p>
+<h3 id="installing-a-desktop-environment">Installing a desktop environment</h3>
+<p>A desktop environment, at its most simplest form, just arranges how your apps and other graphical UI elements are arranged on the screen. Some are more customisable than others.<br />
+There are two main types of Desktop Environments: stacking and tiling.<br />
+Stacking window managers are just your vanilla desktop environment. You use your mouse to stack and arrange windows on your screen.<br />
+Tiling window managers, however, have a steeper learning curve than stacking window managers. You use your keyboard to tile and arrange windows on your screen.</p>
+<p>Use a tiling window manager if you use vim, neovim or emacs.<br />
+Use a stacking window manager if you use nano.</p>
+<p>For a list of notable window managers and how to install them, go to <code>window-managers.md</code>, by clicking <a href="window-managers.html">here</a></p>
+<h3 id="audio-utilities-and-bluetooth">Audio Utilities and Bluetooth</h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is optional but highly recommended.</p>
+</div>
+<div class="highlight"><pre><span></span><code>sudo pacman -S alsa-utils bluez bluez-utils pipewire wireplumber pipewire-alsa pipewire-pulse
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Packages</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alsa-utils</td>
+<td>This contains (among other utilities) the <code>alsamixer</code> and <code>amixer</code> utilities.</td>
+</tr>
+<tr>
+<td>bluez</td>
+<td>Provides the Bluetooth protocol stack.</td>
+</tr>
+<tr>
+<td>bluez-utils</td>
+<td>Provides the <code>bluetoothctl</code> utility.</td>
+</tr>
+<tr>
+<td>pipewire</td>
+<td>Low-latency software for multimedia processing and sharing</td>
+</tr>
+<tr>
+<td>wireplumbler</td>
+<td>Policy and session manager for pipewire</td>
+</tr>
+<tr>
+<td>pipewire-alsa</td>
+<td>Provides soundcard drivers</td>
+</tr>
+<tr>
+<td>pipewire-pulse</td>
+<td>A general sound server intended as a middle-man between your soundcard and applications.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="enable-bluetooth">Enable Bluetooth</h4>
+<div class="highlight"><pre><span></span><code>sudo systemctl enable bluetooth.service
+</code></pre></div>
+<p>If at any point, you experience sound issues when running Wine applications, you may need to install an audio driver package as shown below:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -Syu lib32-alsa-lib lib32-alsa-plugins lib32-pipewire
+</code></pre></div></p>
+<h3 id="final-reboot">Final Reboot</h3>
+<div class="highlight"><pre><span></span><code>reboot
+</code></pre></div>
+<hr />
+<h1 id="the-conclusion">The Conclusion</h1>
+<p>Now everything is installed and after the final <code>reboot</code>, you will land in the SDDM or GDM greeter. You can continue reading for some steps to further improve your experience. I recommend you to install <code>yay</code> &amp; <code>paccache</code>.<br />
+- Yay will provide your packages from AUR (Arch User Repository), which are not available in the official repos.<br />
+- Paccache can be used clean pacman cached packages either manually or in an automated way.<br />
+</br></p>
+<h2 id="extras">Extras</h2>
+<h3 id="cool-apps">Cool apps</h3>
+<p>You can install all the following packages or only the one you want.<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -S firefox openssh qbittorrent audacious wget screen git fastfetch lib32-mesa
+</code></pre></div></p>
+<table>
+<thead>
+<tr>
+<th>Packages</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>firefox</td>
+<td>Mozilla Firefox Web Browser.</td>
+</tr>
+<tr>
+<td>openssh</td>
+<td>Secure Shell access server, allows you to access remote computers or servers.</td>
+</tr>
+<tr>
+<td>qbittorrent</td>
+<td>Qt-based BitTorrent Client.</td>
+</tr>
+<tr>
+<td>audacious</td>
+<td>Qt-based music player.</td>
+</tr>
+<tr>
+<td>wget*</td>
+<td>Wget is a free utility for non-interactive download of files from the Web.</td>
+</tr>
+<tr>
+<td>screen</td>
+<td>Is a full-screen window manager that multiplexes a physical terminal between several processes, typically interactive shells.</td>
+</tr>
+<tr>
+<td>git*</td>
+<td>Github command-line utility tools. (needed to access the AUR)</td>
+</tr>
+<tr>
+<td>fastfetch</td>
+<td>Fastfetch is a command-line system information tool, that is the sucessor to NeoFetch.</td>
+</tr>
+<tr>
+<td>cups*</td>
+<td>Printer service</td>
+</tr>
+<tr>
+<td>wine*</td>
+<td>Compatibility layer for Windows applications. Proton needs this application in order to run most Steam games</td>
+</tr>
+<tr>
+<td>lib32-mesa*</td>
+<td>Optional dependency for Steam game using the Vulkan backend</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>* - These are some of the more important packages, which a lot of programs tend to use. They're optional but it is highly recommended to install both of them.</p>
+</blockquote>
+<h3 id="enable-openssh-daemon-and-cups-printer-service">Enable OpenSSH daemon and CUPS printer service</h3>
+<div class="highlight"><pre><span></span><code>sudo systemctl enable sshd.service
+sudo systemctl enable --now cups.service
+</code></pre></div>
+<p></br></p>
+<h3 id="installing-vulkan-and-opengl-drivers">Installing Vulkan and OpenGL drivers</h3>
+<p>For pretty much any game to work, you need an OpenGL and a Vulkan driver. Check your GPU driver for the corresponding OpenGL and Vulkan drivers below:</p>
+<table>
+<thead>
+<tr>
+<th>GPU driver</th>
+<th>OpenGL driver</th>
+<th>Vulkan driver</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xf86-video-intel</td>
+<td>mesa &amp; lib32-mesa</td>
+<td>vulkan-intel &amp; lib32-vulkan-intel</td>
+</tr>
+<tr>
+<td>xf86-video-amdgpu</td>
+<td>mesa &amp; lib32-mesa</td>
+<td>vulkan-radeon &amp; lib32-vulkan-radeon</td>
+</tr>
+<tr>
+<td>xf86-video-ati</td>
+<td>mesa &amp; lib32-mesa</td>
+<td>(N/A)</td>
+</tr>
+<tr>
+<td>xf86-video-nouveau</td>
+<td>mesa &amp; lib32-mesa</td>
+<td>vulkan-nouveau &amp; lib32-vulkan-nouveau</td>
+</tr>
+<tr>
+<td>nvidia or nvidia-open</td>
+<td>nvidia-utils &amp; lib32-nvidia-utils</td>
+<td>(Same as OpenGL driver)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You want to install both the multilib (prefixed with lib32-*) and non-multilib drivers to ensure compatibility. Additionally, the drivers are listed by their name in the Arch Linux repositories - all the packages listed above can be installed as they are named above. </p>
+</div>
+<p></br></p>
+<h3 id="install-yay">Install YAY</h3>
+<p>Yet Another Yogurt - An AUR Helper - install this if you don't want to integrate the AUR into pacman.<br />
+<div class="highlight"><pre><span></span><code>git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+</code></pre></div><br />
+The below commands delete the yay folder as it isn't necessary anymore<br />
+<div class="highlight"><pre><span></span><code>cd ..
+sudo rm -rf yay
+</code></pre></div></p>
+<p><br/></p>
+<h2 id="enabling-secure-boot">Enabling secure boot</h2>
+<p>Secure Boot is a security standard designed to ensure that a device boots using only trusted software. To enable it, go into your firmware settings and erase all of your secure boot keys. The way on how to do so differs between manufacturers.<br/><br />
+Once you've done that, install sbctl by running the below command:</p>
+<div class="highlight"><pre><span></span><code>pacman -S sbctl
+</code></pre></div>
+<p>Then create secure boot keys by running the below command:<br />
+<div class="highlight"><pre><span></span><code>sudo sbctl create-keys
+</code></pre></div></p>
+<p>Then enroll those keys, alongside Microsoft's, to the UEFI<br />
+<div class="highlight"><pre><span></span><code>sudo sbctl enroll-keys -m
+</code></pre></div></p>
+<p>Check what files need to be signed by running:<br />
+<div class="highlight"><pre><span></span><code>sudo sbctl verify
+</code></pre></div></p>
+<p>And sign those files. If you haven't unified your kernel images, sign your boot files as shown below:<br />
+<div class="highlight"><pre><span></span><code>sudo sbctl sign -s /boot/vmlinuz-linux
+sudo sbctl sign -s /boot/EFI/BOOT/BOOTX64.EFI
+sudo sbctl sign -s /usr/lib/systemd/boot/efi/systemd-bootx64.efi
+</code></pre></div></p>
+<p>And if you have, sign them as shown below:<br />
+<div class="highlight"><pre><span></span><code>sudo sbctl sign -s -o /usr/lib/systemd/boot/efi/systemd-bootx64.efi.signed /usr/lib/systemd/boot/efi/systemd-bootx64.efi
+sudo sbctl sign -s /efi/EFI/BOOT/BOOTX64.EFI
+sudo sbctl sign -s /efi/EFI/Linux/arch-linux.efi
+sudo sbctl sign -s /efi/EFI/Linux/arch-linux-fallback.efi
+</code></pre></div></p>
+<p>Sign the Windows EFI files (if you're dual-booting):<br />
+<div class="highlight"><pre><span></span><code>sudo sbctl sign -s /boot/efi/Microsoft/Boot/bootmgfw.efi
+sudo sbctl sign -s /boot/efi/Microsoft/Boot/bootmgr.efi
+sudo sbctl sign -s /boot/efi/Microsoft/Boot/memtest.efi
+</code></pre></div></p>
+<p>If you have any forks of the linux kernel installed (e.g. Linux Zen, Linux Hardened .etc), go ahead and sign those too.</p>
+<p><br/></p>
+<h3 id="integrating-the-aur-into-pacman">Integrating the AUR into pacman</h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Chaotic-AUR does not include any nightly software into its repos - this is any software ending in '-git'. For this reason, it is recommended to use yay over this method.</p>
+</div>
+<p>Chaotic-AUR is a method for retrieving packages in the AUR (packages made by the community that aren't any of the official repos, which are core, extra and multilib). It's better to use the Chaotic-AUR than other AUR helpers as the packages are pre-built binaries, meaning, your computer doesn't have to take its sweet time to create an app from the source code, as is common with helpers such as yay or paru. This is recommended if you're impatient and/or have a slow PC</p>
+<p>Retrieve the keyring for the Chaotic-AUR from the Ubuntu keyserver:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+</code></pre></div></p>
+<p>Sign it locally:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman-key --lsign-key 3056513887B78AEB
+</code></pre></div></p>
+<p>Then download both the keyring and mirrorlist:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -U &#39;https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst&#39;
+sudo pacman -U &#39;https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst&#39;
+</code></pre></div></p>
+<p>Edit <code>/etc/pacman.conf</code> &amp; add the below two lines.<br />
+<div class="highlight"><pre><span></span><code>[chaotic-aur]
+Include = /etc/pacman.d/chaotic-mirrorlist
+</code></pre></div></p>
+<p>And synchronise pacman with the chaotic AUR repo:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -Syy
+</code></pre></div></p>
+<details>
+ <summary><h4>Use powerpill to download from all mirrors simultaneously (optional and highly recommended if you live in a third-world country)</h4></summary>
+
+
+Download powerpill:
+<div class="highlight"><pre><span></span><code>sudo pacman -S powerpill
+</code></pre></div>
+
+Initialise it as follows:
+<div class="highlight"><pre><span></span><code>sudo powerpill -Su
+</code></pre></div>
+
+Then follow the instructions on screen.
+</details>
+
+<p><br/></p>
+<h3 id="alternative-shells">Alternative shells</h3>
+<p>The shell that comes with your system automatically is bash. However, bash isn't very configurable. To fix that, you can use an alternative shell. Some will be listed below:</p>
+<table>
+<thead>
+<tr>
+<th>Shell</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zsh</td>
+<td>It is fully backwards compatible with bash, and is highly configurable shell. However, it has quite a learning curve.</td>
+</tr>
+<tr>
+<td>fish</td>
+<td>An easy and highly configurable shell. It has features like autosuggestions out of the box. However, if you're used to bash or zsh, it might take some time to learn fish.</td>
+</tr>
+<tr>
+<td>nushell</td>
+<td>An incredibly fast shell that centers around using objects and modules. It lacks a lot of features that bash, zsh and fish have, however.</td>
+</tr>
+</tbody>
+</table>
+<p>To see what shell you have as default (this will likely be bash), run the below command:<br />
+<div class="highlight"><pre><span></span><code>echo $SHELL
+</code></pre></div></p>
+<p>To see what shells you have installed on your system, run the below command:<br />
+<div class="highlight"><pre><span></span><code>chsh -l
+</code></pre></div></p>
+<p>Find the shell of your preference within that list and change it accordingly using the below command:<br />
+<div class="highlight"><pre><span></span><code>chsh -s [shell]
+</code></pre></div></p>
+<blockquote>
+<p>Replacing <code>[shell]</code> with the shell of your preference. An example can be found below.</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>chsh -s /usr/bin/zsh
+</code></pre></div>
+<p><br/></p>
+<h3 id="aptpac">Aptpac</h3>
+<blockquote>
+<p>Note: You should only use this if you're new to Arch Linux or have jumped ship from Debian or its derivatives (like Ubuntu) to Arch.</p>
+</blockquote>
+<p>Install cmake:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -S cmake
+</code></pre></div></p>
+<p>Download the aptpac source code and change directory into it:<br />
+<div class="highlight"><pre><span></span><code>git clone https://github.com/Itai-Nelken/aptpac &amp;&amp; cd ./aptpac/C-edition
+</code></pre></div></p>
+<p>Make the <code>build</code> directory, so it can be built and run, then change directory into it:<br />
+<div class="highlight"><pre><span></span><code>mkdir build &amp;&amp; cd build
+</code></pre></div></p>
+<p>Then build the source code:<br />
+<div class="highlight"><pre><span></span><code>cmake -DCMAKE_BUILD_TYPE=Release .. &amp;&amp; make
+</code></pre></div></p>
+<p>And finally, move it to <code>/usr/local/bin</code> so it can be run easily as a command:<br />
+<div class="highlight"><pre><span></span><code>sudo make install
+</code></pre></div></p>
+<p><br/></p>
+<h3 id="replacing-sudo-with-doas">Replacing sudo with doas</h3>
+<p>Sudo has many issues with it. Firstly, it has a lot of features that only IT administrators would use (that many would consider bloat), and it has quite an old and messy codebase, leading it vulnerable to cybercriminals to attack your system, and is definitely no stranger to having bugs that have existed for over 5 years.\<br />
+If the only thing you ever use sudo for is for making changes to your system, such as <code>sudo pacman</code> or <code>sudo systemctl</code>, then it would make more sense to use <code>doas</code>.</p>
+<p>Opendoas is an implentation of doas for Linux. Install it, as shown below:<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -S opendoas
+</code></pre></div></p>
+<p>Then, allow any member of the <code>wheel</code> group to run <code>doas</code> commands, as shown below:<br />
+<div class="highlight"><pre><span></span><code>sudo echo &#39;permit :wheel&#39; &gt;&gt; /etc/doas.conf
+</code></pre></div></p>
+<p>And change its owner and permissions for the sake of cybersecurity:<br />
+<div class="highlight"><pre><span></span><code>sudo chown -c root:root /etc/doas.conf
+sudo chmod -c 0400 /etc/doas.conf
+</code></pre></div></p>
+<p>Now you're ready to use doas on your system. Its configuration and usage is similar to that of <code>sudo</code>, but do go and check its manpage.<br />
+<div class="highlight"><pre><span></span><code>man doas.conf # For configuration
+man doas # For usage
+</code></pre></div></p>
+<p><br/></p>
+<h2 id="maintenance-performance-tuning-and-monitoring">Maintenance, Performance Tuning and Monitoring</h2>
+<h3 id="paccache">Paccache</h3>
+<p>Pacman Cache Cleaner.</p>
+<p>Install<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -S pacman-contrib
+</code></pre></div></p>
+<p>To manually clean pacman cache, run<br />
+<div class="highlight"><pre><span></span><code>sudo paccache -rk
+</code></pre></div><br />
+Where, <em>k</em> indicates to keep "num" of each package in the cache.</p>
+<h4 id="to-automate-paccache-process">To automate paccache process</h4>
+<p>Create a file in <code>/etc/pacman.d/hooks</code> by running the below <br />
+<div class="highlight"><pre><span></span><code>sudo mkdir /etc/pacman.d/hooks
+sudo nano /etc/pacman.d/hooks/clean_cache.hook
+</code></pre></div></p>
+<p>Append the following lines to it<br />
+<div class="highlight"><pre><span></span><code>[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+[Action]
+Description = Cleaning pacman cache...
+When = PostTransaction
+Exec = /usr/bin/paccache -rk
+</code></pre></div><br />
+Save &amp; exit.</p>
+<p><br/></p>
+<h3 id="install-cockpit">Install Cockpit</h3>
+<p>A systemd web-based user interface for Linux servers, workstations and even desktops. It can be used to monitor your system stats, performance and perform various settings including updating your system.<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -S cockpit
+</code></pre></div></p>
+<p>Enable cockpit as shown below:</p>
+<p><div class="highlight"><pre><span></span><code>sudo systemctl enable --now cockpit.socket
+</code></pre></div><br />
+Now open your browser and type <code>your-machine-ip:9000</code> into the searchbar and login with <strong><em>root</em></strong> to get full access.</p>
+<hr />
+<h2 id="latest-changes">Latest changes</h2>
+<ul>
+<li>Moved guide to its own website</li>
+<li>Deprecated the GitHub guide</li>
+<li>Fixed some grammatical errors</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
