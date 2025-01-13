@@ -17,6 +17,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: deep orange
+      accent: orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -24,6 +25,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: deep orange
+      accent: orange
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -60,6 +62,8 @@ nav:
     - Main Guide: arch-install-guide/main-guide.md
     - Window Managers: arch-install-guide/window-managers.md
   - The Tech Times:
+    - 2025-01-13: the-tech-times/2025-01-13.md
     - 2025-01-04: the-tech-times/2025-01-04.md
   - Changelog:
+    - 2025-01-13: changelog/2025-01-13.md
     - 2025-01-11: changelog/2025-01-11.md
