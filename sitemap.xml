@@ -2,22 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://bahmoudd.github.io/index.html</loc>
-         <lastmod>2025-01-11</lastmod>
+         <lastmod>2025-01-13</lastmod>
     </url>
     <url>
          <loc>https://bahmoudd.github.io/arch-install-guide/main-guide.html</loc>
-         <lastmod>2025-01-11</lastmod>
+         <lastmod>2025-01-13</lastmod>
     </url>
     <url>
          <loc>https://bahmoudd.github.io/arch-install-guide/window-managers.html</loc>
-         <lastmod>2025-01-11</lastmod>
+         <lastmod>2025-01-13</lastmod>
     </url>
     <url>
          <loc>https://bahmoudd.github.io/changelog/2025-01-11.html</loc>
-         <lastmod>2025-01-11</lastmod>
+         <lastmod>2025-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://bahmoudd.github.io/changelog/2025-01-13.html</loc>
+         <lastmod>2025-01-13</lastmod>
     </url>
     <url>
          <loc>https://bahmoudd.github.io/the-tech-times/2025-01-04.html</loc>
-         <lastmod>2025-01-11</lastmod>
+         <lastmod>2025-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://bahmoudd.github.io/the-tech-times/2025-01-13.html</loc>
+         <lastmod>2025-01-13</lastmod>
     </url>
 </urlset>
