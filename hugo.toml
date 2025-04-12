@@ -1,6 +1,3 @@
 baseURL = 'https://bahmoudd.github.io'
 languageCode = 'en-gb'
 title = 'The Cove of Bahmoudd'
-caches:
-  images:
-    dir: :cacheDir/images
