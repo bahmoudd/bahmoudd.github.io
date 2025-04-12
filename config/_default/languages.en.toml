@@ -1,0 +1,20 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "The Cove of Bahmoudd"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+logo = "primary_logo.svg"
+secondaryLogo = "secondary_logo.svg"
+description = "here for whatever bahmoudd feels like placing here"
+
+[params.author]
+name = "bahmoudd"
+links = [ { email = "mailto:bahman.alta@gmail.com" }, { github = "https://github.com/bahmoudd" }, { reddit = "https://reddit.com/user/bahmoudd" }, { steam = "https://steamcommunity.com/id/bahmoudd/" } ]
+image = "cat.jpg"
+bio = "Linguist, hobby author and programmer based in the UK. Currently, I have no projects that I'm working on right now."
