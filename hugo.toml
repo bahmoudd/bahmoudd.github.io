@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://bahmoudd.github.io'
+languageCode = 'en-gb'
+title = 'The Cove of Bahmoudd'
 caches:
   images:
     dir: :cacheDir/images
