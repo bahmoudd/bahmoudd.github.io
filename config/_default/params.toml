@@ -34,13 +34,14 @@ cardViewScreenWidth = false
 layoutBackgroundBlur = true
 
 [article]
+heroStyle = "background"
 showDate = true
 showViews = false
 showLikes = false
 showDateOnlyInArticle = false
 showDateUpdated = false
-showAuthor = true
-showHero = false
+showAuthor = false
+showHero = true
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
@@ -56,10 +57,11 @@ showTableOfContents = true
 showTaxonomies = false
 showAuthorsBadges = false
 showWordCount = true
-showZenMode = true
+showZenMode = false
 
 [list]
-showHero = false
+heroStyle = "background"
+showHero = true
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
@@ -67,10 +69,10 @@ showSummary = false
 showViews = false
 showLikes = false
 showTableOfContents = false
-showCards = false
-orderByWeight = false
-groupByYear = true
-cardView = false
+showCards = true
+orderByWeight = true
+groupByYear = false
+cardView = true
 cardViewScreenWidth = false
 constrainItemsWidth = false
 
@@ -79,7 +81,7 @@ excludedKinds = [ "taxonomy", "term" ]
 
 [taxonomy]
 showTermCount = true
-showHero = false
+showHero = true
 showBreadcrumbs = false
 showViews = false
 showLikes = false
@@ -87,7 +89,7 @@ showTableOfContents = false
 cardView = false
 
 [term]
-showHero = false
+showHero = true
 showBreadcrumbs = false
 showViews = false
 showLikes = false
