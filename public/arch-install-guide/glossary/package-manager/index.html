@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Introduction &middot; The Cove of Bahmoudd</title>
-  <meta name="title" content="Introduction &middot; The Cove of Bahmoudd" />
+  <title>package manager &middot; The Cove of Bahmoudd</title>
+  <meta name="title" content="package manager &middot; The Cove of Bahmoudd" />
   
   <meta name="description" content="here for whatever bahmoudd feels like placing here" />
   
   
   
-  <link rel="canonical" href="//localhost:1313/arch-install-guide/introduction/" />
+  <link rel="canonical" href="//localhost:1313/arch-install-guide/glossary/package-manager/" />
   
   
   
@@ -67,9 +67,9 @@
   
   
   
-  <meta property="og:url" content="//localhost:1313/arch-install-guide/introduction/">
+  <meta property="og:url" content="//localhost:1313/arch-install-guide/glossary/package-manager/">
   <meta property="og:site_name" content="The Cove of Bahmoudd">
-  <meta property="og:title" content="Introduction">
+  <meta property="og:title" content="package manager">
   <meta property="og:description" content="here for whatever bahmoudd feels like placing here">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -77,7 +77,7 @@
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Introduction">
+  <meta name="twitter:title" content="package manager">
   <meta name="twitter:description" content="here for whatever bahmoudd feels like placing here">
 
   
@@ -86,12 +86,12 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Arch Install Guide",
-    "name": "Introduction",
-    "headline": "Introduction",
+    "name": "package manager",
+    "headline": "package manager",
     
     
     "inLanguage": "en",
-    "url" : "\/\/localhost:1313\/arch-install-guide\/introduction\/",
+    "url" : "\/\/localhost:1313\/arch-install-guide\/glossary\/package-manager\/",
     "author" : {
       "@type": "Person",
       "name": "bahmoudd"
@@ -105,7 +105,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "360"
+    "wordCount": "63"
   }]
   </script>
 
@@ -483,7 +483,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Introduction
+      package manager
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -505,11 +505,7 @@
 
 
 
-  
 
-
-
-  
 
 
 
@@ -525,8 +521,6 @@
 
 <div class="flex flex-row flex-wrap items-center">
   
-  
-  <span>360 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -572,78 +566,7 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          
-
-<h1 class="relative group">Requirements 
-    <div id="requirements" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#requirements" aria-label="Anchor">#</a>
-    </span>        
-    
-</h1>
-<p>You must have basic technical understanding (i.e. know what &lsquo;hardware&rsquo; and &lsquo;software&rsquo; mean) and a x86-64 computer, which your computer likely is. This guide will not cover how to install unofficial ports of Arch Linux, such as Artix, Arch Linux ARM or Arch Linux 32. Click on one of the collapsible sections below (depending on your operating system) to check if you have an x86-64 CPU.</p>
-
-<details>
-  <summary>Switching to Arch from Windows?</summary>
-  <p>Hit the Windows Key and R on your keyboard at the same time, a dialog like the below should appear on the bottom left of your screen:
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="/images/arch-install-guide/introduction/run_dialog.png" alt="" />
-      
-    </figure>
-</p>
-<p>In it, type <code>cmd.exe</code>, and hit enter.
-A window like the below should appear:
-
-    <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="/images/arch-install-guide/introduction/cmd.png" alt="" />
-      
-    </figure>
-</p>
-<p>In that, type <code>echo %PROCESSOR_ARCHITECTURE%</code> and hit enter.
-If it returns <code>AMD64</code>, you&rsquo;re all good to go.</p>
-</details>
-
-
-
-<h1 class="relative group">Important terminology 
-    <div id="important-terminology" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#important-terminology" aria-label="Anchor">#</a>
-    </span>        
-    
-</h1>
-<p>Important terminology can be found on the glossary <a href="../glossary/"><em>here</em></a>. Make sure to have a good read of it so you have a good understanding of what I&rsquo;m trying to across in the guide.</p>
-
-
-<h1 class="relative group">Important thing to note 
-    <div id="important-thing-to-note" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#important-thing-to-note" aria-label="Anchor">#</a>
-    </span>        
-    
-</h1>
-<p>If you see a line like the below:
-<code>$ ls</code></p>
-<p>Check the character in front of it, if it starts with a dollar sign, that means you type everything after the dollar sign, but not the dollar sign itself.<br>
-For example:
-<code>$ ls</code> means that you should type <code>ls</code> into your shell, and not <code>$ ls</code></p>
-<p>If you see a hash symbol, however, that means you should run the command with elevated privileges. If you&rsquo;re in the Arch ISO (i.e. not the operating system installed on your computer), then you don&rsquo;t need to do anything, type everything after the hash symbol.<br>
-If Arch Linux is properly installed on your computer, and you are booted into it, you can do one of the two following things:</p>
-<ol>
-<li>Run <code>sudo su</code> in to your shell before typing in to it, this allows you to run any privileged command you want. Make sure you type <code>exit</code> once you&rsquo;re done</li>
-<li>Or, you can do the better method, which is, substitute the hashtag symbol for the word <code>sudo</code>, so something like:<br>
-<code># pacman -Syu</code> means that you type <code>sudo pacman -Syu</code> into your shell.</li>
-</ol>
+          <p>A package manager is a collection of software that automates the process of installing, updating and deleting software on a computer in a consistent manner. Arch Linux uses <em>pacman</em> (not to be confused with the &rsquo;80s arcade game) which is a rolling release package manager, meaning that software is not released as regular, big updates but rather small and continuous updates delivered frequently.</p>
 
           
           
@@ -666,8 +589,8 @@ If Arch Linux is properly installed on your computer, and you are booted into it
           
         
       <script>
-        var oid = "views_arch-install-guide\/Introduction.md"
-        var oid_likes = "likes_arch-install-guide\/Introduction.md"
+        var oid = "views_arch-install-guide\/glossary\/package-manager.md"
+        var oid_likes = "likes_arch-install-guide\/glossary\/package-manager.md"
       </script>
       
       
@@ -678,6 +601,61 @@ If Arch Linux is properly installed on your computer, and you are booted into it
   <footer class="pt-8 max-w-prose print:hidden">
 
     
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/arch-install-guide/glossary/source-code/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >source code</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/arch-install-guide/glossary/machine-code/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >machine code</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
   
 
 

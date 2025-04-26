@@ -28,6 +28,16 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/gnu/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/init/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>//localhost:1313/arch-install-guide/glossary/kernel/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -39,6 +49,11 @@
   </url>
   <url>
     <loc>//localhost:1313/arch-install-guide/glossary/machine-code/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/package-manager/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

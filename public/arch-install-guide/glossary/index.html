@@ -542,25 +542,34 @@
         <div class="article-content max-w-prose mb-20">
           <p><a href="#compilation">C</a> 
 <a href="#distro">D</a> 
+<a href="#gnu">G</a> 
+<a href="#init">I</a> 
 <a href="#kernel">K</a> 
 <a href="#linux">L</a> 
 <a href="#machine-code">M</a> 
+<a href="#package-manager">P</a> 
 <a href="#source-code">S</a> 
 <a href="#unix-like">U</a> </p>
 <dl>
 <dt>compilation</dt>
 <dd><em>Compilation</em> is the act of turning <a href="./source-code">source code</a> into <a href="./machine-code">machine code</a></dd>
 <dt>distro</dt>
-<dd>A &ldquo;distro&rdquo; (or <a href="./linux"><em>Linux</em></a> distribution) is a bundle of software including a fully-configured copy of the Linux kernel, and other software which allow applications to run. For example, Arch Linux is a distro that comes bundled with the GNU software collection, systemd, and pacman (a means of downloading software). You don&rsquo;t have to worry about what GNU and systemd do, just know that they allow apps to run on your computer.</dd>
+<dd>A &ldquo;distro&rdquo; (or <a href="./linux"><em>Linux</em></a> distribution) is a bundle of software including a fully-configured copy of the Linux kernel, and other software which allow applications to run. For example, Arch Linux is a distro that comes bundled with the <a href="./gnu"><em>GNU software collection</em></a>, <a href="./init"><em>systemd</em></a>, and <a href="./package-manager"><em>pacman</em></a>.</dd>
+<dt>gnu</dt>
+<dd>GNU, or more specifically, GNU coreutils, is a collection of software that allows you to fully interact with your computer. Linux was created after GNU as it has no <a href="./kernel"><em>kernel</em></a>, which is essential for a computer to run.</dd>
+<dt>init</dt>
+<dd>An init process is the first process your computer loads when powering on. It is the parent of all processes - it sets them up and manages them. It does things like running background processes, configures hardware et cetera, and makes sure that the computer has come to the state where it&rsquo;s ready for you to use. It stays running the entire time that your computer is on, managing processes as I have stated before and handling errors if they crash. Arch Linux uses systemd, which is an entire suite of software, not just an init system, doing things such as logging and networking. It&rsquo;s easy to manage as everything is in one place, and provides fast boot-up times.</dd>
 <dt>kernel</dt>
 <dd>A kernel is the middleman between programs and hardware. An example of this is the NT kernel, which is what Windows uses.</dd>
 <dt>linux</dt>
-<dd>Linux is a <a href="./unix-like">Unix-like</a> <a href="./kernel"><em>kernel</em></a> released in 1991 by Linus Torvalds.</dd>
+<dd>Linux is a <a href="./unix-like"><em>Unix-like</em></a> <a href="./kernel"><em>kernel</em></a> released in 1991 by Linus Torvalds.</dd>
 <dt>machine code</dt>
 <dd><em>Machine code</em> (also known as a &lsquo;binary executable&rsquo;, or just &lsquo;binary&rsquo;) is what computers can actually understand and run (or &ldquo;execute&rdquo;)</dd>
+<dt>package manager</dt>
+<dd>A package manager is a collection of software that automates the process of installing, updating and deleting software on a computer in a consistent manner. Arch Linux uses <em>pacman</em> (not to be confused with the &rsquo;80s arcade game) which is a rolling release package manager, meaning that software is not released as regular, big updates but rather small and continuous updates delivered frequently.</dd>
 <dt>source code</dt>
-<dd><em>Source code</em> is what computer programmers write to make computers do things. It needs to be converted into <a href="./machine-code">machine code</a> before it can be run (or &ldquo;executed&rdquo;).
-Programs can either be distributed as source code, meaning that the user has to <a href="./compilation">compile</a> it themselves, or they can be distributed as machine code where no compilation is needed. Both approaches have their upsides and downsides.</dd>
+<dd><em>Source code</em> is what computer programmers write to make computers do things. It needs to be converted into <a href="./machine-code"><em>machine code</em></a> before it can be run (or &ldquo;executed&rdquo;).
+Programs can either be distributed as source code, meaning that the user has to <a href="./compilation"><em>compile</em></a> it themselves, or they can be distributed as machine code where no compilation is needed. Both approaches have their upsides and downsides.</dd>
 <dt>unix-like</dt>
 <dd><em>Unix</em> is an operating system family that started off at AT&amp;T. It became very influential within academic circles, leading to large-scale adoption by start-up companies leading Unix to fragment into much smaller, similar but mostly mutually incompatible OSes. Among these are MacOS, the BSD operating systems (FreeBSD, OpenBSD, NetBSD .etc). An operating system is said to be Unix-like if it behaves like a Unix operating system. For this reason, Linux is generally considered to be Unix-like.</dd>
 </dl>
