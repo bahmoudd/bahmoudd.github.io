@@ -18,6 +18,24 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-04-27T16:56:37+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-04-27T16:56:37+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/inital_post/</loc>
+    <lastmod>2025-04-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>//localhost:1313/arch-install-guide/glossary/compilation/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -79,11 +97,6 @@
   </url>
   <url>
     <loc>//localhost:1313/arch-install-guide/glossary/source-code/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>//localhost:1313/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

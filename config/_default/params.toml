@@ -11,6 +11,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 defaultBackgroundImage = "MontBlancMassif_1920x1080.jpg"
 smartTOC = true
 smartTOCHideUnfocusedChildren = true
+mainSections = ["posts"]
 
 [header]
 layout = "fixed-fill-blur"

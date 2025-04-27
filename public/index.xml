@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 bahmoudd</copyright>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Apr 2025 16:56:37 +0100</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Introduction</title>
@@ -16,6 +16,16 @@
       
       <guid>//localhost:1313/arch-install-guide/introduction/</guid>
       <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Initial post</title>
+      <link>//localhost:1313/posts/inital_post/</link>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/inital_post/</guid>
+      <description>A list of things that will go over what I may post in my site, and what people can expect to see here</description>
       
     </item>
     
