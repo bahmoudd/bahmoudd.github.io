@@ -53,7 +53,27 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/mirror/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>//localhost:1313/arch-install-guide/glossary/package-manager/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/root-directory/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/root-user/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/shell/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
