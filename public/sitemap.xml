@@ -18,6 +18,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>//localhost:1313/arch-install-guide/booting_into_the_live_iso/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>//localhost:1313/posts/</loc>
     <lastmod>2025-04-27T16:56:37+01:00</lastmod>
     <changefreq>daily</changefreq>
@@ -52,6 +57,11 @@
   </url>
   <url>
     <loc>//localhost:1313/arch-install-guide/glossary/init/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/iso/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -92,6 +102,11 @@
   </url>
   <url>
     <loc>//localhost:1313/arch-install-guide/glossary/shell/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/signature/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

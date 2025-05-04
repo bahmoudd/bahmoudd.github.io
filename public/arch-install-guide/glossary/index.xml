@@ -50,6 +50,16 @@
     </item>
     
     <item>
+      <title>iso file</title>
+      <link>//localhost:1313/arch-install-guide/glossary/iso/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/iso/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>kernel</title>
       <link>//localhost:1313/arch-install-guide/glossary/kernel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -125,6 +135,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/shell/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>signature</title>
+      <link>//localhost:1313/arch-install-guide/glossary/signature/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/signature/</guid>
       <description></description>
       
     </item>

@@ -1,9 +1,9 @@
 +++
 title = 'Introduction'
 showPagination = true
+invertPagination = true
 weight = 20
 showDate = false
-hideFromRecent = true
 +++
 
 # What is Arch Linux?
@@ -22,11 +22,11 @@ You must have basic technical understanding (i.e. know what 'hardware' and 'soft
     <summary><span style="font-size:1.25em;">Switching to Arch from Windows (or want a dual-boot setup)?</span></summary>
 
 Hit the Windows Key and R on your keyboard at the same time, a dialog like the below should appear on the bottom left of your screen:
-![](/images/arch-install-guide/introduction/run_dialog.png)
+![](/images/arch-install-guide/run_dialog.png)
 
 In it, type `cmd.exe`, and hit enter.
 A window like the below should appear:
-![](/images/arch-install-guide/introduction/cmd.png)
+![](/images/arch-install-guide/cmd.png)
 
 In that, enter the below command:
 {{< highlight cmd >}} echo %PROCESSOR_ARCHITECTURE% {{< /highlight >}}

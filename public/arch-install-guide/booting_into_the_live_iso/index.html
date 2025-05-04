@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>init &middot; The Cove of Bahmoudd</title>
-  <meta name="title" content="init &middot; The Cove of Bahmoudd" />
+  <title>Booting the Arch Live ISO &middot; The Cove of Bahmoudd</title>
+  <meta name="title" content="Booting the Arch Live ISO &middot; The Cove of Bahmoudd" />
   
   <meta name="description" content="here for whatever bahmoudd feels like placing here" />
   
   
   
-  <link rel="canonical" href="//localhost:1313/arch-install-guide/glossary/init/" />
+  <link rel="canonical" href="//localhost:1313/arch-install-guide/booting_into_the_live_iso/" />
   
   
   
@@ -67,9 +67,9 @@
   
   
   
-  <meta property="og:url" content="//localhost:1313/arch-install-guide/glossary/init/">
+  <meta property="og:url" content="//localhost:1313/arch-install-guide/booting_into_the_live_iso/">
   <meta property="og:site_name" content="The Cove of Bahmoudd">
-  <meta property="og:title" content="init">
+  <meta property="og:title" content="Booting the Arch Live ISO">
   <meta property="og:description" content="here for whatever bahmoudd feels like placing here">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -77,7 +77,7 @@
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="init">
+  <meta name="twitter:title" content="Booting the Arch Live ISO">
   <meta name="twitter:description" content="here for whatever bahmoudd feels like placing here">
 
   
@@ -86,12 +86,12 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Arch Install Guide",
-    "name": "init",
-    "headline": "init",
+    "name": "Booting the Arch Live ISO",
+    "headline": "Booting the Arch Live ISO",
     
     
     "inLanguage": "en",
-    "url" : "\/\/localhost:1313\/arch-install-guide\/glossary\/init\/",
+    "url" : "\/\/localhost:1313\/arch-install-guide\/booting_into_the_live_iso\/",
     "author" : {
       "@type": "Person",
       "name": "bahmoudd"
@@ -105,7 +105,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "119"
+    "wordCount": "392"
   }]
   </script>
 
@@ -509,7 +509,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      init
+      Booting the Arch Live ISO
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -531,7 +531,11 @@
 
 
 
+  
 
+
+
+  
 
 
 
@@ -547,6 +551,8 @@
 
 <div class="flex flex-row flex-wrap items-center">
   
+  
+  <span>392 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -592,7 +598,58 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>An init process is the first process your computer loads when powering on. It is the parent of all processes - it sets them up and manages them. It does things like running background processes, configures hardware et cetera, and makes sure that the computer has come to the state where it&rsquo;s ready for you to use. It stays running the entire time that your computer is on, managing processes as I have stated before and handling errors if they crash. Arch Linux uses systemd, which is an entire suite of software, not just an init system, doing things such as logging and networking. It&rsquo;s easy to manage as everything is in one place, and provides fast boot-up times.</p>
+          <p>Firstly, have a BitTorrent client installed on your computer. If you don&rsquo;t, install one from <a href="https://www.qbittorrent.org/download" target="_blank">here</a>.<br>
+Then, visit the official Arch Linux website to find the magnet link required to download the file. Once you find the magent link, click on it and the torrenting process should start shortly.<br>
+Once the torrenting process has completed, you should see a file named <code>archlinux-2025.05.01-x86_64.iso</code> in the downloads folder on your computer.<br>
+Take this file and use some program such as <a href="https://rufus.ie/en/" target="_blank">Rufus</a> (Windows only), <a href="https://etcher.balena.io/#download-etcher" target="_blank">BalenaEtcher</a> or <a href="https://www.ventoy.net/en/download.html" target="_blank">Ventoy</a> to write the ISO image to an appropriate medium, such as a CD, SD card or USB thumbdrive.</p>
+<p>Once you have written the ISO file to your computer, click on one of the collapsible sections below and follow the instructions given, depending on what browser you&rsquo;re starting off from:</p>
+<details>
+    <summary><span style="font-size:1.25em;">Switching from Windows to Arch?</span></summary>
+<p>Hit the Windows Key and R on your keyboard at the same time, a dialog like the below should appear on the bottom left of your screen:                                    
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/arch-install-guide/run_dialog.png" alt="" />
+      
+    </figure>
+</p>
+<p>In it, type <code>cmd.exe</code>, and hit enter.
+A window like the below should appear:
+
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/arch-install-guide/cmd.png" alt="" />
+      
+    </figure>
+</p>
+<p>In that, enter the below command:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"> shutdown /r /fw /t 1 </span></span></code></pre></div></p>
+<p>You should see some kind of screen with options to configure how your computer runs. What exactly you see depends on your hardware manufacturer, which you should search up, as having a photo for each firmware options screen would make this page unnecessarily long.</p>
+<p>Find some option with a name similar to <code>boot options</code>, and select the storage medium that contains the Arch Linux live environment.</p>
+</details>
+<details>
+    <summary><span style="font-size:1.25em;">Switching to Arch on a Mac?</span></summary>
+<p>Turn off your computer and hold the <code>Option</code> key as you turn on your Mac.<br>
+You may see a screen like the below. If your computer boots normally, you held <code>Option</code> too late, so try again with better timing.
+
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/arch-install-guide/macos-startup-manager.png" alt="" />
+      
+    </figure>
+</p>
+<p>Use the arrow keys on your keyboard to navigate to the option labelled <code>EFI Boot</code> and press <code>Enter</code> on your keyboard to select it.</p>
+</details>
+<details>
+     <summary><span style="font-size:1.25em;">Switching to Arch from another Linux distro?</span></summary>
+<p>Open your terminal application, this could be kitty, alacritty, konsole, yakuake .etc.<br>
+In your shell, type the below command:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"> $ sudo systemctl reboot --firmware-setup </span></span></code></pre></div></p>
+</details>
+<p>Once you have booted from your storage medium, select <code>Arch Linux install medium (x86_64, UEFI)</code>, or <code>Arch Linux install medium (x86_64, UEFI) with speech</code> if you are visually impaired.</p>
+<p>You should then see the following screen:</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/arch-install-guide/live_environment.png" alt="" />
+      
+    </figure>
+</p>
 
           
           
@@ -615,8 +672,8 @@
           
         
       <script>
-        var oid = "views_arch-install-guide\/glossary\/init.md"
-        var oid_likes = "likes_arch-install-guide\/glossary\/init.md"
+        var oid = "views_arch-install-guide\/booting_into_the_live_iso.md"
+        var oid_likes = "likes_arch-install-guide\/booting_into_the_live_iso.md"
       </script>
       
       
@@ -631,12 +688,15 @@
     
     
     
+      
+      
+    
     <div class="pt-8">
       <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/arch-install-guide/glossary/iso/">
+            <a class="flex group mr-3" href="/arch-install-guide/introduction/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -648,7 +708,7 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >iso file</span
+                  >Introduction</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
@@ -658,26 +718,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/arch-install-guide/glossary/gnu/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >gnu</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
