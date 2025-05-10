@@ -1,2 +1,6 @@
 # bahmoudd.github.io
-personal site 
+
+## Thank you to:
+
+* Steve Francia for creating Hugo
+* Nuno Coração for creating the Blowfish theme
