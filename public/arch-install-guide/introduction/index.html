@@ -105,7 +105,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "445"
+    "wordCount": "440"
   }]
   </script>
 
@@ -445,6 +445,16 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
 
   </div>
 </div>
@@ -508,6 +518,43 @@
 
   <header id="single_header" class="mt-5 max-w-prose">
     
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >The Cove of Bahmoudd</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/arch-install-guide/"
+      >Arch Install Guide</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/arch-install-guide/introduction/"
+      >Introduction</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+    
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
       Introduction
     </h1>
@@ -552,7 +599,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <span>445 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  <span>440 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -562,6 +609,22 @@
 
 
 
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
 
 
 
@@ -590,7 +653,121 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#important-terminology">Important terminology</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#guide-notation">Guide notation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#important-terminology">Important terminology</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#guide-notation">Guide notation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = decodeURIComponent(e.attr('id'));
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+          
+            $(e).removeClass('active');
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+        
+        onScroll();
+      });
+    }
+  })();
+
+
+</script>
+   </div>
+      </div>
+      
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -598,22 +775,10 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          
-
-<h1 class="relative group">What is Arch Linux? 
-    <div id="what-is-arch-linux" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#what-is-arch-linux" aria-label="Anchor">#</a>
-    </span>        
-    
-</h1>
-<p>Arch Linux is a rolling release Linux distribution, meaning that software updates are released as small updates released continuously rather than as big updates at regular intervals. This makes Arch Linux great for gaming, as new updates to GPU drivers and such are installable as soon as they are available. Also, there is a bit of a learning curve when it comes to Arch, especially when it comes to installation and installing apps through pacman. However, don&rsquo;t let this scare you, as this guide will cover those things in-depth.</p>
+          <p>Arch Linux is a rolling release Linux distribution, meaning that software updates are released as small updates released continuously rather than as big updates at regular intervals. This makes Arch Linux great for gaming, as new updates to GPU drivers and such are installable as soon as they are available. Also, there is a bit of a learning curve when it comes to Arch, especially when it comes to installation and installing apps through pacman. However, don&rsquo;t let this scare you, as this guide will cover those things in-depth.</p>
 
 
-<h1 class="relative group">Important terminology 
+<h2 class="relative group">Important terminology 
     <div id="important-terminology" class="anchor"></div>
     
     <span
@@ -622,11 +787,11 @@
             style="text-decoration-line: none !important;" href="#important-terminology" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p>Important terminology can be found on the glossary <a href="../glossary/"><em>here</em></a>. Make sure to have a good read of it so you have a good understanding of what I&rsquo;m trying to across in the guide.</p>
 
 
-<h1 class="relative group">Requirements 
+<h2 class="relative group">Requirements 
     <div id="requirements" class="anchor"></div>
     
     <span
@@ -635,8 +800,9 @@
             style="text-decoration-line: none !important;" href="#requirements" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
-<p>You must have basic technical understanding (i.e. know what &lsquo;hardware&rsquo; and &lsquo;software&rsquo; mean) and a x86-64 computer, which your computer likely is. This guide will not cover how to install unofficial ports of Arch Linux, such as Artix, Arch Linux ARM or Arch Linux 32. Click on one of the collapsible sections below (depending on your operating system) to check if you have an x86-64 CPU.</p>
+</h2>
+<p>You must have basic technical understanding (i.e. know what &lsquo;hardware&rsquo; and &lsquo;software&rsquo; mean) and a x86-64 computer, which your computer likely is.</p>
+<p>This guide will not cover how to install unofficial ports of Arch Linux, such as Artix, Arch Linux ARM or Arch Linux 32. Click on one of the collapsible sections below (depending on your operating system) to check if you have an x86-64 CPU.</p>
 <details>
     <summary><span style="font-size:1.25em;">Switching to Arch from Windows (or want a dual-boot setup)?</span></summary>
 <p>Hit the Windows Key and R on your keyboard at the same time, a dialog like the below should appear on the bottom left of your screen:
@@ -669,7 +835,7 @@ If it returns <code>x86_64</code>, you&rsquo;re all good to go.</p>
 </br>
 
 
-<h1 class="relative group">Guide notation 
+<h2 class="relative group">Guide notation 
     <div id="guide-notation" class="anchor"></div>
     
     <span
@@ -678,7 +844,7 @@ If it returns <code>x86_64</code>, you&rsquo;re all good to go.</p>
             style="text-decoration-line: none !important;" href="#guide-notation" aria-label="Anchor">#</a>
     </span>        
     
-</h1>
+</h2>
 <p><code>[...]</code> means that there&rsquo;s something between the two or more lines shown in the guide, which have been omitted to narrow the guide&rsquo;s focus.<br>
 Anything else between square brackets means that you should substitute it with what the text reads, for example, <code>[your drive]</code> means that you should substitute <code>[your drive]</code> for the drive that you want to install Arch Linux on to.<br>
 Any text after hashtags explain the command you are running and may be omitted when you type it in.</p>

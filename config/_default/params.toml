@@ -10,8 +10,9 @@ giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v8.next.forgejo.org"
 defaultBackgroundImage = "MontBlancMassif_1920x1080.jpg"
 smartTOC = true
-smartTOCHideUnfocusedChildren = true
-mainSections = ["posts"]
+smartTOCHideUnfocusedChildren = ""
+highlightCurrentMenuArea = true
+mainSections = [ "posts" ]
 
 [header]
 layout = "fixed-fill-blur"
@@ -45,7 +46,7 @@ showAuthor = false
 showHero = true
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
-showBreadcrumbs = false
+showBreadcrumbs = true
 showDraftLabel = true
 showEdit = false
 editAppendPath = true
@@ -55,7 +56,7 @@ showPagination = true
 invertPagination = false
 showReadingTime = true
 showTableOfContents = true
-showTaxonomies = false
+showTaxonomies = true
 showAuthorsBadges = false
 showWordCount = true
 showZenMode = false
@@ -69,7 +70,7 @@ showBreadcrumbs = false
 showSummary = false
 showViews = false
 showLikes = false
-showTableOfContents = false
+showTableOfContents = true
 showCards = true
 orderByWeight = true
 groupByYear = false
@@ -86,7 +87,7 @@ showHero = true
 showBreadcrumbs = false
 showViews = false
 showLikes = false
-showTableOfContents = false
+showTableOfContents = true
 cardView = false
 
 [term]

@@ -445,6 +445,16 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
 
   </div>
 </div>
@@ -508,6 +518,43 @@
 
   <header id="single_header" class="mt-5 max-w-prose">
     
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >The Cove of Bahmoudd</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/arch-install-guide/"
+      >Arch Install Guide</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/arch-install-guide/booting_into_the_live_iso/"
+      >Booting the Arch Live ISO</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+    
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
       Booting the Arch Live ISO
     </h1>
@@ -563,6 +610,22 @@
 
 
 
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
 
 
 
@@ -598,10 +661,10 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>Firstly, have a BitTorrent client installed on your computer. If you don&rsquo;t, install one from <a href="https://www.qbittorrent.org/download" target="_blank">here</a>.<br>
-Then, visit the official Arch Linux website to find the magnet link required to download the file. Once you find the magent link, click on it and the torrenting process should start shortly.<br>
-Once the torrenting process has completed, you should see a file named <code>archlinux-2025.05.01-x86_64.iso</code> in the downloads folder on your computer.<br>
-Take this file and use some program such as <a href="https://rufus.ie/en/" target="_blank">Rufus</a> (Windows only), <a href="https://etcher.balena.io/#download-etcher" target="_blank">BalenaEtcher</a> or <a href="https://www.ventoy.net/en/download.html" target="_blank">Ventoy</a> to write the ISO image to an appropriate medium, such as a CD, SD card or USB thumbdrive.</p>
+          <p>Firstly, have a BitTorrent client installed on your computer. If you don&rsquo;t, install one from <a href="https://www.qbittorrent.org/download" target="_blank">here</a>.</p>
+<p>Then, visit the official Arch Linux website to find the magnet link required to download the file. Once you find the magent link, click on it and the torrenting process should start shortly.</p>
+<p>Once the torrenting process has completed, you should see a file named <code>archlinux-2025.05.01-x86_64.iso</code> in the downloads folder on your computer.</p>
+<p>Take this file and use some program such as <a href="https://rufus.ie/en/" target="_blank">Rufus</a> (Windows only), <a href="https://etcher.balena.io/#download-etcher" target="_blank">BalenaEtcher</a> or <a href="https://www.ventoy.net/en/download.html" target="_blank">Ventoy</a> to write the ISO image to an appropriate medium, such as a CD, SD card or USB thumbdrive.</p>
 <p>Once you have written the ISO file to your computer, click on one of the collapsible sections below and follow the instructions given, depending on what browser you&rsquo;re starting off from:</p>
 <details>
     <summary><span style="font-size:1.25em;">Switching from Windows to Arch?</span></summary>
@@ -624,6 +687,7 @@ A window like the below should appear:
 <p>You should see some kind of screen with options to configure how your computer runs. What exactly you see depends on your hardware manufacturer, which you should search up, as having a photo for each firmware options screen would make this page unnecessarily long.</p>
 <p>Find some option with a name similar to <code>boot options</code>, and select the storage medium that contains the Arch Linux live environment.</p>
 </details>
+</br>
 <details>
     <summary><span style="font-size:1.25em;">Switching to Arch on a Mac?</span></summary>
 <p>Turn off your computer and hold the <code>Option</code> key as you turn on your Mac.<br>
@@ -636,6 +700,7 @@ You may see a screen like the below. If your computer boots normally, you held <
 </p>
 <p>Use the arrow keys on your keyboard to navigate to the option labelled <code>EFI Boot</code> and press <code>Enter</code> on your keyboard to select it.</p>
 </details>
+</br>
 <details>
      <summary><span style="font-size:1.25em;">Switching to Arch from another Linux distro?</span></summary>
 <p>Open your terminal application, this could be kitty, alacritty, konsole, yakuake .etc.<br>

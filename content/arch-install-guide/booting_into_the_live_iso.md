@@ -6,9 +6,12 @@ weight = 30
 showDate = false
 +++
 
-Firstly, have a BitTorrent client installed on your computer. If you don't, install one from [here](https://www.qbittorrent.org/download).\
-Then, visit the official Arch Linux website to find the magnet link required to download the file. Once you find the magent link, click on it and the torrenting process should start shortly.\
-Once the torrenting process has completed, you should see a file named `archlinux-2025.05.01-x86_64.iso` in the downloads folder on your computer.\
+Firstly, have a BitTorrent client installed on your computer. If you don't, install one from [here](https://www.qbittorrent.org/download).
+
+Then, visit the official Arch Linux website to find the magnet link required to download the file. Once you find the magent link, click on it and the torrenting process should start shortly.
+
+Once the torrenting process has completed, you should see a file named `archlinux-2025.05.01-x86_64.iso` in the downloads folder on your computer.
+
 Take this file and use some program such as [Rufus](https://rufus.ie/en/) (Windows only), [BalenaEtcher](https://etcher.balena.io/#download-etcher) or [Ventoy](https://www.ventoy.net/en/download.html) to write the ISO image to an appropriate medium, such as a CD, SD card or USB thumbdrive.
 
 Once you have written the ISO file to your computer, click on one of the collapsible sections below and follow the instructions given, depending on what browser you're starting off from:

@@ -6,17 +6,17 @@ weight = 20
 showDate = false
 +++
 
-# What is Arch Linux?
-
 Arch Linux is a rolling release Linux distribution, meaning that software updates are released as small updates released continuously rather than as big updates at regular intervals. This makes Arch Linux great for gaming, as new updates to GPU drivers and such are installable as soon as they are available. Also, there is a bit of a learning curve when it comes to Arch, especially when it comes to installation and installing apps through pacman. However, don't let this scare you, as this guide will cover those things in-depth.
 
-# Important terminology
+## Important terminology
 
 Important terminology can be found on the glossary [_here_](../glossary/). Make sure to have a good read of it so you have a good understanding of what I'm trying to across in the guide.
 
-# Requirements
+## Requirements
 
-You must have basic technical understanding (i.e. know what 'hardware' and 'software' mean) and a x86-64 computer, which your computer likely is. This guide will not cover how to install unofficial ports of Arch Linux, such as Artix, Arch Linux ARM or Arch Linux 32. Click on one of the collapsible sections below (depending on your operating system) to check if you have an x86-64 CPU.
+You must have basic technical understanding (i.e. know what 'hardware' and 'software' mean) and a x86-64 computer, which your computer likely is. 
+
+This guide will not cover how to install unofficial ports of Arch Linux, such as Artix, Arch Linux ARM or Arch Linux 32. Click on one of the collapsible sections below (depending on your operating system) to check if you have an x86-64 CPU.
 
 <details>
     <summary><span style="font-size:1.25em;">Switching to Arch from Windows (or want a dual-boot setup)?</span></summary>
@@ -47,7 +47,7 @@ If it returns `x86_64`, you're all good to go.
  
 </br>
 
-# Guide notation
+## Guide notation
 
 `[...]` means that there's something between the two or more lines shown in the guide, which have been omitted to narrow the guide's focus.\
 Anything else between square brackets means that you should substitute it with what the text reads, for example, `[your drive]` means that you should substitute `[your drive]` for the drive that you want to install Arch Linux on to.\
