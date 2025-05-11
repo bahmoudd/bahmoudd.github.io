@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "blowfish-node": "^1.1.4"
+  }
+}
