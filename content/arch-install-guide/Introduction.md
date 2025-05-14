@@ -6,17 +6,28 @@ weight = 20
 showDate = false
 +++
 
-Arch Linux is a rolling release Linux distribution, meaning that software updates are released as small updates released continuously rather than as big updates at regular intervals. This makes Arch Linux great for gaming, as new updates to GPU drivers and such are installable as soon as they are available. Also, there is a bit of a learning curve when it comes to Arch, especially when it comes to installation and installing apps through pacman. However, don't let this scare you, as this guide will cover those things in-depth.
+Arch Linux is a rolling release Linux distribution, meaning that software updates are released as small continuous updates rather than big updates delivered at regular intervals, like Windows. 
+
+This makes Arch Linux great for gaming, as new updates to GPU drivers and such are installable as soon as they are available. 
+
+However, there is a bit of a learning curve when it comes to Arch, especially when it comes to installing it and any apps through pacman. However, don't let this scare you, as this guide will cover those things in-depth.
 
 ## Important terminology
 
 Important terminology can be found on the glossary [_here_](../glossary/). Make sure to have a good read of it so you have a good understanding of what I'm trying to across in the guide.
 
+## What this guide will not cover (as of now)
+
+All the points below are unplanned as of now - but may come sometime in the far future!
+
+- How to install any unofficial ports of Arch Linux (e.g. Artix, Arch Linux ARM, Arch Linux 32 .etc).
+- How to fully configure desktop environments.
+- How to configure shells
+- How to configure greeters
+
 ## Requirements
 
-You must have basic technical understanding (i.e. know what 'hardware' and 'software' mean) and a x86-64 computer, which your computer likely is. 
-
-This guide will not cover how to install unofficial ports of Arch Linux, such as Artix, Arch Linux ARM or Arch Linux 32. Click on one of the collapsible sections below (depending on your operating system) to check if you have an x86-64 CPU.
+You must have basic technical understanding (i.e. know what 'hardware' and 'software' mean) and a x86-64 computer, which your computer likely is, and you must have an AMD64 computer (or 'x86_64') which your computer likely is.
 
 <details>
     <summary><span style="font-size:1.25em;">Switching to Arch from Windows (or want a dual-boot setup)?</span></summary>
