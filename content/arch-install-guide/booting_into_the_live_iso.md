@@ -56,6 +56,6 @@ In your shell, type the below command:
 
 Once you have booted from your storage medium, select `Arch Linux install medium (x86_64, UEFI)`, or `Arch Linux install medium (x86_64, UEFI) with speech` if you are visually impaired.
 
-You should then see the following screen:
+You should then see something resembling the following screen:
 
 ![](/images/arch-install-guide/live_environment.png)
