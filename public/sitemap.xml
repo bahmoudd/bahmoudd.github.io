@@ -23,6 +23,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>//localhost:1313/arch-install-guide/connect_to_the_internet/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>//localhost:1313/posts/</loc>
     <lastmod>2025-04-27T16:56:37+01:00</lastmod>
     <changefreq>daily</changefreq>

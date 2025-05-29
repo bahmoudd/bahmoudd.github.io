@@ -6,6 +6,8 @@ weight = 30
 showDate = false
 +++
 
+### Reboot into firmware interface
+
 Firstly, have a BitTorrent client installed on your computer. If you don't, install one from [here](https://www.qbittorrent.org/download).
 
 Then, visit the official Arch Linux website to find the magnet link required to download the file. Once you find the magent link, click on it and the torrenting process should start shortly.
@@ -26,7 +28,7 @@ A window like the below should appear:
 ![](/images/arch-install-guide/cmd.png)
 
 In that, enter the below command:
-{{< highlight cmd >}} shutdown /r /fw /t 1 {{< /highlight >}}
+{{< highlight cmd >}} $ shutdown /r /fw /t 1 {{< /highlight >}}
 
 You should see some kind of screen with options to configure how your computer runs. What exactly you see depends on your hardware manufacturer, which you should search up, as having a photo for each firmware options screen would make this page unnecessarily long.
 
@@ -50,7 +52,7 @@ Use the arrow keys on your keyboard to navigate to the option labelled `EFI Boot
 
 Open your terminal application, this could be kitty, alacritty, konsole, yakuake .etc.\
 In your shell, type the below command:
-{{< highlight sh >}} $ sudo systemctl reboot --firmware-setup {{< /highlight >}}
+{{< highlight cmd >}} # systemctl reboot --firmware-setup {{< /highlight >}}
 
 </details>
 
@@ -59,3 +61,30 @@ Once you have booted from your storage medium, select `Arch Linux install medium
 You should then see something resembling the following screen:
 
 ![](/images/arch-install-guide/live_environment.png)
+
+### Change font (on HiDPI monitors)
+
+If you have a HiDPI monitor, it may be in your best interest to change the terminal font to a larger one since the text may be small and difficult to read.\
+Load a larger terminal font as shown below:
+```
+setfont ter-132b
+```
+
+### Load keymaps
+
+A keymap is how your keyboard is laid out. It defines the keys you use and where they are placed on the keyboard. To find a list of all the keymaps available for your language/region, run the below command:
+
+```
+localectl list-keymaps
+```
+
+To search for a keymap, use the following command, replacing `{search_term}` with the code for your language, country, or layout:
+```
+localectl list-keymaps | grep -i {search_term}
+```
+
+Once you've found a keymap that matches your physical keyboard's layout, run the below command.
+
+```
+loadkeys [keymap]
+```

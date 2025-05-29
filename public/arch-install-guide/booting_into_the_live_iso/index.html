@@ -105,7 +105,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "394"
+    "wordCount": "534"
   }]
   </script>
 
@@ -606,7 +606,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <span>394 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <span>534 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -660,7 +660,129 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#reboot-into-firmware-interface">Reboot into firmware interface</a></li>
+            <li><a href="#change-font-on-hidpi-monitors">Change font (on HiDPI monitors)</a></li>
+            <li><a href="#load-keymaps">Load keymaps</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#reboot-into-firmware-interface">Reboot into firmware interface</a></li>
+            <li><a href="#change-font-on-hidpi-monitors">Change font (on HiDPI monitors)</a></li>
+            <li><a href="#load-keymaps">Load keymaps</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = decodeURIComponent(e.attr('id'));
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+          
+            $(e).removeClass('active');
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+        
+        onScroll();
+      });
+    }
+  })();
+
+
+</script>
+   </div>
+      </div>
+      
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -668,7 +790,19 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>Firstly, have a BitTorrent client installed on your computer. If you don&rsquo;t, install one from <a href="https://www.qbittorrent.org/download" target="_blank">here</a>.</p>
+          
+
+<h3 class="relative group">Reboot into firmware interface 
+    <div id="reboot-into-firmware-interface" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reboot-into-firmware-interface" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Firstly, have a BitTorrent client installed on your computer. If you don&rsquo;t, install one from <a href="https://www.qbittorrent.org/download" target="_blank">here</a>.</p>
 <p>Then, visit the official Arch Linux website to find the magnet link required to download the file. Once you find the magent link, click on it and the torrenting process should start shortly.</p>
 <p>Once the torrenting process has completed, you should see a file named <code>archlinux-2025.05.01-x86_64.iso</code> in the downloads folder on your computer.</p>
 <p>Take this file and use some program such as <a href="https://rufus.ie/en/" target="_blank">Rufus</a> (Windows only), <a href="https://etcher.balena.io/#download-etcher" target="_blank">BalenaEtcher</a> or <a href="https://www.ventoy.net/en/download.html" target="_blank">Ventoy</a> to write the ISO image to an appropriate medium, such as a CD, SD card or USB thumbdrive.</p>
@@ -690,7 +824,7 @@ A window like the below should appear:
     </figure>
 </p>
 <p>In that, enter the below command:
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"> shutdown /r /fw /t 1 </span></span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"> $ shutdown /r /fw /t 1 </span></span></code></pre></div></p>
 <p>You should see some kind of screen with options to configure how your computer runs. What exactly you see depends on your hardware manufacturer, which you should search up, as having a photo for each firmware options screen would make this page unnecessarily long.</p>
 <p>Find some option with a name similar to <code>boot options</code>, and select the storage medium that contains the Arch Linux live environment.</p>
 </details>
@@ -710,7 +844,7 @@ You may see a screen like the below. If your computer boots normally, you held <
      <summary><span style="font-size:1.25em;">Switching to Arch from another Linux distro?</span></summary>
 <p>Open your terminal application, this could be kitty, alacritty, konsole, yakuake .etc.<br>
 In your shell, type the below command:
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"> $ sudo systemctl reboot --firmware-setup </span></span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"> # systemctl reboot --firmware-setup </span></span></code></pre></div></p>
 </details>
 <p>Once you have booted from your storage medium, select <code>Arch Linux install medium (x86_64, UEFI)</code>, or <code>Arch Linux install medium (x86_64, UEFI) with speech</code> if you are visually impaired.</p>
 <p>You should then see something resembling the following screen:</p>
@@ -721,6 +855,39 @@ In your shell, type the below command:
     </figure>
 </p>
 
+
+<h3 class="relative group">Change font (on HiDPI monitors) 
+    <div id="change-font-on-hidpi-monitors" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#change-font-on-hidpi-monitors" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>If you have a HiDPI monitor, it may be in your best interest to change the terminal font to a larger one since the text may be small and difficult to read.<br>
+Load a larger terminal font as shown below:</p>
+<pre tabindex="0"><code>setfont ter-132b
+</code></pre>
+
+<h3 class="relative group">Load keymaps 
+    <div id="load-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#load-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>A keymap is how your keyboard is laid out. It defines the keys you use and where they are placed on the keyboard. To find a list of all the keymaps available for your language/region, run the below command:</p>
+<pre tabindex="0"><code>localectl list-keymaps
+</code></pre><p>To search for a keymap, use the following command, replacing <code>{search_term}</code> with the code for your language, country, or layout:</p>
+<pre tabindex="0"><code>localectl list-keymaps | grep -i {search_term}
+</code></pre><p>Once you&rsquo;ve found a keymap that matches your physical keyboard&rsquo;s layout, run the below command.</p>
+<pre tabindex="0"><code>loadkeys [keymap]
+</code></pre>
           
           
           
@@ -788,6 +955,26 @@ In your shell, type the below command:
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/arch-install-guide/connect_to_the_internet/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Connect to the internet</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
