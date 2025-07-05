@@ -13,6 +13,7 @@ smartTOC = true
 smartTOCHideUnfocusedChildren = ""
 highlightCurrentMenuArea = true
 mainSections = [ "posts" ]
+googlefonts = "//fonts.googleapis.com/css?family=Lexend"
 
 [header]
 layout = "fixed-fill-blur"

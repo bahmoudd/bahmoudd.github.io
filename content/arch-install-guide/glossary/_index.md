@@ -6,6 +6,9 @@ showDate = false
 showWordCount = false
 showReadingTime = false
 weight = 10
+showComments = false
+showViews = false
+showLikes = false
 +++
 
 {{% glossary %}}
