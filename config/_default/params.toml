@@ -38,8 +38,9 @@ layoutBackgroundBlur = true
 [article]
 heroStyle = "background"
 showDate = true
-showViews = false
-showLikes = false
+showViews = true
+showLikes = true
+showComments = true
 showDateOnlyInArticle = false
 showDateUpdated = false
 showAuthor = false
@@ -101,6 +102,13 @@ cardView = ""
 cardViewScreenWidth = false
 
 [firebase]
+apiKey = "AIzaSyAQNvE3yWtMAY2j86hhqqnNpkZU4MUFAkw"
+authDomain = "bahmoudd.firebaseapp.com"
+projectId = "bahmoudd"
+storageBucket = "bahmoudd.firebasestorage.app"
+messagingSenderId = "523693964707"
+appId = "1:523693964707:web:fed2abc765499dd76dae16"
+measurementId = "G-5MQ86THKRR"
 
 [fathomAnalytics]
 

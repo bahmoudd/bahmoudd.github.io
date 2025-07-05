@@ -154,6 +154,29 @@
   <meta name="theme-color"/>
   
   
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAQNvE3yWtMAY2j86hhqqnNpkZU4MUFAkw",
+      authDomain: "AIzaSyAQNvE3yWtMAY2j86hhqqnNpkZU4MUFAkw",
+      projectId: "bahmoudd",
+      storageBucket: "bahmoudd.firebasestorage.app",
+      messagingSenderId: "523693964707",
+      appId: "1:523693964707:web:fed2abc765499dd76dae16",
+      measurementId: "G-5MQ86THKRR"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+
+  </script>
+  
+  
 
   
   
@@ -589,9 +612,15 @@
   
 
   
-
+    
   
 
+  
+    
+  
+
+  
+    
   
 
   
@@ -601,6 +630,91 @@
 
   <div class="flex flex-row flex-wrap items-center">
     
+    
+      <span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_arch-install-guide/glossary/_index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span>
+<span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="likes_arch-install-guide/glossary/_index.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="likes"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+  </span>
+
+</span>
+</span>
+<span class="px-2 text-primary-500">&middot;</span><span>
+  <button
+    id="button_likes"
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+    onclick="process_article()">
+    <span id="button_likes_heart" class="inline-block align-text-bottom hidden"
+      >
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+  </span>
+
+
+    </span>
+    <span id="button_likes_emtpty_heart" class="inline-block align-text-bottom"
+      >
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/></svg>
+  </span>
+
+</span
+    >
+    <span id="button_likes_text">&nbsp;Like</span>
+  </button>
+</span>
     
 
     
@@ -666,59 +780,41 @@
 
         <div class="article-content max-w-prose mb-20">
           <p><a
-  href="#compilation">C</a>
- 
+  href="#compilation">C</a> 
 <a
-  href="#distro">D</a>
- 
+  href="#distro">D</a> 
 <a
-  href="#gnu">G</a>
- 
+  href="#gnu">G</a> 
 <a
-  href="#init">I</a>
- 
+  href="#init">I</a> 
 <a
-  href="#kernel">K</a>
- 
+  href="#kernel">K</a> 
 <a
-  href="#linux">L</a>
- 
+  href="#linux">L</a> 
 <a
-  href="#machine-code">M</a>
- 
+  href="#machine-code">M</a> 
 <a
-  href="#package-manager">P</a>
- 
+  href="#package-manager">P</a> 
 <a
-  href="#root-directory">R</a>
- 
+  href="#root-directory">R</a> 
 <a
-  href="#shell">S</a>
- 
+  href="#shell">S</a> 
 <a
-  href="#unix-like">U</a>
- </p>
+  href="#unix-like">U</a> </p>
 <dl>
 <dt>compilation</dt>
 <dd><em>Compilation</em> is the act of turning <a
-  href="/arch-install-guide/glossary/source-code">source code</a>
- into <a
-  href="/arch-install-guide/glossary/machine-code">machine code</a>
-</dd>
+  href="/arch-install-guide/glossary/source-code">source code</a> into <a
+  href="/arch-install-guide/glossary/machine-code">machine code</a></dd>
 <dt>distro</dt>
 <dd><em>A &ldquo;distro&rdquo;</em> (or <a
-  href="/arch-install-guide/glossary/linux"><em>Linux</em></a>
- distribution) is a bundle of software including a fully-configured copy of the Linux kernel, and other software which allow applications to run. For example, Arch Linux is a distro that comes bundled with the <a
-  href="/arch-install-guide/glossary/gnu"><em>GNU software collection</em></a>
-, <a
-  href="./init"><em>systemd</em></a>
-, and <a
-  href="/arch_install-guide/glossary/package-manager"><em>pacman</em></a>
-.</dd>
+  href="/arch-install-guide/glossary/linux"><em>Linux</em></a> distribution) is a bundle of software including a fully-configured copy of the Linux kernel, and other software which allow applications to run. For example, Arch Linux is a distro that comes bundled with the <a
+  href="/arch-install-guide/glossary/gnu"><em>GNU software collection</em></a>, <a
+  href="./init"><em>systemd</em></a>, and <a
+  href="/arch_install-guide/glossary/package-manager"><em>pacman</em></a>.</dd>
 <dt>gnu</dt>
 <dd><em>GNU</em>, or more specifically, GNU coreutils, is a collection of software that allows you to fully interact with your computer. Linux was created after GNU as it has no <a
-  href="/arch-install-guide/glossary/kernel"><em>kernel</em></a>
-, which is essential for a computer to run.</dd>
+  href="/arch-install-guide/glossary/kernel"><em>kernel</em></a>, which is essential for a computer to run.</dd>
 <dt>init</dt>
 <dd><em>An init process</em> is the first process your computer loads when powering on. It is the parent of all processes - it sets them up and manages them. It does things like running background processes, configures hardware et cetera, and makes sure that the computer has come to the state where it&rsquo;s ready for you to use. It stays running the entire time that your computer is on, managing processes as I have stated before and handling errors if they crash. Arch Linux uses systemd, which is an entire suite of software, not just an init system, doing things such as logging and networking. It&rsquo;s easy to manage as everything is in one place, and provides fast boot-up times.</dd>
 <dt>iso file</dt>
@@ -727,43 +823,33 @@
 <dd><em>A kernel</em> is the middleman between programs and hardware. An example of this is the NT kernel, which is what Windows uses.</dd>
 <dt>linux</dt>
 <dd>Linux is a <a
-  href="/arch-install-guide/glossary/unix-like"><em>Unix-like</em></a>
- <a
-  href="/arch-install-guide/glossary/kernel"><em>kernel</em></a>
- released in 1991 by Linus Torvalds.</dd>
+  href="/arch-install-guide/glossary/unix-like"><em>Unix-like</em></a> <a
+  href="/arch-install-guide/glossary/kernel"><em>kernel</em></a> released in 1991 by Linus Torvalds.</dd>
 <dt>machine code</dt>
 <dd><em>Machine code</em> (also known as a &lsquo;binary executable&rsquo;, or just &lsquo;binary&rsquo;) is what computers can actually understand and run (or &ldquo;execute&rdquo;)</dd>
 <dt>mirror</dt>
 <dd><em>A mirror</em> is essentially a duplicate copy of some data on a master server. Mirrors are kept for two reasons, to have a copy in case something goes wrong on the master server (or, &ldquo;redundancy&rdquo;) and speed. Mirrors are set up on <a
-  href="/arch-install-guide/glossary/kernel"><em>Linux</em></a>
- <a
-  href="/arch-install-guide/glossary/distro"><em>distros</em></a>
- to make download speeds faster, because, put simply, the closer you are to a server, the less time it takes to upload and download data. This is why the mirrorlist exists, as really slow download speeds can time out, meaning that your computer will give up after some period of waiting.</dd>
+  href="/arch-install-guide/glossary/kernel"><em>Linux</em></a> <a
+  href="/arch-install-guide/glossary/distro"><em>distros</em></a> to make download speeds faster, because, put simply, the closer you are to a server, the less time it takes to upload and download data. This is why the mirrorlist exists, as really slow download speeds can time out, meaning that your computer will give up after some period of waiting.</dd>
 <dt>package manager</dt>
 <dd><em>A package manager</em> is a collection of software that automates the process of installing, updating and deleting software on a computer in a consistent manner. Arch Linux uses <em>pacman</em> (not to be confused with the &rsquo;80s arcade game) which is a rolling release package manager, meaning that software is not released as regular, big updates but rather small and continuous updates delivered frequently.</dd>
 <dt>root directory</dt>
 <dd>Not to be confused with the <a
-  href="/arch-install-guide/glossary/root-user"><em>root user</em></a>
-. <em>The root directory</em> is the furthest back in a file structure you can go. It is where all the branches created from files and folders on your computer originate from. It holds important folders such as <code>/boot/</code> and <code>/home/</code>.</dd>
+  href="/arch-install-guide/glossary/root-user"><em>root user</em></a>. <em>The root directory</em> is the furthest back in a file structure you can go. It is where all the branches created from files and folders on your computer originate from. It holds important folders such as <code>/boot/</code> and <code>/home/</code>.</dd>
 <dt>root user</dt>
 <dd>Not to be confused with the <a
-  href="/arch-install-guide/glossary/root-directory"><em>root directory</em></a>
-. <em>The root user</em> is the most powerful user on your computer capable of performing any task with zero restrictions. Regular users can&rsquo;t and shouldn&rsquo;t be able to run everything as root, because it&rsquo;s too easy to, for example, delete something important that is essential for your OS to function. This is why it&rsquo;s good practice to make a user separate from the root user, and add a password to it so you think more about what you type in to your <a
-  href="/arch-install-guide/glossary/shell"><em>shell</em></a>
-.</dd>
+  href="/arch-install-guide/glossary/root-directory"><em>root directory</em></a>. <em>The root user</em> is the most powerful user on your computer capable of performing any task with zero restrictions. Regular users can&rsquo;t and shouldn&rsquo;t be able to run everything as root, because it&rsquo;s too easy to, for example, delete something important that is essential for your OS to function. This is why it&rsquo;s good practice to make a user separate from the root user, and add a password to it so you think more about what you type in to your <a
+  href="/arch-install-guide/glossary/shell"><em>shell</em></a>.</dd>
 <dt>shell</dt>
 <dd><em>The shell</em> is the text interface that allows you to interact with your computer that surrounds the <a
-  href="/arch-install-guide/glossary/kernel"><em>kernel</em></a>
- to hide its intricate details.</dd>
+  href="/arch-install-guide/glossary/kernel"><em>kernel</em></a> to hide its intricate details.</dd>
 <dt>signature</dt>
 <dd><em>A signature</em> (or a &lsquo;hash signature&rsquo;, or just &lsquo;hash&rsquo;) is a random string of letters assigned to a file that serves as its unique digital fingerprint. A good hashing algorithm (such as SHA-256) produces a unique string of letters for each input it is given, if they are different. This means that it is impossible for a file to be tampered with without producing an extremely different hash. This is why it is important to check the signature of each file you download off the internet with the one given by the software&rsquo;s publisher.</dd>
 <dt>source code</dt>
 <dd><em>Source code</em> is what computer programmers write to make computers do things. It needs to be converted into <a
-  href="/arch-install-guide/glossary/machine-code"><em>machine code</em></a>
- before it can be run (or &ldquo;executed&rdquo;).
+  href="/arch-install-guide/glossary/machine-code"><em>machine code</em></a> before it can be run (or &ldquo;executed&rdquo;).
 Programs can either be distributed as source code, meaning that the user has to <a
-  href="/arch-install-guide/glossary/compilation"><em>compile</em></a>
- it themselves, or they can be distributed as machine code where no compilation is needed. Both approaches have their upsides and downsides.</dd>
+  href="/arch-install-guide/glossary/compilation"><em>compile</em></a> it themselves, or they can be distributed as machine code where no compilation is needed. Both approaches have their upsides and downsides.</dd>
 <dt>unix-like</dt>
 <dd><em>Unix</em> is an operating system family that started off at AT&amp;T. It became very influential within academic circles, leading to large-scale adoption by start-up companies leading Unix to fragment into much smaller, similar but mostly mutually incompatible OSes. Among these are MacOS, the BSD operating systems (FreeBSD, OpenBSD, NetBSD .etc). An operating system is said to be Unix-like if it behaves like a Unix operating system. For this reason, Linux is generally considered to be Unix-like.</dd>
 </dl>
@@ -806,6 +892,34 @@ Programs can either be distributed as source code, meaning that the user has to 
   
 
 
+      
+        
+          <div class="pt-3">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+            <div class="pt-3">
+              <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bahmoudd" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+          </div>
+        
       
     </footer>
   </article>

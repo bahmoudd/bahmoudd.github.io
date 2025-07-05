@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "blowfish-node": "^1.1.4"
+    "blowfish-node": "^1.1.4",
+    "firebase": "^11.10.0"
   }
 }
