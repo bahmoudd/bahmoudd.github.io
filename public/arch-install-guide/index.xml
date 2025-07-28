@@ -39,5 +39,15 @@
       
     </item>
     
+    <item>
+      <title>Partitioning the drive</title>
+      <link>//localhost:1313/arch-install-guide/drive_partitioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/drive_partitioning/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

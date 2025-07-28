@@ -18,12 +18,13 @@ Important terminology can be found on the glossary [_here_](../glossary/). Make 
 
 ## What this guide will not cover (as of now)
 
-All the points below are unplanned as of now - but may come sometime in the far future!
+All the points below are unplanned as of now - but may come sometime in the future!
 
-- How to install any unofficial ports of Arch Linux (e.g. Artix, Arch Linux ARM, Arch Linux 32 .etc).
-- How to fully configure desktop environments.
-- How to configure [_shells_](/arch-install-guide/glossary/shell)
-- How to configure greeters
+* How to install any unofficial ports of Arch Linux (e.g. Artix, Arch Linux ARM, Arch Linux 32 .etc).
+* How to dual-boot any operating system with Linux
+* How to configure desktop environments.
+* How to configure [_shells_](/arch-install-guide/glossary/shell)
+* How to configure greeters
 
 ## Requirements
 
@@ -40,7 +41,9 @@ A window like the below should appear:
 ![](/images/arch-install-guide/cmd.png)
 
 In that, enter the below command:
-{{< highlight cmd >}} echo %PROCESSOR_ARCHITECTURE% {{< /highlight >}}
+```
+echo %PROCESSOR_ARCHITECTURE% 
+```
 If it returns `AMD64`, you're all good to go.
 
 </details>
@@ -51,7 +54,9 @@ If it returns `AMD64`, you're all good to go.
 On MacOS, open the "Terminal" application from Finder.\
 On any Linux distribution, open your terminal application. This could be kitty, alacritty, konsole, yakuake .etc.\
 In the shell, enter the below command:
-{{< highlight bash >}} uname -m {{< /highlight >}}
+```
+uname -m 
+```
 If it returns `x86_64`, you're all good to go.
 
 </details>
@@ -60,17 +65,26 @@ If it returns `x86_64`, you're all good to go.
 
 ## Guide notation
 
-`{...}` means that there's something between the two or more lines shown in the guide, which have been omitted to narrow the guide's focus.\
-Anything else between curly brackets means that you should substitute it with what the text reads, for example, `{your drive}` means that you should substitute `{your drive}` for the drive that you want to install Arch Linux on to.\
+`<...>` means that there's something between the text shown in the guide, which have been omitted to narrow the guide's focus, or because the program lists something specific to your computer .etc
+
+Anything else between angled brackets means that you should substitute it with what the text reads, for example, `<your drive>` means that you should substitute `<your drive>` for the drive that you want to install Arch Linux on to.
+
 Any text after hashtags explain the command you are running and may be omitted when you type it in.
 
 This means that if you see the below in the guide:
-{{< highlight sh >}} sfdisk --delete {your drive} # make a backup of your drive before running this command {{< /highlight >}}
+```
+sfdisk --delete <your drive> # make a backup of your drive before running this command 
+```
+
 Assuming your drive is /dev/sda, you would type the below command into the shell:
-{{< highlight sh >}} sfdisk --delete /dev/sda {{< /highlight >}}
+```
+sfdisk --delete /dev/sda 
+```
 
 ### Prompts
 
-`#` before a command means that you need the command as [_root_](/arch-install-guide/glossary/root-user) in order to execute it. The safest (and simplest) was to do so is to replace the hashtag with `sudo`.\
-`$` before a command means that the command can just be run normally. Just omit the dollar sign when typing in the command.\
+`#` before a command means that you need the command as [_root_](/arch-install-guide/glossary/root-user) in order to execute it. The safest (and simplest) was to do so is to replace the hashtag with `sudo`. If you are in the Arch Live ISO, you can simply omit the hashtag when typing in the command.
+
+`$` before a command means that the command can just be run normally. Just omit the dollar sign when typing in the command.
+
 Any other prompt before a command means that you should not be typing in the command into your shell, but rather, you should be typing it into some other program, such as iwctl, which has the prompt: `[iwd]#`

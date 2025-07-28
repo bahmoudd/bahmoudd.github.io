@@ -28,6 +28,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>//localhost:1313/arch-install-guide/drive_partitioning/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>//localhost:1313/</loc>
     <lastmod>2025-06-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -48,6 +53,21 @@
   <url>
     <loc>//localhost:1313/posts/initial_post/</loc>
     <lastmod>2025-04-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/filesystem/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/format/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/partition/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -123,6 +143,11 @@
   </url>
   <url>
     <loc>//localhost:1313/arch-install-guide/glossary/source-code/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/swap/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

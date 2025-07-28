@@ -2,7 +2,7 @@
 title = 'Connect to the internet'
 showPagination = true
 invertPagination = true
-weight = 30
+weight = 40
 showDate = false
 +++
 
@@ -21,39 +21,64 @@ If you normally connect via an ethernet cable, you may skip this section after p
      <summary><span style="font-size:1.25em;">Connecting to a fixed broadband network</span></summary>
 
 Firstly, enter the below command:
-{{< highlight cmd >}} iwctl {{< /highlight >}}
+```
+# iwctl 
+```
 
 This will change your [_shell_](/arch-install/guide/glossary/shell) prompt from:
-{{< highlight cmd >}} root@archiso ~ # {{< /highlight >}}
+```
+root@archiso ~ # 
+```
 
 to:
 
-{{< highlight cmd >}} [iwd]# {{< /highlight >}}
+```
+[iwd]#
+```
 
 In this new prompt, the following command will show a list of your network devices (interface that provides some network functionality, e.g. connecting to the internet using Wi-Fi) and their adapters (the actual network hardware):
-{{< highlight cmd >}} [iwd]# device list {{< /highlight >}}
+```
+[iwd]# device list
+```
 
 Find your network device (and its adapter, if applicable) from the list given, and turn them on using the commands below:
-{{< highlight cmd >}} [iwd]# device {network device} set-property Powered on {{< /highlight >}}
+```
+[iwd]# device <network device> set-property Powered on
+```
 
-{{< highlight cmd >}} [iwd]# device {network adapter} set-property Powered on {{< /highlight >}}
+```
+[iwd]# device <network adapter> set-property Powered on
+```
 
 Once you have done that, scan for networks using the command below:
-{{< highlight cmd >}} [iwd]# station {network device} scan {{< /highlight >}}
+```
+[iwd]# station <network device> scan
+```
 
 Take note that the above command will not output anything. To actually output a list of all the networks around your computer, run the following command:
-{{< highlight cmd >}} [iwd]# station {network device} get-networks {{< /highlight >}}
+```
+[iwd]# station <network device> get-networks
+```
 
 Then, to connect to the network of your choice, use the below command:
-{{< highlight cmd >}} [iwd]# station {network device} connect {network SSID} {{< /highlight >}}
+```
+[iwd]# station <network device> connect <network SSID>
+```
 
 If the network is hidden (i.e. it doesn't show up in the list of networks, but you want to connect to it anyway), use the below command:
-{{< highlight cmd >}} [iwd]# station {network device} connect-hidden {network SSID} {{< /highlight>}}
+```
+[iwd]# station <network device> connect-hidden <network SSID>
+```
 
 Enter your network password when prompted and hit enter.
 
 Once finished, simply enter:
-{{< highlight cmd >}} [iwd]# exit {{< /highlight >}}
+```
+[iwd]# exit
+```
+
+---
+
 </details>
 
 
@@ -62,23 +87,35 @@ Once finished, simply enter:
 
 Enable the `modemmanager` service, as shown below:
 
-{{< highlight cmd >}} # systemctl enable modemmanager.service --now {{< /highlight >}}
+```
+# systemctl enable modemmanager.service --now
+```
 
 `modemmanager` is the software that allows you to connect to your mobile broadband modem.
 
 To get a list of all the mobile broadband modems around you, run the below command:
-{{< highlight cmd >}} # mmcli -L {{< /highlight >}}
+```
+# mmcli -L
+```
 
 Look for ```/org/freedesktop/ModemManager1/Modem/[modem index]``` (where your modem index is the unique number representing your modem)
 
 Connect to your modem by running:
-{{< highlight cmd >}} # mmcli -m {modem index} --simple-connect="apn={your modem's APN}" {{< /highlight >}}
+```
+# mmcli -m <modem index> --simple-connect="apn=<your modem's APN>"
+```
 
 Your APN is your modem's Access Point Name and will have been given to you by your ISP.\
 If your modem requires a username and password, you can specify them like so:\
-{{< highlight cmd >}} mmcli -m {modem index} --simple-connect="apn={your modem's APN},user={username},password={password}" {{< /highlight >}}
+```
+mmcli -m <modem index> --simple-connect="apn=<your modem's APN>,user=<username>,password=<password>"
+```
+
+---
 
 </details>
 
 Test that your internet connection actually works, as shown below:
-{{< highlight cmd >}} ping -c 4 archlinux.org {{< /highlight >}}
+```
+ping -c 4 archlinux.org
+```

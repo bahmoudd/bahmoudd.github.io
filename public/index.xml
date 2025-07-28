@@ -40,6 +40,16 @@
     </item>
     
     <item>
+      <title>Partitioning the drive</title>
+      <link>//localhost:1313/arch-install-guide/drive_partitioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/drive_partitioning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Xlibre is the FOSS world in action</title>
       <link>//localhost:1313/posts/xlibre/</link>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
@@ -56,6 +66,36 @@
       
       <guid>//localhost:1313/posts/initial_post/</guid>
       <description>A list of things that will go over what I may post in my site, and what people can expect to see here</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/arch-install-guide/glossary/filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/filesystem/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/arch-install-guide/glossary/format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/format/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/arch-install-guide/glossary/partition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/partition/</guid>
+      <description></description>
       
     </item>
     
@@ -205,6 +245,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/source-code/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>swap</title>
+      <link>//localhost:1313/arch-install-guide/glossary/swap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/swap/</guid>
       <description></description>
       
     </item>
