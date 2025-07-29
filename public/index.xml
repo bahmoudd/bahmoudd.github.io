@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/introduction/</guid>
-      <description></description>
+      <description>Outlines what the guide will and will not go through, requirements for installing Arch and guide notation</description>
       
     </item>
     
@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/booting_into_the_live_iso/</guid>
-      <description></description>
+      <description>Informs you on how to boot into the Arch Live ISO and basic things like setting up keymaps and font sizes in the Live ISO</description>
       
     </item>
     
@@ -35,7 +35,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/connect_to_the_internet/</guid>
-      <description></description>
+      <description>Informs you on how to connect to the internet in the Arch Live ISO</description>
       
     </item>
     
@@ -45,7 +45,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/drive_partitioning/</guid>
-      <description></description>
+      <description>Informs you on what partitions to make, how to make them, and how to format and mount them</description>
       
     </item>
     
@@ -70,36 +70,6 @@
     </item>
     
     <item>
-      <title></title>
-      <link>//localhost:1313/arch-install-guide/glossary/filesystem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/arch-install-guide/glossary/filesystem/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/arch-install-guide/glossary/format/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/arch-install-guide/glossary/format/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/arch-install-guide/glossary/partition/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/arch-install-guide/glossary/partition/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>compilation</title>
       <link>//localhost:1313/arch-install-guide/glossary/compilation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -115,6 +85,26 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/distro/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>filesystem</title>
+      <link>//localhost:1313/arch-install-guide/glossary/filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/filesystem/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>format</title>
+      <link>//localhost:1313/arch-install-guide/glossary/format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/format/</guid>
       <description></description>
       
     </item>
@@ -195,6 +185,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/package-manager/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>partition</title>
+      <link>//localhost:1313/arch-install-guide/glossary/partition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/partition/</guid>
       <description></description>
       
     </item>

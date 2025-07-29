@@ -17,7 +17,7 @@ Change directory into `bahmoudd.github.io/`
 $ cd bahmoudd.github.io/
 ```
 
-Then, with hugo 0.147.5 installed, run the below command:
+Then, with hugo 0.148.0 installed, run the below command:
 ```
 $ hugo serve
 ```

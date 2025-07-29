@@ -1,5 +1,6 @@
 +++
 title = "Booting the Arch Live ISO"
+summary = "Informs you on how to boot into the Arch Live ISO and basic things like setting up keymaps and font sizes in the Live ISO"
 showPagination = true
 invertPagination = true
 weight = 30

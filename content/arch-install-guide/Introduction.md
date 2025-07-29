@@ -1,5 +1,6 @@
 +++
 title = 'Introduction'
+summary = 'Outlines what the guide will and will not go through, requirements for installing Arch and guide notation'
 showPagination = true
 invertPagination = true
 weight = 20

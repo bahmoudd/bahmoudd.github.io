@@ -69,16 +69,16 @@ showHero = true
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
-showSummary = false
+showSummary = true
 showViews = false
 showLikes = false
 showTableOfContents = true
 showCards = true
 orderByWeight = true
 groupByYear = false
-cardView = true
+cardView = false
 cardViewScreenWidth = false
-constrainItemsWidth = false
+constrainItemsWidth = true
 
 [sitemap]
 excludedKinds = [ "taxonomy", "term" ]

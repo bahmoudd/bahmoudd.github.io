@@ -1,5 +1,6 @@
 +++
-title = 'Partitioning the drive'
+title = "Partitioning the drive"
+summary = "Informs you on what partitions to make, how to make them, and how to format and mount them"
 showPagination = true
 invertPagination = true
 weight = 50

@@ -1,5 +1,6 @@
 +++
-title = 'Connect to the internet'
+title = "Connect to the internet"
+summary = "Informs you on how to connect to the internet in the Arch Live ISO"
 showPagination = true
 invertPagination = true
 weight = 40

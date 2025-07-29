@@ -57,27 +57,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/arch-install-guide/glossary/filesystem/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>//localhost:1313/arch-install-guide/glossary/format/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>//localhost:1313/arch-install-guide/glossary/partition/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>//localhost:1313/arch-install-guide/glossary/compilation/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>//localhost:1313/arch-install-guide/glossary/distro/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/filesystem/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/format/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -118,6 +113,11 @@
   </url>
   <url>
     <loc>//localhost:1313/arch-install-guide/glossary/package-manager/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/partition/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
