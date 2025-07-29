@@ -6,4 +6,4 @@ showWordCount = false
 hideFromRecent = true
 +++
 
-*Machine code* (also known as a 'binary executable', or just 'binary') is what computers can actually understand and run (or "execute")
+_Machine code_ (also known as a 'binary executable', or just 'binary') is what computers can actually understand and run (or "execute").

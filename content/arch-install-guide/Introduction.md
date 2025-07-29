@@ -69,7 +69,7 @@ If it returns `x86_64`, you're all good to go.
 
 Anything else between angled brackets means that you should substitute it with what the text reads, for example, `<your drive>` means that you should substitute `<your drive>` for the drive that you want to install Arch Linux on to.
 
-Any text after hashtags explain the command you are running and may be omitted when you type it in.
+Any text after hashtags, where the hashtag is not the first character in the command, explain the command you are running and may be omitted when you type it in.
 
 This means that if you see the below in the guide:
 ```

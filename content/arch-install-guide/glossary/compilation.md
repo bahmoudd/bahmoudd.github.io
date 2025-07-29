@@ -6,4 +6,4 @@ showWordCount = false
 hideFromRecent = true
 +++
 
-*Compilation* is the act of turning [source code](/arch-install-guide/glossary/source-code) into [machine code](/arch-install-guide/glossary/machine-code)
+_Compilation_ is the act of turning [_source code_](/arch-install-guide/glossary/source-code) into [_machine code_](/arch-install-guide/glossary/machine-code).
