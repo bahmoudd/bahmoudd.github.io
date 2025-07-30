@@ -89,3 +89,7 @@ sfdisk --delete /dev/sda
 `$` before a command means that the command can just be run normally. Just omit the dollar sign when typing in the command.
 
 Any other prompt before a command means that you should not be typing in the command into your shell, but rather, you should be typing it into some other program, such as iwctl, which has the prompt: `[iwd]#`
+
+{{< notice warning >}}
+Make sure you read everything thoroughly instead of blindly copying and pasting commands into the Arch Live ISO or the terminal. Any loss of data as a result of this recklessness is no fault to the author of this guide
+{{< /notice >}}
