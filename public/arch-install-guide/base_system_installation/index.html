@@ -40,8 +40,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.5c1f183abbd81c1e3325f920a27cbb9ba254b48fb31ea3618517bff4770f91f0ae423c9e8292ba4cf2bd80c63fd0d2da86c482956da99c3c0e48b5a3911df364.css"
-    integrity="sha512-XB8YOrvYHB4zJfkgony7m6JUtI&#43;zHqNhhRe/9HcPkfCuQjyegpK6TPK9gMY/0NLahsSClW2pnDwOSLWjkR3zZA==">
+    href="/css/main.bundle.min.8837a1137620e89660fc372bfa1a326e90134a558937a2634117839bc0886b2f5242c0bd275ed63b60f26d1f9b0df8d24f11d3746d65f1e97ba1fadd73367518.css"
+    integrity="sha512-iDehE3Yg6JZg/Dcr&#43;hoybpATSlWJN6JjQReDm8CIay9SQsC9J17WO2DybR&#43;bDfjSTxHTdG1l8el7ofrdczZ1GA==">
 
   
   
@@ -134,7 +134,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "733"
+    "wordCount": "730"
   }]
   </script>
 
@@ -714,7 +714,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span>733 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+      <span>730 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -1092,11 +1092,7 @@ Hit <code>Ctrl</code>+<code>W</code> then <code>Enter</code> to save. Then hit <
     </span>        
     
 </h3>
-<p>Arch Linux will not actually remember where to mount the partitions you have mounted to.<br>
-To make it remember, you will have to create an fstab file, which describes the partitions and where to mount them to on boot.</p>
-<p>This is done with the below command:</p>
-<pre tabindex="0"><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
-</code></pre><style type="text/css">
+<style type="text/css">
      
     .notice {
         --title-color: #fff;
@@ -1210,14 +1206,27 @@ To make it remember, you will have to create an fstab file, which describes the 
         top: .125em;
         position: relative;
     }
-</style><div class="notice note" >
+</style><div class="notice warning" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="126 76.5 300 300">
+  <path d="M297.431 324.397v-34.255c0-3.245-2.344-5.95-5.358-5.95h-32.146c-3.014 0-5.358 2.705-5.358 5.95v34.255c0 3.245 2.344 5.95 5.358 5.95h32.146c3.014 0 5.358-2.705 5.358-5.95Zm-.335-67.428 3.014-82.753c0-1.081-.502-2.524-1.674-3.425-1.005-.902-2.512-1.983-4.019-1.983h-36.834c-1.507 0-3.014 1.081-4.019 1.983-1.172.901-1.674 2.704-1.674 3.786l2.846 82.392c0 2.344 2.512 4.146 5.693 4.146h30.975c3.013 0 5.525-1.803 5.692-4.146Zm-2.344-168.39L423.34 342.425c3.683 7.032 3.516 15.686-.335 22.717-3.85 7.031-10.883 11.358-18.417 11.358H147.413c-7.534 0-14.566-4.327-18.417-11.358-3.85-7.031-4.018-15.685-.335-22.716L257.248 88.578C260.93 81.188 268.13 76.5 276 76.5c7.87 0 15.069 4.688 18.752 12.08Z"/>
+</svg>
+
+        </span>Warning</p><p>This step is <strong>CRUCIAL</strong>. If you forget to do this step, your Arch Linux system will <em>not</em> boot.</p></div>
+
+<p>Arch Linux will not remember where you have mounted your partitions.<br>
+To make it remember, you will have to create an fstab file, which describes your drive&rsquo;s partitions and where to mount them to on boot.</p>
+<p>This is done with the following command:</p>
+<pre tabindex="0"><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre><div class="notice note" >
     <p class="notice-title">
         <span class="icon-notice baseline">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
   <path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
 </svg>
 
-        </span>Note</p><p>A <code>&gt;</code> will overwrite a file and a <code>&gt;&gt;</code> will append to a file. Make sure you don&rsquo;t confuse these with each other, and make sure the commands you type are as how this guide has written it before you hit enter.</p></div>
+        </span>Note</p><p>A <code>&gt;</code> will overwrite a file and a <code>&gt;&gt;</code> will append to a file. Make sure you don&rsquo;t confuse these with each other</p></div>
 
 
           
@@ -1300,26 +1309,21 @@ To make it remember, you will have to create an fstab file, which describes the 
           <div class="pt-3">
             <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
             <div class="pt-3">
-              <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "bahmoudd" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+              <script src="https://giscus.app/client.js"
+        data-repo="bahmoudd/bahmoudd.github.io"
+        data-repo-id="R_kgDOOYkq4w"
+        data-category="[ENTER CATEGORY NAME HERE]"
+        data-category-id="[ENTER CATEGORY ID HERE]"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="catppuccin"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </div>
           </div>
         

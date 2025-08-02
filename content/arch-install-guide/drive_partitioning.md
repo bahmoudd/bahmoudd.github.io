@@ -331,17 +331,17 @@ ext4 doesn't have these things, but it is quite fast and is the most common file
 
 Check that your partitions are correct by typing in the below command:
 ```
-lsblk
+# lsblk
 ```
 
 Format the boot partition, as shown below:
 ```
-mkfs.fat -F32 /dev/disk/by-partlabel/boot
+# mkfs.fat -F32 /dev/disk/by-partlabel/boot
 ```
 
 Then, format the swap partition, as shown below:
 ```
-mkswap /dev/disk/by-partlabel/swap
+# mkswap /dev/disk/by-partlabel/swap
 ```
 
 <details>
@@ -352,7 +352,7 @@ If you want to encrypt your drive, namely your root and home partitions, you wil
 Firstly, ensure that your swap and boot partitions have been formatted.\
 Then, start by encrypting your root partition, as shown below:
 ```
-cryptsetup luksFormat /dev/disk/by-partlabel/root
+# cryptsetup luksFormat /dev/disk/by-partlabel/root
 ```
 
 cryptsetup will give you a warning, and ask for confirmation before encrypting your drive.\
@@ -379,10 +379,10 @@ Then, it will start encrypting your root partition, which may take a while.
 
 Then, you will want to encrypt your home partition.
 ```
-cryptsetup luksFormat /dev/disk/by-partlabel/home
+# cryptsetup luksFormat /dev/disk/by-partlabel/home
 ```
 
-cryptsetup will ask you for a passphrase, this can be the same as the passphrase you used for your root partition.
+`cryptsetup` will ask you for a passphrase, this can be the same as the passphrase you used for your root partition.
 ```
 Enter passphrase:
 ```
@@ -396,7 +396,7 @@ Then, it will start encrypting your home partition, which may take a while.
 
 Now, in order to install anything on to your root and home partitions, you will have to open them, as shown below:
 ```
-cryptsetup open /dev/disk/by-partlabel/root cryptroot
+# cryptsetup open /dev/disk/by-partlabel/root cryptroot
 ```
 
 It will then ask you for your passphrase:
@@ -406,7 +406,7 @@ Enter passphrase for /dev/disk/by-partlabel/root:
 
 Do the same for your home partition:
 ```
-cryptsetup open /dev/disk/by-partlabel/home crypthome
+# cryptsetup open /dev/disk/by-partlabel/home crypthome
 ```
 
 It will then ask you for your passphrase:
@@ -417,18 +417,23 @@ Enter passphrase for /dev/disk/by-partlabel/home:
 Now that the root and home partitions have been opened, it is time to format them.
 Then, format the root partition, as shown below:
 
-```sh
-mkfs.btrfs /dev/mapper/cryptroot -f
-# OR, do not run the below command if you have run the one above, or vice versa.
-mkfs.ext4 -F /dev/mapper/cryptroot
+```
+# mkfs.btrfs /dev/mapper/crypthome -f
+```
+OR, do not run the below command if you have run the one above, or vice versa
+```
+# mkfs.ext4 -F /dev/mapper/crypthome
+
 ```
 
 If you have created a home partition, go ahead and format it.
 
-```sh
-mkfs.btrfs /dev/mapper/crypthome -f
-# OR, do not run the below command if you have run the one above, or vice versa.
-mkfs.ext4 -F /dev/mapper/crypthome
+```
+# mkfs.btrfs /dev/mapper/crypthome -f
+```
+OR, do not run the below command if you have run the one above, or vice versa
+```
+# mkfs.ext4 -F /dev/mapper/crypthome
 
 ```
 
@@ -440,18 +445,22 @@ Once you have done all of the above, go ahead and skip to `If you have encrypted
 
 Then, format the root partition, as shown below:
 
-```sh
-mkfs.btrfs /dev/disk/by-partlabel/root -f
-# OR, do not run the below command if you have run the one above, or vice versa.
-mkfs.ext4 -F /dev/disk/by-partlabel/root
+```
+# mkfs.btrfs /dev/disk/by-partlabel/root -f
+```
+OR, do not run the below command if you have run the one above, or vice versa.
+```
+# mkfs.ext4 -F /dev/disk/by-partlabel/root
 ```
 
 If you have created a home partition, go ahead and format it.
 
-```sh
-mkfs.btrfs /dev/disk/by-partlabel/home -f
-# OR, do not run the below command if you have run the one above, or vice versa.
-mkfs.ext4 -F /dev/disk/by-partlabel/home
+```
+# mkfs.btrfs /dev/disk/by-partlabel/home -f
+```
+OR, do not run the below command if you have run the one above, or vice versa.
+```
+# mkfs.ext4 -F /dev/disk/by-partlabel/home
 ```
 
 
@@ -466,22 +475,22 @@ For the partitions to be accessible to the Arch ISO, you need to mount them, whi
 
 Start by mounting the root partition:
 ```
-mount /dev/mapper/cryptroot /mnt
+# mount /dev/mapper/cryptroot /mnt
 ```
 
 Then, mount the swap partition:
 ```
-swapon /dev/disk/by-partlabel/swap
+# swapon /dev/disk/by-partlabel/swap
 ```
 
 Then, mount the boot partition:
 ```
-mount -m /dev/disk/by-partlabel/boot /mnt/boot
+# mount -m /dev/disk/by-partlabel/boot /mnt/boot
 ```
 
 Finally, mount the home parititon:
 ```
-mount -m /dev/mapper/crypthome /mnt/home
+# mount -m /dev/mapper/crypthome /mnt/home
 ```
 
 Once you've finished all of the above, you've finished with this page of the guide. Move on with the next page.
@@ -491,20 +500,20 @@ Once you've finished all of the above, you've finished with this page of the gui
 
 To do this, start by mounting the root partition.
 ```
-mount /dev/disk/by-partlabel/root /mnt
+# mount /dev/disk/by-partlabel/root /mnt
 ```
 
 Then mount your swap partition:
 ```
-swapon /dev/disk/by-partlabel/swap
+# swapon /dev/disk/by-partlabel/swap
 ```
 
 Then the boot partition:
 ```
-mount -m /dev/disk/by-partlabel/boot /mnt/boot
+# mount -m /dev/disk/by-partlabel/boot /mnt/boot
 ```
 
 And finally, the home partition:
 ```
-mount -m /dev/disk/by-partlabel/home /mnt/home
+# mount -m /dev/disk/by-partlabel/home /mnt/home
 ```

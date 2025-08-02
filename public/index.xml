@@ -50,11 +50,11 @@
     </item>
     
     <item>
-      <title>Partitioning the drive</title>
-      <link>//localhost:1313/arch-install-guide/base_system_installation/</link>
+      <title>Pre-chroot configuration</title>
+      <link>//localhost:1313/arch-install-guide/pre-chroot-configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/arch-install-guide/base_system_installation/</guid>
+      <guid>//localhost:1313/arch-install-guide/pre-chroot-configuration/</guid>
       <description>Informs you on how to set up the mirrorlist, fstab file and how to install the bare minimum so that you can fully set up the operating system later</description>
       
     </item>

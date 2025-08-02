@@ -1,5 +1,5 @@
 +++
-title = "Partitioning the drive"
+title = "Pre-chroot configuration"
 summary = "Informs you on how to set up the mirrorlist, fstab file and how to install the bare minimum so that you can fully set up the operating system later"
 showPagination = true
 invertPagination = true
@@ -7,13 +7,13 @@ weight = 60
 showDate = false
 +++
 
-Now that the internet and partitions have been fully sorted out, it is now time to set up the [_mirrorlist_](/arch-install-guide/glossary/mirror). This is to make sure that you get the faster download speeds possible.
+Now that the internet and partitions have been fully sorted out, make sure that you get the faster download speeds possible.
 
 ### Enabling parallel downloads
 
-Speaking of, edit the `pacman.conf` file using the command below:
+Edit the `pacman.conf` file using the command below:
 ```
-nano /etc/pacman.conf
+# nano /etc/pacman.conf
 ```
 
 And uncomment the following line (meaning, remove the hashtag preceding the line):
@@ -97,10 +97,14 @@ modemmanager usb_modeswitch
 
 ### Generating the fstab file
 
-Arch Linux will not actually remember where to mount the partitions you have mounted to.\
-To make it remember, you will have to create an fstab file, which describes the partitions and where to mount them to on boot.
+{{< notice warning >}}
+This step is __CRUCIAL__. If you forget to do this step, your Arch Linux system will *not* boot.
+{{< /notice >}}
 
-This is done with the below command:
+Arch Linux will not remember where you have mounted your partitions.\
+To make it remember, you will have to create an fstab file, which describes your drive's partitions and where to mount them to on boot.
+
+This is done with the following command:
 ```
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
