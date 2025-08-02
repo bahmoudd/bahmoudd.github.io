@@ -60,6 +60,16 @@
     </item>
     
     <item>
+      <title>Chroot configuration</title>
+      <link>//localhost:1313/arch-install-guide/chroot-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/chroot-configuration/</guid>
+      <description>Informs you on how to set the time, date, locale, language, root password and any user accounts</description>
+      
+    </item>
+    
+    <item>
       <title>Xlibre is the FOSS world in action</title>
       <link>//localhost:1313/posts/xlibre/</link>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
@@ -125,6 +135,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/gnu/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>greeter</title>
+      <link>//localhost:1313/arch-install-guide/glossary/greeter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/greeter/</guid>
       <description></description>
       
     </item>
