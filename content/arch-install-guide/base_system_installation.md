@@ -106,5 +106,5 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
 {{< notice note >}}
-A `>` will overwrite a file and a `>>` will append to a file. Make sure you don't confuse these with each other, and make sure the commands you type are as how this guide has written it before you hit enter.
+A `>` will overwrite a file and a `>>` will append to a file. Make sure you don't confuse these with each other
 {{< /notice >}}
