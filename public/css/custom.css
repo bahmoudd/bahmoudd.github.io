@@ -1,3 +1,0 @@
-{{ if eq .Section "glossary" }}
-  <link rel="stylesheet" href="{{ "css/glossary.css" | relURL }}">
-{{ end }}
