@@ -69,5 +69,25 @@
       
     </item>
     
+    <item>
+      <title>Logging into your user account</title>
+      <link>//localhost:1313/arch-install-guide/creating_and_login_into_a_user_account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/creating_and_login_into_a_user_account/</guid>
+      <description>Informs you on how to install the programs that allow you to have a comfortable desktop experience and how to set up pacman and networking so that they can be used properly.</description>
+      
+    </item>
+    
+    <item>
+      <title>Window and display managers</title>
+      <link>//localhost:1313/arch-install-guide/window_and_display_managers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/window_and_display_managers/</guid>
+      <description>Informs you on how to choose and install a window manager and a display manager</description>
+      
+    </item>
+    
   </channel>
 </rss>

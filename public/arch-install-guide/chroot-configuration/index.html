@@ -134,7 +134,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "681"
+    "wordCount": "1496"
   }]
   </script>
 
@@ -714,7 +714,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span>681 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+      <span>1496 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -881,8 +881,7 @@
             <li><a href="#editing-the-hosts-file">Editing the hosts file</a></li>
             <li><a href="#enable-networkmananger">Enable networkmananger</a></li>
             <li><a href="#set-the-root-password">Set the root password</a></li>
-            <li><a href="#create-a-user-account">Create a user account</a></li>
-            <li><a href="#allow-the-wheel-group-to-make-changes-to-the-system">Allow the &lsquo;wheel&rsquo; group to make changes to the system</a></li>
+            <li><a href="#picking-a-bootloader">Picking a bootloader</a></li>
           </ul>
         </li>
       </ul>
@@ -910,8 +909,7 @@
             <li><a href="#editing-the-hosts-file">Editing the hosts file</a></li>
             <li><a href="#enable-networkmananger">Enable networkmananger</a></li>
             <li><a href="#set-the-root-password">Set the root password</a></li>
-            <li><a href="#create-a-user-account">Create a user account</a></li>
-            <li><a href="#allow-the-wheel-group-to-make-changes-to-the-system">Allow the &lsquo;wheel&rsquo; group to make changes to the system</a></li>
+            <li><a href="#picking-a-bootloader">Picking a bootloader</a></li>
           </ul>
         </li>
       </ul>
@@ -1067,7 +1065,7 @@ This will be your two-letter language code, followed by a dash, then your two-le
 <pre tabindex="0"><code>#en_US.UTF-8 UTF-8
 </code></pre><p>Once you&rsquo;ve found your locale, uncomment it. This would turn the above into the below:</p>
 <pre tabindex="0"><code>en_US.UTF-8 UTF-8
-</code></pre><p>Save and quit (<code>Ctrl</code>+<code>W</code> then <code>Enter</code> then <code>Ctrl</code>+<code>Q</code>)</p>
+</code></pre><p>Save and quit (<code>Ctrl</code>+<code>O</code> then <code>Enter</code> then <code>Ctrl</code>+<code>X</code>)</p>
 <p>Once all of this is done, let Arch Linux recognise them by running the below command:</p>
 <pre tabindex="0"><code>locale-gen
 </code></pre><p>Then, open and edit the <code>/etc/locale.conf</code> file (as shown below):</p>
@@ -1107,7 +1105,7 @@ This will be your two-letter language code, followed by a dash, then your two-le
 <pre tabindex="0"><code>127.0.0.1    localhost
 ::1          localhost
 127.0.1.1    &lt;your hostname&gt;.localdomain &lt;your hostname&gt;
-</code></pre><p>Save and quit (<code>Ctrl</code>+<code>W</code> then <code>Enter</code> then <code>Ctrl</code>+<code>Q</code>)</p>
+</code></pre><p>Save and quit (<code>Ctrl</code>+<code>O</code> then <code>Enter</code> then <code>Ctrl</code>+<code>X</code>)</p>
 <p>This step is important because a lot of programs tend to use <code>localhost</code> instead of <code>127.0.0.1</code>. The above step just translates <code>localhost</code> into <code>127.0.0.1</code>. <code>localhost</code> refers to the local machine on which a program is currently running on. It allows you to connect with services on the local machine&rsquo;s network without having to connect to an outer network.</p>
 
 <h3 class="relative group">Enable networkmananger 
@@ -1136,40 +1134,316 @@ NetworkManager configures things like Wi-FI, ethernet, VPNs, mobile broadband mo
 <p>Set a password for the <a
   href="/arch-install-guide/glossary/root-user"><em>root user</em></a> so that your computer isn&rsquo;t left wide open for cybercriminals to do as they please with your computer:</p>
 <pre tabindex="0"><code># passwd
-</code></pre>
-<h3 class="relative group">Create a user account 
-    <div id="create-a-user-account" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#create-a-user-account" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>Doing this is common sense, as many greeters do not allow you to login to your desktop as the root user. To do this, run the below command:</p>
-<pre tabindex="0"><code># useradd -mG wheel &lt;username&gt;
-</code></pre><p><code>-m</code> option creates a user directory for you, where local configurations and apps are stored.
-<code>-G wheel</code> creates the user as part of the wheel group, which will allow you to make changes on the system itself. For example, downloading and installing packages, and configuring them.</p>
-<p>Set a password for your user account (as shown below):</p>
-<pre tabindex="0"><code>passwd [username]
-</code></pre><p>Repeat the above process as many times as you want, depending on how many users you want to add to your system. If you do not want a user to make changes to the system, run the below command instead of the one shown above:</p>
-<pre tabindex="0"><code># useradd -m &lt;username&gt;
-</code></pre>
-<h3 class="relative group">Allow the &lsquo;wheel&rsquo; group to make changes to the system 
-    <div id="allow-the-wheel-group-to-make-changes-to-the-system" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#allow-the-wheel-group-to-make-changes-to-the-system" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>Open and edit the &ldquo;<code>sudoers</code>&rdquo; file (as shown below)</p>
-<pre tabindex="0"><code>EDITOR=nano visudo
-</code></pre><p>Find and uncomment the below line:</p>
-<pre tabindex="0"><code># %wheel ALL=(ALL:ALL) ALL
-</code></pre><p>Save and quit (<code>Ctrl</code>+<code>W</code> then <code>Enter</code> then <code>Ctrl</code>+<code>Q</code>)</p>
+</code></pre><details>
+    <summary><span style="font-size:1.25em;">If you have encrypted your root/home partition(s)</span></summary>
+<p>If you have encrypted your root/home partition(s), you will need to configure Arch Linux&rsquo;s boot process so that it will prompt you for your password to unlock them.</p>
+<p>To do this, you will have to edit the <code>mkinitcpio.conf</code> file as shown below.</p>
+<pre tabindex="0"><code># nano /etc/mkinitcpio.conf
+</code></pre><p>Find and comment out any line beginning with <code>hooks</code> (by adding a hashtag before it) and add the following line to the file:</p>
+<pre tabindex="0"><code>HOOKS=(base systemd autodetect microcode modconf kms keyboard keymap consolefont block encrypt lvm2 filesystems fsck)
+</code></pre><p>Save and quit (<code>Ctrl</code>+<code>O</code> then <code>Enter</code> then <code>Ctrl</code>+<code>X</code>).\</p>
+<p>Regenerate the initcpio as shown below. The initcpio is a temporary root <a
+  href="/arch-install-guide/glossary/filesystem"><em>filesystem</em></a> loaded by the kernel during the boot process before the real root filesystem is mounted.</p>
+<pre tabindex="0"><code>mkinitcpio -P
+</code></pre><hr>
+</details>
 
+<h3 class="relative group">Picking a bootloader 
+    <div id="picking-a-bootloader" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#picking-a-bootloader" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>This guide will cover how to install three different bootloaders: systemd-boot, GRUB and rEFInd. If you are unsure, or haven&rsquo;t bothered with encrypting your partitions and if you do not want to unify your kernel images, choose GRUB as your bootloader.</p>
+<p>GRUB is easily customisable, but a bit clunky and slow. You should select this option if you have encrypted your drive. It&rsquo;s themeable, meaning you can make the bootloader look however you&rsquo;d like it to.</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/arch-install-guide/GRUB.png">
+
+  
+</figure>
+</p>
+<details>
+    <summary><span style="font-size:1.25em;">Install GRUB</span></summary>
+<p>Install <code>GRUB</code> as shown below:</p>
+<pre tabindex="0"><code># pacman -S grub
+</code></pre><p>Then install GRUB (as shown below):</p>
+<pre tabindex="0"><code>grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+</code></pre><p>Then create a configuration file so that GRUB knows how to display the boot entries on your drive</p>
+<pre tabindex="0"><code>grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre><hr>
+</details>
+<p>rEFInd has a pretty GUI and is good for multi-booting.</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/arch-install-guide/rEFInd.png">
+
+  
+</figure>
+</p>
+<details>
+    <summary><span style="font-size:1.25em;">Install rEFInd</span></summary>
+<p>Install rEFInd (as shown below):</p>
+<pre tabindex="0"><code># pacman -S refind
+</code></pre><p>Create the configuration file (as shown below):</p>
+<pre tabindex="0"><code># mkrlconf
+</code></pre><p>Edit the <code>refind_linux.conf</code> file (as shown below):</p>
+<pre tabindex="0"><code># nano /boot/refind_linux.conf
+</code></pre><p>Delete the first two lines of the file by hitting Ctrl+K twice.<br>
+Then save and exit (<code>Ctrl</code>+<code>O</code> then <code>Enter</code> then <code>Ctrl</code>+<code>X</code>).</p>
+<p>Then, edit the <code>refind.conf</code> file as shown below.</p>
+<pre tabindex="0"><code>nano /boot/EFI/BOOT/refind.conf
+</code></pre><p>Find the following line:</p>
+<pre tabindex="0"><code>menuentry &#34;Arch Linux&#34; {
+</code></pre><p>Which can be found by hitting <code>Ctrl</code> + <code>W</code> and then entering the above line.</p>
+<p>Edit that section of the file such that:</p>
+<pre tabindex="0"><code>menuentry &#34;Arch Linux&#34; {
+    &lt;...&gt;
+    options &#34;root=PARTUUID=&lt;...&gt; rw add_efi_memmap&#34;
+</code></pre><p>becomes:</p>
+<pre tabindex="0"><code>menuentry &#34;Arch Linux&#34; {
+    &lt;...&gt;
+    options &#34;root=label=root rw add_efi_memmap&#34;
+</code></pre><p>Save and exit (<code>Ctrl</code>+<code>O</code> then <code>Enter</code> then <code>Ctrl</code>+<code>X</code>).</p>
+<hr>
+</details>
+<p>systemd-boot is lightweight and fast, it integrates well with your <a
+  href="/arch-install-guide/glossary/init"><em>init system</em></a> but installing and configuring it is quite involved. It&rsquo;s also good if you want to unify your kernel images.</p>
+<p>
+
+
+
+
+
+
+<figure>
+    <img class="my-0 rounded-md" loading="lazy" alt="" src="/images/arch-install-guide/systemd-boot.png">
+
+  
+</figure>
+</p>
+<details>
+    <summary><span style="font-size:1.25em;">Install systemd-boot (optionally contains instructions on how to unify kernel images)</span></summary>
+<p>Install systemd-boot (as shown below):</p>
+<pre tabindex="0"><code>bootctl install
+</code></pre><details>
+    <summary><span style="font-size:1.25em;">Create a unified kernel image (optional)</span></summary>
+<p>Edit the <code>loader.conf</code> file (as shown below):</p>
+<pre tabindex="0"><code># nano loader.conf
+</code></pre><p>Then make it so that the file only contains these lines:</p>
+<pre tabindex="0"><code>default arch-linux.efi
+timeout 5
+console-mode keep
+</code></pre><p><code>default arch-linux.efi</code> makes systemd-boot automatically boot to Arch Linux if you don&rsquo;t select a boot entry.</p>
+<p><code>timeout 5</code> stalls your system by 5 seconds before it boots so you have time to select an option. This is optional, and if you want an instant boot, you can leave it commented.</p>
+<p><code>console-mode keep</code> keeps your console-based SystemD-Boot menu to how it was last time.</p>
+<p>Save and exit (<code>Ctrl</code>+<code>O</code> then <code>Enter</code> then <code>Ctrl</code>+<code>X</code>).</p>
+<p>Then, go and edit the <code>linux.preset</code> file as shown below</p>
+<pre tabindex="0"><code># nano /etc/mkinitcpio.d/linux.preset
+</code></pre><p>Then edit the file so that the following are the contents of it:</p>
+<pre tabindex="0"><code># mkinitcpio preset file for the &#39;linux&#39; package
+
+ALL_CONFIG=&#34;/etc/mkinitcpio.conf&#34;
+ALL_kver=&#34;/boot/vmlinuz-linux&#34;
+
+PRESETS=(&#39;default&#39; &#39;fallback&#39;)
+
+#default_config=&#39;/etc/mkinitcpio.conf&#39;
+#default_image=&#39;/boot/initramfs-linux.img&#39;
+default_uki=&#34;/boot/EFI/Linux/arch-linux.efi&#34;
+default_options=&#34;--splash /usr/share/systemd/bootctl/splash-arch.bmp&#34;
+
+#default_config=&#39;/etc/mkinitcpio.conf&#39;
+#default_image=&#39;/boot/initramfs-linux-fallback.img&#39;
+default_uki=&#34;/boot/EFI/Linux/arch-linux-fallback.efi&#34;
+default_options=&#34;-S autodetect&#34;
+</code></pre><p>Then, generate the unified kernel image as shown below:</p>
+<pre tabindex="0"><code>mkinitcpio -P
+</code></pre><p>Once you&rsquo;re done with this, move on from this page of the guide. Following the sections below will cause your Arch Linux system to fail its boot process.</p>
+<hr>
+</details>
+<p>Edit the <code>loader.conf</code> file (as shown below):</p>
+<pre tabindex="0"><code># nano loader.conf
+</code></pre><p>Then make it so that the file only contains these lines:</p>
+<pre tabindex="0"><code>default arch.conf
+timeout 5
+console-mode keep
+</code></pre><p><code>default arch.conf</code> makes systemd-boot automatically boot to Arch Linux if you don&rsquo;t select a boot entry.</p>
+<p><code>timeout 5</code> stalls your system by 5 seconds before it boots so you have time to select an option. This is optional, and if you want an instant boot, you can leave it commented.</p>
+<p><code>console-mode keep</code> keeps your console-based SystemD-Boot menu to how it was last time.</p>
+<p>Change directory into the entries folder, as shown below:</p>
+<pre tabindex="0"><code>cd entries/
+</code></pre><p>Once you have done that, create a Arch Linux boot configuration file, as shown below:</p>
+<pre tabindex="0"><code>nano arch.conf
+</code></pre><p>Add the following lines to it:</p>
+<pre tabindex="0"><code>title Arch Linux
+linux /vmlinuz-linux
+initrd /initramfs-linux.img
+options root=label=root quiet rw
+</code></pre><p><code>title</code> is what the boot option will display.</p>
+<p><code>linux</code> specifies where the Linux kernel image exists.</p>
+<p><code>initrd</code> specifies where your <a
+  href="/arch-install-guide/glossary/initramfs"><em>initramfs</em></a> image exists.\</p>
+<p><code>options</code> is a list of parameters to be sent to the kernel.</p>
+<p>Save and exit (<code>Ctrl</code>+<code>O</code> then <code>Enter</code> then <code>Ctrl</code>+<code>X</code>).</p>
+<p>Now, you need to create a boot configuration file for the fallback image, which is a <a
+  href="/arch-install-guide/glossary/initramfs"><em>initramfs</em></a> that holds more modules and drivers, This exists because the default initramfs generated by mkinitcpio tries to include only what&rsquo;s necessary for your specific hardware setup, using autodetection (e.g., filesystem, storage drivers). This keeps it small and fast. However, if something goes wrong, the fallback image comes in. It&rsquo;s bloated on purpose, including every possible module and driver so it can boot in a broader range of situations.</p>
+<p>This is done by simply copying the <code>arch.conf</code> file into a new <code>arch-fb.conf</code> file and then modifying <code>arch-fb.conf</code> in order to load the fallback initramfs instead of the regular one.</p>
+<p>Firstly, copy the <code>arch-conf</code> file into a new <code>arch-fb.conf</code> file</p>
+<pre tabindex="0"><code>cp /boot/loader/entries/arch.conf /boot/loader/entries/arch-fb.conf
+</code></pre><p>Then, edit the <code>arch-fb.conf</code> file:</p>
+<pre tabindex="0"><code>nano /boot/loader/entries/arch-fb.conf
+</code></pre><p>Change the file:</p>
+<pre tabindex="0"><code>title Arch Linux
+linux /vmlinuz-linux
+initrd /initramfs-linux.img
+options root=label=root quiet rw
+</code></pre><p>So that it looks like this:</p>
+<pre tabindex="0"><code>title Arch Linux
+linux /vmlinuz-linux
+initrd /initramfs-linux.img
+options root=label=root quiet rw
+</code></pre><p>Save and exit (<code>Ctrl</code>+<code>O</code> then <code>Enter</code> then <code>Ctrl</code>+<code>X</code>).</p>
+<style type="text/css">
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+     
+    @media (prefers-color-scheme:dark) {
+        .notice {
+            --title-color: #fff;
+            --title-background-color: #069;
+            --content-color: #ddd;
+            --content-background-color: #023;
+        }
+
+        .notice.info {
+            --title-background-color: #a50;
+            --content-background-color: #420;
+        }
+
+        .notice.tip {
+            --title-background-color: #363;
+            --content-background-color: #121;
+        }
+
+        .notice.warning {
+            --title-background-color: #800;
+            --content-background-color: #400;
+        }
+    }
+
+    body.dark .notice {
+        --title-color: #fff;
+        --title-background-color: #069;
+        --content-color: #ddd;
+        --content-background-color: #023;
+    }
+
+    body.dark .notice.info {
+        --title-background-color: #a50;
+        --content-background-color: #420;
+    }
+
+    body.dark .notice.tip {
+        --title-background-color: #363;
+        --content-background-color: #121;
+    }
+
+    body.dark .notice.warning {
+        --title-background-color: #800;
+        --content-background-color: #400;
+    }
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+</style><div class="notice warning" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="126 76.5 300 300">
+  <path d="M297.431 324.397v-34.255c0-3.245-2.344-5.95-5.358-5.95h-32.146c-3.014 0-5.358 2.705-5.358 5.95v34.255c0 3.245 2.344 5.95 5.358 5.95h32.146c3.014 0 5.358-2.705 5.358-5.95Zm-.335-67.428 3.014-82.753c0-1.081-.502-2.524-1.674-3.425-1.005-.902-2.512-1.983-4.019-1.983h-36.834c-1.507 0-3.014 1.081-4.019 1.983-1.172.901-1.674 2.704-1.674 3.786l2.846 82.392c0 2.344 2.512 4.146 5.693 4.146h30.975c3.013 0 5.525-1.803 5.692-4.146Zm-2.344-168.39L423.34 342.425c3.683 7.032 3.516 15.686-.335 22.717-3.85 7.031-10.883 11.358-18.417 11.358H147.413c-7.534 0-14.566-4.327-18.417-11.358-3.85-7.031-4.018-15.685-.335-22.716L257.248 88.578C260.93 81.188 268.13 76.5 276 76.5c7.87 0 15.069 4.688 18.752 12.08Z"/>
+</svg>
+
+        </span>Warning</p><p>Make sure you have followed each instruction given above to a &rsquo;t&rsquo;.<br>
+Any mistakes that you might make can and will cause Arch Linux to fail its boot sequence</p></div>
+
+</details>
           
           
           
@@ -1239,6 +1513,25 @@ NetworkManager configures things like Wi-FI, ethernet, VPNs, mobile broadband mo
         </span>
         <span>
           
+            <a class="flex text-right group ml-3" href="/arch-install-guide/creating_and_login_into_a_user_account/">
+              <span class="flex flex-col">
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Logging into your user account</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
         </span>
       </div>
     </div>
@@ -1254,8 +1547,8 @@ NetworkManager configures things like Wi-FI, ethernet, VPNs, mobile broadband mo
     <script src="https://giscus.app/client.js"
             data-repo="bahmoudd/bahmoudd.github.io"
             data-repo-id="R_kgDOOYkq4w"
-            data-category="[ENTER CATEGORY NAME HERE]"
-            data-category-id="[ENTER CATEGORY ID HERE]"
+            data-category="Comments"
+            data-category-id="DIC_kwDOOYkq484CtxLB"
             data-mapping="url"
             data-strict="0"
             data-reactions-enabled="1"
