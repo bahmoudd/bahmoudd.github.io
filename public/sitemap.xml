@@ -53,6 +53,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>//localhost:1313/arch-install-guide/extras/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>//localhost:1313/</loc>
     <lastmod>2025-06-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -77,7 +82,42 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/access-point/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/firmware/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>//localhost:1313/arch-install-guide/glossary/initramfs/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/network/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/repository/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/ssid/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/boatloader/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>//localhost:1313/arch-install-guide/glossary/compatibility-layer/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

@@ -90,6 +90,16 @@
     </item>
     
     <item>
+      <title>Extras</title>
+      <link>//localhost:1313/arch-install-guide/extras/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/extras/</guid>
+      <description>Informs you on different applications you can install/configure to make your Arch Linux experience more comfortable</description>
+      
+    </item>
+    
+    <item>
       <title>Xlibre is the FOSS world in action</title>
       <link>//localhost:1313/posts/xlibre/</link>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
@@ -111,10 +121,80 @@
     
     <item>
       <title></title>
+      <link>//localhost:1313/arch-install-guide/glossary/access-point/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/access-point/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/arch-install-guide/glossary/firmware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/firmware/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
       <link>//localhost:1313/arch-install-guide/glossary/initramfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/initramfs/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/arch-install-guide/glossary/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/network/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/arch-install-guide/glossary/repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/repository/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/arch-install-guide/glossary/ssid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/ssid/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>bootloader</title>
+      <link>//localhost:1313/arch-install-guide/glossary/boatloader/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/boatloader/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>compatibility-layer</title>
+      <link>//localhost:1313/arch-install-guide/glossary/compatibility-layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/compatibility-layer/</guid>
       <description></description>
       
     </item>

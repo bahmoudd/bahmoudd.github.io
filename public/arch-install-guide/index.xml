@@ -89,5 +89,15 @@
       
     </item>
     
+    <item>
+      <title>Extras</title>
+      <link>//localhost:1313/arch-install-guide/extras/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/extras/</guid>
+      <description>Informs you on different applications you can install/configure to make your Arch Linux experience more comfortable</description>
+      
+    </item>
+    
   </channel>
 </rss>

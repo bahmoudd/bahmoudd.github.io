@@ -134,7 +134,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "421"
+    "wordCount": "681"
   }]
   </script>
 
@@ -714,7 +714,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span>421 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+      <span>681 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -879,6 +879,8 @@
             <li><a href="#my-advice">My advice?</a></li>
             <li><a href="#different-swms">Different SWMs</a></li>
             <li><a href="#different-twms">Different TWMs</a></li>
+            <li><a href="#installing-a-display-manager">Installing a display manager</a></li>
+            <li><a href="#setting-up-sound-on-linux">Setting up sound on Linux</a></li>
           </ul>
         </li>
       </ul>
@@ -904,6 +906,8 @@
             <li><a href="#my-advice">My advice?</a></li>
             <li><a href="#different-swms">Different SWMs</a></li>
             <li><a href="#different-twms">Different TWMs</a></li>
+            <li><a href="#installing-a-display-manager">Installing a display manager</a></li>
+            <li><a href="#setting-up-sound-on-linux">Setting up sound on Linux</a></li>
           </ul>
         </li>
       </ul>
@@ -1319,6 +1323,205 @@ There are two main types of Window Managers (WMs):</p>
 <pre tabindex="0"><code># pacman -S river
 </code></pre></details>
 
+<h3 class="relative group">Installing a display manager 
+    <div id="installing-a-display-manager" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#installing-a-display-manager" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Now that you have installed a window manager, you will need to install a <a
+  href="/arch-install-guide/glossary/greeter"><em>display manager</em></a>.<br>
+There are two main greeters in Arch Linux: sddm and gdm.</p>
+<p>If you have installed GNOME as your desktop environment, install and enable GDM as shown below:</p>
+<pre tabindex="0"><code># pacman -S gdm
+# systemctl enable gdm.service
+</code></pre><p>If you have installed any other window manager, install and enable SDDM as shown below:</p>
+<pre tabindex="0"><code># pacman -S sddm
+# systemctl enable sddm.service
+</code></pre>
+<h3 class="relative group">Setting up sound on Linux 
+    <div id="setting-up-sound-on-linux" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#setting-up-sound-on-linux" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<style type="text/css">
+     
+    .notice {
+        --title-color: #fff;
+        --title-background-color: #6be;
+        --content-color: #444;
+        --content-background-color: #e7f2fa;
+    }
+
+    .notice.info {
+        --title-background-color: #fb7;
+        --content-background-color: #fec;
+    }
+
+    .notice.tip {
+        --title-background-color: #5a5;
+        --content-background-color: #efe;
+    }
+
+    .notice.warning {
+        --title-background-color: #c33;
+        --content-background-color: #fee;
+    }
+
+     
+    @media (prefers-color-scheme:dark) {
+        .notice {
+            --title-color: #fff;
+            --title-background-color: #069;
+            --content-color: #ddd;
+            --content-background-color: #023;
+        }
+
+        .notice.info {
+            --title-background-color: #a50;
+            --content-background-color: #420;
+        }
+
+        .notice.tip {
+            --title-background-color: #363;
+            --content-background-color: #121;
+        }
+
+        .notice.warning {
+            --title-background-color: #800;
+            --content-background-color: #400;
+        }
+    }
+
+    body.dark .notice {
+        --title-color: #fff;
+        --title-background-color: #069;
+        --content-color: #ddd;
+        --content-background-color: #023;
+    }
+
+    body.dark .notice.info {
+        --title-background-color: #a50;
+        --content-background-color: #420;
+    }
+
+    body.dark .notice.tip {
+        --title-background-color: #363;
+        --content-background-color: #121;
+    }
+
+    body.dark .notice.warning {
+        --title-background-color: #800;
+        --content-background-color: #400;
+    }
+
+     
+    .notice {
+        padding: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        border-radius: 4px;
+        color: var(--content-color);
+        background: var(--content-background-color);
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0
+    }
+
+     
+    .notice-title {
+        margin: -18px -18px 12px;
+        padding: 4px 18px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: var(--title-color);
+        background: var(--title-background-color);
+    }
+
+     
+    .icon-notice {
+        display: inline-flex;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .icon-notice img,
+    .icon-notice svg {
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+
+    .icon-notice img,
+    .icon-notice.baseline svg {
+        top: .125em;
+        position: relative;
+    }
+</style><div class="notice note" >
+    <p class="notice-title">
+        <span class="icon-notice baseline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 128 300 300">
+  <path d="M150 128c82.813 0 150 67.188 150 150 0 82.813-67.188 150-150 150C67.187 428 0 360.812 0 278c0-82.813 67.188-150 150-150Zm25 243.555v-37.11c0-3.515-2.734-6.445-6.055-6.445h-37.5c-3.515 0-6.445 2.93-6.445 6.445v37.11c0 3.515 2.93 6.445 6.445 6.445h37.5c3.32 0 6.055-2.93 6.055-6.445Zm-.39-67.188 3.515-121.289c0-1.367-.586-2.734-1.953-3.516-1.172-.976-2.93-1.562-4.688-1.562h-42.968c-1.758 0-3.516.586-4.688 1.563-1.367.78-1.953 2.148-1.953 3.515l3.32 121.29c0 2.734 2.93 4.882 6.64 4.882h36.134c3.515 0 6.445-2.148 6.64-4.883Z"/>
+</svg>
+
+        </span>Note</p><p>This step is optional, but allows you to enjoy bluetooth and configuring sound devices on your computer.</p></div>
+
+<p>Below is a command that installs a bunch of applications somewhat relating to sound</p>
+<pre tabindex="0"><code># pacman -S alsa-utils bluez bluez-utils pipewire wireplumber pipewire-alsa pipewire-pulse
+</code></pre><table>
+  <thead>
+      <tr>
+          <th>Packages</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>alsa-utils</td>
+          <td>Allows you to configure sound devices in the terminal</td>
+      </tr>
+      <tr>
+          <td>bluez</td>
+          <td>Provides bluetooth functionality</td>
+      </tr>
+      <tr>
+          <td>bluez-utils</td>
+          <td>Allows you to configure bluetooth in the terminal</td>
+      </tr>
+      <tr>
+          <td>pipewire</td>
+          <td>Audio and video server for Linux. Allows you to screen-capture and provides desktop sound</td>
+      </tr>
+      <tr>
+          <td>wireplumbler</td>
+          <td>Tells PipeWire what to do with audio and video devices</td>
+      </tr>
+      <tr>
+          <td>pipewire-alsa</td>
+          <td>Provides sound drivers</td>
+      </tr>
+      <tr>
+          <td>pipewire-pulse</td>
+          <td>A compatibility layer that allows legacy PulseAudio apps to work on PipeWire</td>
+      </tr>
+  </tbody>
+</table>
+<p>Then, enable bluetooth, as shown below:</p>
+<pre tabindex="0"><code># pacman -S bluetooth.service
+</code></pre><p>If at any point, you experience sound issues when running Wine applications, you may need to install an audio driver package as shown below:</p>
+<pre tabindex="0"><code># pacman -Syu lib32-alsa-lib lib32-alsa-plugins lib32-pipewire
+</code></pre><p>Now, installation is fully complete. For some quality-of-life features, check out the <code>extras</code> page.<br>
+To enjoy graphics on Arch, run the below command:</p>
+<pre tabindex="0"><code>$ reboot
+</code></pre>
           
           
           
@@ -1387,6 +1590,25 @@ There are two main types of Window Managers (WMs):</p>
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/arch-install-guide/extras/">
+              <span class="flex flex-col">
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Extras</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
