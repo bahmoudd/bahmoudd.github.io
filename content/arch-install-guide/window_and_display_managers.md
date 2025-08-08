@@ -171,3 +171,56 @@ To install river, use the below command:
 
 </details>
 
+
+### Installing a display manager
+
+Now that you have installed a window manager, you will need to install a [_display manager_](/arch-install-guide/glossary/greeter).\
+There are two main greeters in Arch Linux: sddm and gdm.
+
+If you have installed GNOME as your desktop environment, install and enable GDM as shown below:
+```
+# pacman -S gdm
+# systemctl enable gdm.service
+```
+If you have installed any other window manager, install and enable SDDM as shown below:
+```
+# pacman -S sddm
+# systemctl enable sddm.service
+```
+
+### Setting up sound on Linux
+
+{{< notice note >}}
+This step is optional, but allows you to enjoy bluetooth and configuring sound devices on your computer.
+{{< /notice >}}
+
+Below is a command that installs a bunch of applications somewhat relating to sound
+```
+# pacman -S alsa-utils bluez bluez-utils pipewire wireplumber pipewire-alsa pipewire-pulse
+```
+
+Packages       | Description
+-------------- | -----------------------------------------
+alsa-utils     | Allows you to configure sound devices in the terminal
+bluez          | Provides bluetooth functionality
+bluez-utils    | Allows you to configure bluetooth in the terminal
+pipewire       | Audio and video server for Linux. Allows you to screen-capture and provides desktop sound
+wireplumbler   | Tells PipeWire what to do with audio and video devices
+pipewire-alsa  | Provides sound drivers
+pipewire-pulse | A compatibility layer that allows legacy PulseAudio apps to work on PipeWire
+
+Then, enable bluetooth, as shown below:
+```
+# pacman -S bluetooth.service
+```
+
+If at any point, you experience sound issues when running Wine applications, you may need to install an audio driver package as shown below:
+```
+# pacman -Syu lib32-alsa-lib lib32-alsa-plugins lib32-pipewire
+```
+
+Now, installation is fully complete. For some quality-of-life features, check out the `extras` page.\
+To enjoy graphics on Arch, run the below command:
+```
+$ reboot
+```
