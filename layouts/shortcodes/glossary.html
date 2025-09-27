@@ -14,22 +14,25 @@ shortcode.
 {{- $path := "/arch-install-guide/glossary" }}
 {{- with site.GetPage $path }}
 
-  {{- /* Build and render alphabetical index. */}}
-  {{- $m := dict }}
-  {{- range $p := .Pages.ByTitle }}
-    {{- $k := substr .Title 0 1 | strings.ToUpper }}
-    {{- if index $m $k }}
-      {{- continue }}
-    {{- end }}
-    {{- $anchor := path.BaseName .Path | anchorize }}
-    {{- $m = merge $m (dict $k $anchor) }}
-  {{- end }}
-  {{- range $k, $v := $m }}
-[{{ $k }}](#{{ $v }})&nbsp;{{/* Do not indent. */}}
-  {{- end }}
+  {{- /* Build alphabetical index */ -}}
+  {{- $m := dict -}}
+  {{- range $p := .Pages.ByTitle -}}
+    {{- $k := substr $p.Title 0 1 | strings.ToUpper -}}
+    {{- if not (index $m $k) -}}
+      {{- $anchor := path.BaseName $p.Path | anchorize -}}
+      {{- $m = merge $m (dict $k $anchor) -}}
+    {{- end -}}
+  {{- end -}}
 
+  {{- /* Render horizontal alphabetical index */ -}}
+    {{- $letters := slice -}}
+    {{- range $k, $v := $m -}}
+      {{ $letters = $letters | append (printf "<a href=\"#%s\">%s</a>" $v $k) }}
+    {{- end -}}
+    {{- delimit $letters "&nbsp;&nbsp;" | safeHTML -}}
   {{/* Render glossary terms. */}}
   {{- range $p := .Pages.ByTitle }}
+
 {{ .Title }}{{/* Do not indent. */}}
 : {{ .RawContent | strings.TrimSpace | safeHTML }}{{/* Do not indent. */}}
     {{ with .Params.reference }}
@@ -45,6 +48,7 @@ shortcode.
           {{- end }}
         {{- end }}
       {{- end }}
+      
 : See&nbsp;[details]({{ $destination }}).{{/* Do not indent. */}}
     {{- end }}
   {{ end }}

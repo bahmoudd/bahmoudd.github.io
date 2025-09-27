@@ -75,7 +75,7 @@ showTableOfContents = true
 showCards = true
 orderByWeight = true
 groupByYear = false
-cardView = false
+cardView = true
 cardViewScreenWidth = false
 constrainItemsWidth = true
 
