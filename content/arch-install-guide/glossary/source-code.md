@@ -4,6 +4,7 @@ showDate = false
 showReadingTime = false
 showWordCount = false
 hideFromRecent = true
+showPagination = false
 +++
 
 _Source code_ is what computer programmers write to make computers do things. It needs to be converted into [_machine code_](/arch-install-guide/glossary/machine-code) before it can be run (or "executed").
