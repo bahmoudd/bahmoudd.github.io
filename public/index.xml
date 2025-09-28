@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 bahmoudd</copyright>
-    <lastBuildDate>Sat, 21 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Sep 2025 16:11:37 +0100</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Introduction</title>
@@ -100,6 +100,26 @@
     </item>
     
     <item>
+      <title>Laws of motion</title>
+      <link>//localhost:1313/gcse-revision/laws-of-motion/</link>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/gcse-revision/laws-of-motion/</guid>
+      <description>A page explaining Newton&amp;rsquo;s three laws of motion (Physics OCR 21st Century)</description>
+      
+    </item>
+    
+    <item>
+      <title>Speed, velocity and acceleration</title>
+      <link>//localhost:1313/gcse-revision/speed-time-acceleration/</link>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/gcse-revision/speed-time-acceleration/</guid>
+      <description>A page explaining speed, velocity and acceleration and how each three of these things can be worked out. (Physics OCR 21st Century)</description>
+      
+    </item>
+    
+    <item>
       <title>Xlibre is the FOSS world in action</title>
       <link>//localhost:1313/posts/xlibre/</link>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
@@ -120,61 +140,11 @@
     </item>
     
     <item>
-      <title></title>
+      <title>access point</title>
       <link>//localhost:1313/arch-install-guide/glossary/access-point/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/access-point/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/arch-install-guide/glossary/firmware/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/arch-install-guide/glossary/firmware/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/arch-install-guide/glossary/initramfs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/arch-install-guide/glossary/initramfs/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/arch-install-guide/glossary/network/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/arch-install-guide/glossary/network/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/arch-install-guide/glossary/repository/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/arch-install-guide/glossary/repository/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/arch-install-guide/glossary/ssid/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/arch-install-guide/glossary/ssid/</guid>
       <description></description>
       
     </item>
@@ -230,6 +200,16 @@
     </item>
     
     <item>
+      <title>firmware</title>
+      <link>//localhost:1313/arch-install-guide/glossary/firmware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/firmware/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>format</title>
       <link>//localhost:1313/arch-install-guide/glossary/format/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -265,6 +245,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/init/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>initramfs</title>
+      <link>//localhost:1313/arch-install-guide/glossary/initramfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/initramfs/</guid>
       <description></description>
       
     </item>
@@ -320,11 +310,31 @@
     </item>
     
     <item>
+      <title>network</title>
+      <link>//localhost:1313/arch-install-guide/glossary/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/network/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>package manager</title>
       <link>//localhost:1313/arch-install-guide/glossary/package-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/package-manager/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>package manager</title>
+      <link>//localhost:1313/arch-install-guide/glossary/repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/repository/</guid>
       <description></description>
       
     </item>
@@ -385,6 +395,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/arch-install-guide/glossary/source-code/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SSID</title>
+      <link>//localhost:1313/arch-install-guide/glossary/ssid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/arch-install-guide/glossary/ssid/</guid>
       <description></description>
       
     </item>

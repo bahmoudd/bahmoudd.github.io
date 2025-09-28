@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCSE Revision on The Cove of Bahmoudd</title>
+    <link>//localhost:1313/gcse-revision/</link>
+    <description>Recent content in GCSE Revision on The Cove of Bahmoudd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 bahmoudd</copyright>
+    <lastBuildDate>Sun, 28 Sep 2025 16:11:37 +0100</lastBuildDate><atom:link href="//localhost:1313/gcse-revision/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Laws of motion</title>
+      <link>//localhost:1313/gcse-revision/laws-of-motion/</link>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/gcse-revision/laws-of-motion/</guid>
+      <description>A page explaining Newton&amp;rsquo;s three laws of motion (Physics OCR 21st Century)</description>
+      
+    </item>
+    
+    <item>
+      <title>Speed, velocity and acceleration</title>
+      <link>//localhost:1313/gcse-revision/speed-time-acceleration/</link>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/gcse-revision/speed-time-acceleration/</guid>
+      <description>A page explaining speed, velocity and acceleration and how each three of these things can be worked out. (Physics OCR 21st Century)</description>
+      
+    </item>
+    
+  </channel>
+</rss>

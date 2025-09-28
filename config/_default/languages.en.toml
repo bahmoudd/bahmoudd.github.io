@@ -15,6 +15,6 @@ description = "here for whatever bahmoudd feels like placing here"
 
 [params.author]
 name = "bahmoudd"
-links = [ { email = "mailto:bahman.alta@gmail.com" }, { github = "https://github.com/bahmoudd" }, { reddit = "https://reddit.com/user/bahmoudd" }, { steam = "https://steamcommunity.com/id/bahmoudd/" } ]
+links = [ { email = "mailto:bahmanalta.ifc@protonmail.com" }, { github = "https://github.com/bahmoudd" }, { steam = "https://steamcommunity.com/id/bahmoudd/" } ]
 image = "cat.jpg"
 bio = "Linguist, hobby author and programmer based in the UK. Currently, I have no projects that I'm working on right now."
