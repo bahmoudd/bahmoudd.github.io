@@ -202,6 +202,11 @@ Install rEFInd (as shown below):
 # pacman -S refind
 ```
 
+Install refind:
+```
+# refind-install
+```
+
 Create the configuration file (as shown below):
 ```
 # mkrlconf

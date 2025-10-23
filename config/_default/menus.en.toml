@@ -16,14 +16,9 @@
   weight = 10
 
 [[main]]
-  name = "GCSE Revision"
-  pageRef = "gcse-revision"
-  weight = 20
-
-[[main]]
   name = "Posts"
   pageRef = "posts"
-  weight = 30
+  weight = 20
 
 #[[main]]
 #  name = "Parent"

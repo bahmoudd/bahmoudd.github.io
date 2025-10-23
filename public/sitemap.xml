@@ -58,26 +58,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/gcse-revision/</loc>
-    <lastmod>2025-09-28T16:11:37+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2025-09-28T16:11:37+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>//localhost:1313/gcse-revision/laws-of-motion/</loc>
-    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>//localhost:1313/gcse-revision/speed-time-acceleration/</loc>
-    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
